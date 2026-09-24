@@ -280,7 +280,7 @@ extern const  UINT32  _gPcd_FixedAtBuild_PcdMipiFrameBufferHeight;
 #define _PCD_TOKEN_PcdMipiFrameBufferPixelBpp  0U
 #define _PCD_SIZE_PcdMipiFrameBufferPixelBpp 4
 #define _PCD_GET_MODE_SIZE_PcdMipiFrameBufferPixelBpp  _PCD_SIZE_PcdMipiFrameBufferPixelBpp 
-#define _PCD_VALUE_PcdMipiFrameBufferPixelBpp  32U
+#define _PCD_VALUE_PcdMipiFrameBufferPixelBpp  24U
 GLOBAL_REMOVE_IF_UNREFERENCED const UINT32 _gPcd_FixedAtBuild_PcdMipiFrameBufferPixelBpp = _PCD_VALUE_PcdMipiFrameBufferPixelBpp;
 extern const  UINT32  _gPcd_FixedAtBuild_PcdMipiFrameBufferPixelBpp;
 #define _PCD_GET_MODE_32_PcdMipiFrameBufferPixelBpp  _gPcd_FixedAtBuild_PcdMipiFrameBufferPixelBpp
@@ -370,7 +370,7 @@ extern const  UINT32  _gPcd_FixedAtBuild_PcdUefiLibMaxPrintBufferSize;
 #define _PCD_TOKEN_PcdArmGicV3WithV2Legacy  0U
 #define _PCD_SIZE_PcdArmGicV3WithV2Legacy 1
 #define _PCD_GET_MODE_SIZE_PcdArmGicV3WithV2Legacy  _PCD_SIZE_PcdArmGicV3WithV2Legacy 
-#define _PCD_VALUE_PcdArmGicV3WithV2Legacy  ((BOOLEAN)0U)
+#define _PCD_VALUE_PcdArmGicV3WithV2Legacy  ((BOOLEAN)1U)
 GLOBAL_REMOVE_IF_UNREFERENCED const BOOLEAN _gPcd_FixedAtBuild_PcdArmGicV3WithV2Legacy = _PCD_VALUE_PcdArmGicV3WithV2Legacy;
 extern const  BOOLEAN  _gPcd_FixedAtBuild_PcdArmGicV3WithV2Legacy;
 #define _PCD_GET_MODE_BOOL_PcdArmGicV3WithV2Legacy  _gPcd_FixedAtBuild_PcdArmGicV3WithV2Legacy
@@ -552,7 +552,7 @@ extern const  UINT64  _gPcd_FixedAtBuild_PcdBootFdtAddressEnd;
 #define _PCD_TOKEN_PcdGicDistributorBase  0U
 #define _PCD_SIZE_PcdGicDistributorBase 8
 #define _PCD_GET_MODE_SIZE_PcdGicDistributorBase  _PCD_SIZE_PcdGicDistributorBase 
-#define _PCD_VALUE_PcdGicDistributorBase  0x17a00000ULL
+#define _PCD_VALUE_PcdGicDistributorBase  0x0B000000ULL
 GLOBAL_REMOVE_IF_UNREFERENCED const UINT64 _gPcd_FixedAtBuild_PcdGicDistributorBase = _PCD_VALUE_PcdGicDistributorBase;
 extern const  UINT64  _gPcd_FixedAtBuild_PcdGicDistributorBase;
 #define _PCD_GET_MODE_64_PcdGicDistributorBase  _gPcd_FixedAtBuild_PcdGicDistributorBase

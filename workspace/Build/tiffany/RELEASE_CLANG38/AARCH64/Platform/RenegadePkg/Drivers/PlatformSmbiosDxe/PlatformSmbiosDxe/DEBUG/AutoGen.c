@@ -70,8 +70,8 @@ GLOBAL_REMOVE_IF_UNREFERENCED UINT64 _gPcd_SkuId_Array[] = {0x0};
 // Definition of PCDs used in this module
 GLOBAL_REMOVE_IF_UNREFERENCED const UINT64 _gPcd_FixedAtBuild_PcdSystemMemoryBase = _PCD_VALUE_PcdSystemMemoryBase;
 GLOBAL_REMOVE_IF_UNREFERENCED const UINT32 _gPcd_FixedAtBuild_PcdFirmwareRevision = _PCD_VALUE_PcdFirmwareRevision;
-GLOBAL_REMOVE_IF_UNREFERENCED const UINT16 _gPcd_FixedAtBuild_PcdFirmwareVersionString[26] = {50, 51, 48, 50, 46, 49, 45, 109, 104, 50, 108, 109, 45, 49, 54, 57, 45, 103, 101, 49, 57, 53, 50, 54, 50, 0 };
-GLOBAL_REMOVE_IF_UNREFERENCED const UINTN _gPcd_FixedAtBuild_Size_PcdFirmwareVersionString = 52;
+GLOBAL_REMOVE_IF_UNREFERENCED const UINT16 _gPcd_FixedAtBuild_PcdFirmwareVersionString[9] = {54, 55, 99, 56, 55, 48, 102, 55, 0 };
+GLOBAL_REMOVE_IF_UNREFERENCED const UINTN _gPcd_FixedAtBuild_Size_PcdFirmwareVersionString = 18;
 GLOBAL_REMOVE_IF_UNREFERENCED const UINT8 _gPcd_FixedAtBuild_PcdDeviceVendor[7] = {88, 105, 97, 111, 109, 105, 0 };
 GLOBAL_REMOVE_IF_UNREFERENCED const UINTN _gPcd_FixedAtBuild_Size_PcdDeviceVendor = 7;
 GLOBAL_REMOVE_IF_UNREFERENCED const UINT8 _gPcd_FixedAtBuild_PcdDeviceProduct[6] = {77, 105, 32, 53, 88, 0 };
@@ -174,7 +174,7 @@ extern const  UINT32  _gPcd_FixedAtBuild_PcdMipiFrameBufferHeight;
 #define _PCD_TOKEN_PcdMipiFrameBufferPixelBpp  0U
 #define _PCD_SIZE_PcdMipiFrameBufferPixelBpp 4
 #define _PCD_GET_MODE_SIZE_PcdMipiFrameBufferPixelBpp  _PCD_SIZE_PcdMipiFrameBufferPixelBpp 
-#define _PCD_VALUE_PcdMipiFrameBufferPixelBpp  32U
+#define _PCD_VALUE_PcdMipiFrameBufferPixelBpp  24U
 GLOBAL_REMOVE_IF_UNREFERENCED const UINT32 _gPcd_FixedAtBuild_PcdMipiFrameBufferPixelBpp = _PCD_VALUE_PcdMipiFrameBufferPixelBpp;
 extern const  UINT32  _gPcd_FixedAtBuild_PcdMipiFrameBufferPixelBpp;
 #define _PCD_GET_MODE_32_PcdMipiFrameBufferPixelBpp  _gPcd_FixedAtBuild_PcdMipiFrameBufferPixelBpp

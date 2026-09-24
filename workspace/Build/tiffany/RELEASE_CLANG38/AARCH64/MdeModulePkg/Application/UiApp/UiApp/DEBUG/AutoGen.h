@@ -211,9 +211,9 @@ extern UINTN _gPcd_BinaryPatch_Size_PcdSetupVideoVerticalResolution;
 
 #define _PCD_TOKEN_PcdFirmwareVersionString  0U
 #define _PCD_VALUE_PcdFirmwareVersionString  _gPcd_FixedAtBuild_PcdFirmwareVersionString
-extern const UINT16 _gPcd_FixedAtBuild_PcdFirmwareVersionString[26];
+extern const UINT16 _gPcd_FixedAtBuild_PcdFirmwareVersionString[9];
 #define _PCD_GET_MODE_PTR_PcdFirmwareVersionString  _gPcd_FixedAtBuild_PcdFirmwareVersionString
-#define _PCD_SIZE_PcdFirmwareVersionString 52
+#define _PCD_SIZE_PcdFirmwareVersionString 18
 #define _PCD_GET_MODE_SIZE_PcdFirmwareVersionString  _PCD_SIZE_PcdFirmwareVersionString 
 //#define _PCD_SET_MODE_PTR_PcdFirmwareVersionString  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
 

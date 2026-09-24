@@ -25,5 +25,9 @@
   UefiDriverEntryPoint
   UefiBootServicesTableLib
 
+[Protocols]
+  gEfiCpuArchProtocolGuid
+
+
 [Depex]
-  TRUE
+  gEfiCpuArchProtocolGuid

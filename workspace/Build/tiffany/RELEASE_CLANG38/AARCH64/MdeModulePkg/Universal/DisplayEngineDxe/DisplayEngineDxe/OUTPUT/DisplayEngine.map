@@ -138,13 +138,13 @@
  .text          0x0000000000000000       0x10 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
  .data          0x0000000000000000        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
  .bss           0x0000000000000000        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
- .text          0x0000000000000000        0x0 /tmp/lto-llvm-0f84c1.o
- .text.memcpy   0x0000000000000000       0x1c /tmp/lto-llvm-0f84c1.o
+ .text          0x0000000000000000        0x0 /tmp/lto-llvm-be5b91.o
+ .text.memcpy   0x0000000000000000       0x1c /tmp/lto-llvm-be5b91.o
  .text.__memset
-                0x0000000000000000       0x18 /tmp/lto-llvm-0f84c1.o
- .comment       0x0000000000000000      0x925 /tmp/lto-llvm-0f84c1.o
+                0x0000000000000000       0x18 /tmp/lto-llvm-be5b91.o
+ .comment       0x0000000000000000      0x925 /tmp/lto-llvm-be5b91.o
  .note.GNU-stack
-                0x0000000000000000        0x0 /tmp/lto-llvm-0f84c1.o
+                0x0000000000000000        0x0 /tmp/lto-llvm-be5b91.o
  .text          0x0000000000000000       0x30 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
  .text          0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
  .text          0x0000000000000000        0x0 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
@@ -343,7 +343,7 @@
 
 LOAD /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
 START GROUP
-LOAD /tmp/lto-llvm-0f84c1.o
+LOAD /tmp/lto-llvm-be5b91.o
 LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe/OUTPUT/DisplayEngine.lib
 LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/DxePcdLib/DxePcdLib/OUTPUT/DxePcdLib.lib
 LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
@@ -384,504 +384,504 @@ END GROUP
  .gnu.version_r
                 0x0000000000000228        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
 
-.text           0x0000000000001000    0x108d8
+.text           0x0000000000001000    0x10880
  *(.text .text.* .stub .gnu.linkonce.t.*)
  .text._DriverUnloadHandler
-                0x0000000000001000      0x5f4 /tmp/lto-llvm-0f84c1.o
+                0x0000000000001000      0x5f4 /tmp/lto-llvm-be5b91.o
  .text._ModuleEntryPoint
-                0x00000000000015f4      0x97c /tmp/lto-llvm-0f84c1.o
+                0x00000000000015f4      0x97c /tmp/lto-llvm-be5b91.o
                 0x00000000000015f4                _ModuleEntryPoint
  .text.__stack_chk_fail
-                0x0000000000001f70       0x20 /tmp/lto-llvm-0f84c1.o
+                0x0000000000001f70       0x20 /tmp/lto-llvm-be5b91.o
                 0x0000000000001f70                __stack_chk_fail
  .text.FormDisplay
-                0x0000000000001f90     0x3510 /tmp/lto-llvm-0f84c1.o
+                0x0000000000001f90     0x3510 /tmp/lto-llvm-be5b91.o
  .text.IsSelectable
-                0x00000000000054a0       0xd4 /tmp/lto-llvm-0f84c1.o
+                0x00000000000054a0       0xd4 /tmp/lto-llvm-be5b91.o
  .text.DisplayOneMenu
-                0x0000000000005574      0x780 /tmp/lto-llvm-0f84c1.o
+                0x0000000000005574      0x780 /tmp/lto-llvm-be5b91.o
  .text.UpdateHighlightMenuInfo
-                0x0000000000005cf4      0x1d8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000005cf4      0x1d8 /tmp/lto-llvm-be5b91.o
  .text.GetToken
-                0x0000000000005ecc       0x64 /tmp/lto-llvm-0f84c1.o
+                0x0000000000005ecc       0x64 /tmp/lto-llvm-be5b91.o
  .text.GetStringWidth
-                0x0000000000005f30       0x60 /tmp/lto-llvm-0f84c1.o
+                0x0000000000005f30       0x60 /tmp/lto-llvm-be5b91.o
  .text.GetFieldFromNum
-                0x0000000000005f90       0xa0 /tmp/lto-llvm-0f84c1.o
+                0x0000000000005f90       0xa0 /tmp/lto-llvm-be5b91.o
  .text.AdjustDateAndTimePosition
-                0x0000000000006030       0x90 /tmp/lto-llvm-0f84c1.o
+                0x0000000000006030       0x90 /tmp/lto-llvm-be5b91.o
  .text.MoveToNextStatement
-                0x00000000000060c0       0xe0 /tmp/lto-llvm-0f84c1.o
+                0x00000000000060c0       0xe0 /tmp/lto-llvm-be5b91.o
  .text.FindTopOfScreenMenu
-                0x00000000000061a0       0xac /tmp/lto-llvm-0f84c1.o
+                0x00000000000061a0       0xac /tmp/lto-llvm-be5b91.o
  .text.UpdateOptionSkipLines
-                0x000000000000624c       0xc8 /tmp/lto-llvm-0f84c1.o
+                0x000000000000624c       0xc8 /tmp/lto-llvm-be5b91.o
  .text.UpdateSkipInfoForMenu
-                0x0000000000006314       0xe8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000006314       0xe8 /tmp/lto-llvm-be5b91.o
  .text.GetLineByWidth
-                0x00000000000063fc      0x208 /tmp/lto-llvm-0f84c1.o
+                0x00000000000063fc      0x208 /tmp/lto-llvm-be5b91.o
  .text.GetIndexInfoForOpcode
-                0x0000000000006604       0xbc /tmp/lto-llvm-0f84c1.o
+                0x0000000000006604       0xbc /tmp/lto-llvm-be5b91.o
  .text.SetDisplayAttribute
-                0x00000000000066c0       0x54 /tmp/lto-llvm-0f84c1.o
+                0x00000000000066c0       0x54 /tmp/lto-llvm-be5b91.o
  .text.DisplayMenuString
-                0x0000000000006714       0xbc /tmp/lto-llvm-0f84c1.o
+                0x0000000000006714       0xbc /tmp/lto-llvm-be5b91.o
  .text.GetWidth
-                0x00000000000067d0      0x178 /tmp/lto-llvm-0f84c1.o
+                0x00000000000067d0      0x178 /tmp/lto-llvm-be5b91.o
  .text.FindHighLightMenuOption
-                0x0000000000006948      0x16c /tmp/lto-llvm-0f84c1.o
+                0x0000000000006948      0x16c /tmp/lto-llvm-be5b91.o
  .text.FindTopOfScreenMenuOption
-                0x0000000000006ab4      0x18c /tmp/lto-llvm-0f84c1.o
+                0x0000000000006ab4      0x18c /tmp/lto-llvm-be5b91.o
  .text.UiAddMenuOption
-                0x0000000000006c40      0x27c /tmp/lto-llvm-0f84c1.o
+                0x0000000000006c40      0x27c /tmp/lto-llvm-be5b91.o
  .text.DriverClearDisplayPage
-                0x0000000000006ebc       0x50 /tmp/lto-llvm-0f84c1.o
+                0x0000000000006ebc       0x50 /tmp/lto-llvm-be5b91.o
  .text.HiiValueToUINT64
-                0x0000000000006f0c       0x88 /tmp/lto-llvm-0f84c1.o
+                0x0000000000006f0c       0x88 /tmp/lto-llvm-be5b91.o
  .text.CompareHiiValue
-                0x0000000000006f94      0x2e4 /tmp/lto-llvm-0f84c1.o
+                0x0000000000006f94      0x2e4 /tmp/lto-llvm-be5b91.o
  .text.ValueToOption
-                0x0000000000007278       0xc0 /tmp/lto-llvm-0f84c1.o
+                0x0000000000007278       0xc0 /tmp/lto-llvm-be5b91.o
  .text.PrintFormattedNumber
-                0x0000000000007338       0xa4 /tmp/lto-llvm-0f84c1.o
+                0x0000000000007338       0xa4 /tmp/lto-llvm-be5b91.o
  .text.CreateMultiStringPopUp
-                0x00000000000073dc      0x3ac /tmp/lto-llvm-0f84c1.o
+                0x00000000000073dc      0x3ac /tmp/lto-llvm-be5b91.o
  .text.EmptyEventProcess
-                0x0000000000007788        0x4 /tmp/lto-llvm-0f84c1.o
+                0x0000000000007788        0x4 /tmp/lto-llvm-be5b91.o
  .text.RefreshTimeOutProcess
-                0x000000000000778c       0xa8 /tmp/lto-llvm-0f84c1.o
+                0x000000000000778c       0xa8 /tmp/lto-llvm-be5b91.o
  .text.PasswordInvalid
-                0x0000000000007834       0x54 /tmp/lto-llvm-0f84c1.o
+                0x0000000000007834       0x54 /tmp/lto-llvm-be5b91.o
  .text.PrintMismatchMenuInfo
-                0x0000000000007888      0x584 /tmp/lto-llvm-0f84c1.o
+                0x0000000000007888      0x584 /tmp/lto-llvm-be5b91.o
  .text.ProcessOptions
-                0x0000000000007e0c     0x122c /tmp/lto-llvm-0f84c1.o
+                0x0000000000007e0c     0x122c /tmp/lto-llvm-be5b91.o
  .text.ProcessHelpString
-                0x0000000000009038      0x130 /tmp/lto-llvm-0f84c1.o
+                0x0000000000009038      0x130 /tmp/lto-llvm-be5b91.o
  .text.ReadString
-                0x0000000000009168      0x988 /tmp/lto-llvm-0f84c1.o
+                0x0000000000009168      0x988 /tmp/lto-llvm-be5b91.o
  .text.GetNumericInput
-                0x0000000000009af0     0x1004 /tmp/lto-llvm-0f84c1.o
+                0x0000000000009af0     0x1004 /tmp/lto-llvm-be5b91.o
  .text.GetSelectionInputPopUp
-                0x000000000000aaf4      0xfa8 /tmp/lto-llvm-0f84c1.o
+                0x000000000000aaf4      0xfa8 /tmp/lto-llvm-be5b91.o
  .text.AddOneSelectableOption
-                0x000000000000ba9c      0x104 /tmp/lto-llvm-0f84c1.o
+                0x000000000000ba9c      0x104 /tmp/lto-llvm-be5b91.o
  .text.ParseMessageString
-                0x000000000000bba0      0x110 /tmp/lto-llvm-0f84c1.o
+                0x000000000000bba0      0x110 /tmp/lto-llvm-be5b91.o
  .text.CreatePopup
-                0x000000000000bcb0      0xeb4 /tmp/lto-llvm-0f84c1.o
+                0x000000000000bcb0      0xeb4 /tmp/lto-llvm-be5b91.o
  .text.SwapListEntries
-                0x000000000000cb64       0x7c /tmp/lto-llvm-0f84c1.o
- .text.StrCpyS  0x000000000000cbe0      0x1cc /tmp/lto-llvm-0f84c1.o
+                0x000000000000cb64       0x7c /tmp/lto-llvm-be5b91.o
+ .text.StrCpyS  0x000000000000cbe0      0x1cc /tmp/lto-llvm-be5b91.o
  .text.StrnCpyS
-                0x000000000000cdac      0x230 /tmp/lto-llvm-0f84c1.o
- .text.StrCatS  0x000000000000cfdc      0x264 /tmp/lto-llvm-0f84c1.o
- .text.ZeroMem  0x000000000000d240       0x6c /tmp/lto-llvm-0f84c1.o
- .text.CopyMem  0x000000000000d2ac      0x190 /tmp/lto-llvm-0f84c1.o
+                0x000000000000cdac      0x230 /tmp/lto-llvm-be5b91.o
+ .text.StrCatS  0x000000000000cfdc      0x264 /tmp/lto-llvm-be5b91.o
+ .text.ZeroMem  0x000000000000d240       0x6c /tmp/lto-llvm-be5b91.o
+ .text.CopyMem  0x000000000000d2ac      0x190 /tmp/lto-llvm-be5b91.o
  .text.CopyGuid
-                0x000000000000d43c       0xc8 /tmp/lto-llvm-0f84c1.o
+                0x000000000000d43c       0xc8 /tmp/lto-llvm-be5b91.o
  .text.CompareGuid
-                0x000000000000d504       0xa8 /tmp/lto-llvm-0f84c1.o
+                0x000000000000d504       0xa8 /tmp/lto-llvm-be5b91.o
  .text.UnicodeSPrint
-                0x000000000000d5ac       0x60 /tmp/lto-llvm-0f84c1.o
+                0x000000000000d5ac       0x60 /tmp/lto-llvm-be5b91.o
  .text.BasePrintLibSPrintMarker
-                0x000000000000d60c      0xe3c /tmp/lto-llvm-0f84c1.o
+                0x000000000000d60c      0xe3c /tmp/lto-llvm-be5b91.o
  .text.BasePrintLibSPrint
-                0x000000000000e448       0x54 /tmp/lto-llvm-0f84c1.o
+                0x000000000000e448       0x54 /tmp/lto-llvm-be5b91.o
  .text.DebugPrint
-                0x000000000000e49c      0x480 /tmp/lto-llvm-0f84c1.o
+                0x000000000000e49c      0x42c /tmp/lto-llvm-be5b91.o
  .text.InternalAllocateZeroPool
-                0x000000000000e91c       0x60 /tmp/lto-llvm-0f84c1.o
+                0x000000000000e8c8       0x60 /tmp/lto-llvm-be5b91.o
  .text.AllocateCopyPool
-                0x000000000000e97c       0x68 /tmp/lto-llvm-0f84c1.o
+                0x000000000000e928       0x68 /tmp/lto-llvm-be5b91.o
  .text.GetBestLanguage
-                0x000000000000e9e4      0x1d4 /tmp/lto-llvm-0f84c1.o
+                0x000000000000e990      0x1d4 /tmp/lto-llvm-be5b91.o
  .text.HiiAddPackages
-                0x000000000000ebb8      0x200 /tmp/lto-llvm-0f84c1.o
+                0x000000000000eb64      0x200 /tmp/lto-llvm-be5b91.o
  .text.HiiSetString
-                0x000000000000edb8      0x158 /tmp/lto-llvm-0f84c1.o
+                0x000000000000ed64      0x158 /tmp/lto-llvm-be5b91.o
  .text.HiiGetString
-                0x000000000000ef10      0x1f0 /tmp/lto-llvm-0f84c1.o
+                0x000000000000eebc      0x1f0 /tmp/lto-llvm-be5b91.o
  .text.HiiGetSupportedLanguages
-                0x000000000000f100       0xac /tmp/lto-llvm-0f84c1.o
+                0x000000000000f0ac       0xac /tmp/lto-llvm-be5b91.o
  .text.ClearLines
-                0x000000000000f1ac       0xec /tmp/lto-llvm-0f84c1.o
+                0x000000000000f158       0xec /tmp/lto-llvm-be5b91.o
  .text.UpdateStatusBar
-                0x000000000000f298      0x1ac /tmp/lto-llvm-0f84c1.o
+                0x000000000000f244      0x1ac /tmp/lto-llvm-be5b91.o
  .text.RefreshKeyHelp
-                0x000000000000f444      0x73c /tmp/lto-llvm-0f84c1.o
+                0x000000000000f3f0      0x73c /tmp/lto-llvm-be5b91.o
  .text.CreateDialog
-                0x000000000000fb80      0x5e8 /tmp/lto-llvm-0f84c1.o
+                0x000000000000fb2c      0x5e8 /tmp/lto-llvm-be5b91.o
  .text.ConfirmDataChange
-                0x0000000000010168       0xd0 /tmp/lto-llvm-0f84c1.o
+                0x0000000000010114       0xd0 /tmp/lto-llvm-be5b91.o
  .text.LibGetToken
-                0x0000000000010238       0x50 /tmp/lto-llvm-0f84c1.o
+                0x00000000000101e4       0x50 /tmp/lto-llvm-be5b91.o
  .text.LibGetStringWidth
-                0x0000000000010288       0x60 /tmp/lto-llvm-0f84c1.o
+                0x0000000000010234       0x60 /tmp/lto-llvm-be5b91.o
  .text.ProcessUserOpcode
-                0x00000000000102e8      0x164 /tmp/lto-llvm-0f84c1.o
+                0x0000000000010294      0x164 /tmp/lto-llvm-be5b91.o
  .text.PrintHotKeyHelpString
-                0x000000000001044c      0x1e4 /tmp/lto-llvm-0f84c1.o
+                0x00000000000103f8      0x1e4 /tmp/lto-llvm-be5b91.o
  .text.LibGetFieldFromNum
-                0x0000000000010630       0xa0 /tmp/lto-llvm-0f84c1.o
+                0x00000000000105dc       0xa0 /tmp/lto-llvm-be5b91.o
  .text.WaitForKeyStroke
-                0x00000000000106d0       0x98 /tmp/lto-llvm-0f84c1.o
- .text.PrintAt  0x0000000000010768      0x298 /tmp/lto-llvm-0f84c1.o
+                0x000000000001067c       0x98 /tmp/lto-llvm-be5b91.o
+ .text.PrintAt  0x0000000000010714      0x298 /tmp/lto-llvm-be5b91.o
  .text.ReadUnaligned32
-                0x0000000000010a00       0x44 /tmp/lto-llvm-0f84c1.o
+                0x00000000000109ac       0x44 /tmp/lto-llvm-be5b91.o
  .text.WriteBackInvalidateDataCacheRange
-                0x0000000000010a44       0x50 /tmp/lto-llvm-0f84c1.o
+                0x00000000000109f0       0x50 /tmp/lto-llvm-be5b91.o
  .text.ArmCleanInvalidateDataCacheEntryByMVA
-                0x0000000000010a94        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
-                0x0000000000010a94                ArmCleanInvalidateDataCacheEntryByMVA
+                0x0000000000010a40        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x0000000000010a40                ArmCleanInvalidateDataCacheEntryByMVA
  .text.ArmDataSynchronizationBarrier
-                0x0000000000010a9c        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
-                0x0000000000010a9c                ArmDataSynchronizationBarrier
+                0x0000000000010a48        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x0000000000010a48                ArmDataSynchronizationBarrier
  .text.ArmIsArchTimerImplemented
-                0x0000000000010aa4        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
-                0x0000000000010aa4                ArmIsArchTimerImplemented
+                0x0000000000010a50        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x0000000000010a50                ArmIsArchTimerImplemented
  .text.ArmCacheInfo
-                0x0000000000010aac        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
-                0x0000000000010aac                ArmCacheInfo
+                0x0000000000010a58        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+                0x0000000000010a58                ArmCacheInfo
  .text.ArmGetInterruptState
-                0x0000000000010ab4       0x10 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
-                0x0000000000010ab4                ArmGetInterruptState
+                0x0000000000010a60       0x10 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+                0x0000000000010a60                ArmGetInterruptState
  .text.ArmEnableInterrupts
-                0x0000000000010ac4        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
-                0x0000000000010ac4                ArmEnableInterrupts
+                0x0000000000010a70        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+                0x0000000000010a70                ArmEnableInterrupts
  .text.ArmDisableInterrupts
-                0x0000000000010ad0        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
-                0x0000000000010ad0                ArmDisableInterrupts
+                0x0000000000010a7c        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+                0x0000000000010a7c                ArmDisableInterrupts
  .text.ArmReadCntPct
-                0x0000000000010adc        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
-                0x0000000000010adc                ArmReadCntPct
+                0x0000000000010a88        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+                0x0000000000010a88                ArmReadCntPct
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.FormDisplay
-                0x0000000000010ae4       0x26 /tmp/lto-llvm-0f84c1.o
- *fill*         0x0000000000010b0a        0x6 
- .rodata.cst8   0x0000000000010b10       0x10 /tmp/lto-llvm-0f84c1.o
+                0x0000000000010a90       0x26 /tmp/lto-llvm-be5b91.o
+ *fill*         0x0000000000010ab6        0x2 
+ .rodata.cst8   0x0000000000010ab8       0x10 /tmp/lto-llvm-be5b91.o
  .rodata.str1.1
-                0x0000000000010b20      0x5da /tmp/lto-llvm-0f84c1.o
+                0x0000000000010ac8      0x5da /tmp/lto-llvm-be5b91.o
                                         0x5db (松开之前的大小)
- *fill*         0x00000000000110fa        0x2 
+ *fill*         0x00000000000110a2        0x2 
  .rodata.gScanCodeToOperation
-                0x00000000000110fc       0x38 /tmp/lto-llvm-0f84c1.o
+                0x00000000000110a4       0x38 /tmp/lto-llvm-be5b91.o
  .rodata.gScreenOperationToControlFlag
-                0x0000000000011134       0x50 /tmp/lto-llvm-0f84c1.o
+                0x00000000000110dc       0x50 /tmp/lto-llvm-be5b91.o
  .rodata.str2.2
-                0x0000000000011184       0x84 /tmp/lto-llvm-0f84c1.o
+                0x000000000001112c       0x84 /tmp/lto-llvm-be5b91.o
                                          0xb4 (松开之前的大小)
  .rodata..Lswitch.table.GetNumericInput
-                0x0000000000011208       0x40 /tmp/lto-llvm-0f84c1.o
- .rodata.cst16  0x0000000000011248       0x10 /tmp/lto-llvm-0f84c1.o
+                0x00000000000111b0       0x40 /tmp/lto-llvm-be5b91.o
+ .rodata.cst16  0x00000000000111f0       0x10 /tmp/lto-llvm-be5b91.o
  .rodata.mWarningString
-                0x0000000000011258       0x96 /tmp/lto-llvm-0f84c1.o
+                0x0000000000011200       0x96 /tmp/lto-llvm-be5b91.o
  .rodata.mErrorString
-                0x00000000000112ee      0x2b5 /tmp/lto-llvm-0f84c1.o
+                0x0000000000011296      0x2b5 /tmp/lto-llvm-be5b91.o
  .rodata.mEndOfPakageList
-                0x00000000000115a3        0x4 /tmp/lto-llvm-0f84c1.o
+                0x000000000001154b        0x4 /tmp/lto-llvm-be5b91.o
  .rodata._gPcd_FixedAtBuild_PcdFrontPageFormSetGuid
-                0x00000000000115a7       0x10 /tmp/lto-llvm-0f84c1.o
- *fill*         0x00000000000115b7        0x1 
+                0x000000000001154f       0x10 /tmp/lto-llvm-be5b91.o
+ *fill*         0x000000000001155f        0x1 
  .rodata.font5x12
-                0x00000000000115b8      0x300 /tmp/lto-llvm-0f84c1.o
+                0x0000000000011560      0x300 /tmp/lto-llvm-be5b91.o
  *(.got .got.*)
- .got           0x00000000000118b8        0x8 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
-                0x00000000000118b8                _GLOBAL_OFFSET_TABLE_
- .got.plt       0x00000000000118c0       0x18 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .got           0x0000000000011860        0x8 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+                0x0000000000011860                _GLOBAL_OFFSET_TABLE_
+ .got.plt       0x0000000000011868       0x18 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
  *:AutoGen.obj(.data.g*Guid)
 
-.plt            0x00000000000118d8        0x0
- .plt           0x00000000000118d8        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+.plt            0x0000000000011880        0x0
+ .plt           0x0000000000011880        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
 
 .data           0x0000000000012000     0x2210
  *(.data .data.* .gnu.linkonce.d.*)
  .data.rel.ro   0x0000000000012000        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
  .data.__stack_chk_guard
-                0x0000000000012000        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000012000        0x8 /tmp/lto-llvm-be5b91.o
                 0x0000000000012000                __stack_chk_guard
  .data.gEfiLoadedImageProtocolGuid
-                0x0000000000012008       0x10 /tmp/lto-llvm-0f84c1.o
+                0x0000000000012008       0x10 /tmp/lto-llvm-be5b91.o
  .data.gDisplayEngineGuid
-                0x0000000000012018       0x10 /tmp/lto-llvm-0f84c1.o
+                0x0000000000012018       0x10 /tmp/lto-llvm-be5b91.o
  .data.mPrivateData
-                0x0000000000012028       0x38 /tmp/lto-llvm-0f84c1.o
+                0x0000000000012028       0x38 /tmp/lto-llvm-be5b91.o
  .data.DisplayEngineStrings
-                0x0000000000012060     0x15c6 /tmp/lto-llvm-0f84c1.o
+                0x0000000000012060     0x15c6 /tmp/lto-llvm-be5b91.o
  *fill*         0x0000000000013626        0x2 
  .data.gEdkiiFormDisplayEngineProtocolGuid
-                0x0000000000013628       0x10 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013628       0x10 /tmp/lto-llvm-be5b91.o
  .data.gEfiHiiPopupProtocolGuid
-                0x0000000000013638       0x10 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013638       0x10 /tmp/lto-llvm-be5b91.o
  .data.gEdkiiFormBrowserEx2ProtocolGuid
-                0x0000000000013648       0x10 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013648       0x10 /tmp/lto-llvm-be5b91.o
  .data.gEfiGlobalVariableGuid
-                0x0000000000013658       0x10 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013658       0x10 /tmp/lto-llvm-be5b91.o
  .data.gEfiHobListGuid
-                0x0000000000013668       0x10 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013668       0x10 /tmp/lto-llvm-be5b91.o
  .data.gEfiHiiStringProtocolGuid
-                0x0000000000013678       0x10 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013678       0x10 /tmp/lto-llvm-be5b91.o
  .data.gEfiHiiDatabaseProtocolGuid
-                0x0000000000013688       0x10 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013688       0x10 /tmp/lto-llvm-be5b91.o
  .data.gEfiHiiConfigRoutingProtocolGuid
-                0x0000000000013698       0x10 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013698       0x10 /tmp/lto-llvm-be5b91.o
  .data.gEfiHiiFontProtocolGuid
-                0x00000000000136a8       0x10 /tmp/lto-llvm-0f84c1.o
+                0x00000000000136a8       0x10 /tmp/lto-llvm-be5b91.o
  .data.gEfiHiiImageProtocolGuid
-                0x00000000000136b8       0x10 /tmp/lto-llvm-0f84c1.o
+                0x00000000000136b8       0x10 /tmp/lto-llvm-be5b91.o
  .data.gCustomizedDisplayLibGuid
-                0x00000000000136c8       0x10 /tmp/lto-llvm-0f84c1.o
+                0x00000000000136c8       0x10 /tmp/lto-llvm-be5b91.o
  .data.gEfiIfrTianoGuid
-                0x00000000000136d8       0x10 /tmp/lto-llvm-0f84c1.o
+                0x00000000000136d8       0x10 /tmp/lto-llvm-be5b91.o
  .data.CustomizedDisplayLibStrings
-                0x00000000000136e8      0x6ea /tmp/lto-llvm-0f84c1.o
+                0x00000000000136e8      0x6ea /tmp/lto-llvm-be5b91.o
  *(.bss .bss.*)
  *fill*         0x0000000000013dd2        0x6 
  .bss.gHighligthMenuInfo
-                0x0000000000013dd8       0x48 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013dd8       0x48 /tmp/lto-llvm-be5b91.o
  .bss.mIsFirstForm
-                0x0000000000013e20        0x1 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013e20        0x1 /tmp/lto-llvm-be5b91.o
  *fill*         0x0000000000013e21        0x7 
  .bss.gOldFormEntry
-                0x0000000000013e28       0x38 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013e28       0x38 /tmp/lto-llvm-be5b91.o
  .bss.mUnknownString
-                0x0000000000013e60        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013e60        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gHiiHandle
-                0x0000000000013e68        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013e68        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gReconnectConfirmChanges
-                0x0000000000013e70        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013e70        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gSaveFailed
-                0x0000000000013e78        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013e78        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gNoSubmitIfFailed
-                0x0000000000013e80        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013e80        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gReconnectFail
-                0x0000000000013e88        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013e88        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gReconnectRequired
-                0x0000000000013e90        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013e90        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gChangesOpt
-                0x0000000000013e98        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013e98        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gSaveProcess
-                0x0000000000013ea0        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013ea0        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gSaveNoSubmitProcess
-                0x0000000000013ea8        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013ea8        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gDiscardChange
-                0x0000000000013eb0        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013eb0        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gJumpToFormSet
-                0x0000000000013eb8        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013eb8        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gCheckError
-                0x0000000000013ec0        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013ec0        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gFormSuppress
-                0x0000000000013ec8        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013ec8        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gProtocolNotFound
-                0x0000000000013ed0        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013ed0        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gFormNotFound
-                0x0000000000013ed8        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013ed8        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gNoSubmitIf
-                0x0000000000013ee0        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013ee0        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gBrowserError
-                0x0000000000013ee8        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013ee8        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gConfirmDefaultMsg
-                0x0000000000013ef0        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013ef0        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gConfirmDiscardMsg
-                0x0000000000013ef8        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013ef8        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gConfirmSubmitMsg
-                0x0000000000013f00        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f00        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gConfirmResetMsg
-                0x0000000000013f08        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f08        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gConfirmExitMsg
-                0x0000000000013f10        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f10        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gConfirmDefaultMsg2nd
-                0x0000000000013f18        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f18        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gConfirmSubmitMsg2nd
-                0x0000000000013f20        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f20        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gConfirmResetMsg2nd
-                0x0000000000013f28        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f28        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gConfirmExitMsg2nd
-                0x0000000000013f30        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f30        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gConfirmOpt
-                0x0000000000013f38        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f38        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gConfirmMsgConnect
-                0x0000000000013f40        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f40        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gConfirmMsgEnd
-                0x0000000000013f48        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f48        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gModalSkipColumn
-                0x0000000000013f50        0x2 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f50        0x2 /tmp/lto-llvm-be5b91.o
  *fill*         0x0000000000013f52        0x2 
  .bss.gPromptBlockWidth
-                0x0000000000013f54        0x2 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f54        0x2 /tmp/lto-llvm-be5b91.o
  *fill*         0x0000000000013f56        0x2 
  .bss.gMenuOption
-                0x0000000000013f58       0x10 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f58       0x10 /tmp/lto-llvm-be5b91.o
  .bss.gEmptyString
-                0x0000000000013f68        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f68        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gPassowordInvalid
-                0x0000000000013f70        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f70        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gPasswordUnsupported
-                0x0000000000013f78        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f78        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gPromptForPassword
-                0x0000000000013f80        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f80        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gPromptForNewPassword
-                0x0000000000013f88        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f88        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gConfirmPassword
-                0x0000000000013f90        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f90        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gConfirmError
-                0x0000000000013f98        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013f98        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gOptionMismatch
-                0x0000000000013fa0        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013fa0        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gMisMatch
-                0x0000000000013fa8        0x1 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013fa8        0x1 /tmp/lto-llvm-be5b91.o
  *fill*         0x0000000000013fa9        0x7 
  .bss.gPromptForData
-                0x0000000000013fb0        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013fb0        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gHelpBlockWidth
-                0x0000000000013fb8        0x2 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013fb8        0x2 /tmp/lto-llvm-be5b91.o
  *fill*         0x0000000000013fba        0x6 
  .bss.gStatementDimensions.0
-                0x0000000000013fc0        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013fc0        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gStatementDimensions.1
-                0x0000000000013fc8        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013fc8        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gStatementDimensions.2
-                0x0000000000013fd0        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013fd0        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gStatementDimensions.3
-                0x0000000000013fd8        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013fd8        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gMiniString
-                0x0000000000013fe0        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013fe0        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gPressEnter
-                0x0000000000013fe8        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013fe8        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gDirection
-                0x0000000000013ff0        0x2 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013ff0        0x2 /tmp/lto-llvm-be5b91.o
  *fill*         0x0000000000013ff2        0x2 
  .bss.gOptionBlockWidth
-                0x0000000000013ff4        0x2 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013ff4        0x2 /tmp/lto-llvm-be5b91.o
  *fill*         0x0000000000013ff6        0x2 
  .bss.gUserInput
-                0x0000000000013ff8        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000013ff8        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gFormData
-                0x0000000000014000        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014000        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gUserSelectableOptions
-                0x0000000000014008       0x10 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014008       0x10 /tmp/lto-llvm-be5b91.o
  .bss.gPopupDimensions.0
-                0x0000000000014018        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014018        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gPopupDimensions.1
-                0x0000000000014020        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014020        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gPopupDimensions.2
-                0x0000000000014028        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014028        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gPopupDimensions.3
-                0x0000000000014030        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014030        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gOkOption
-                0x0000000000014038        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014038        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gCancelOption
-                0x0000000000014040        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014040        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gYesOption
-                0x0000000000014048        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014048        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gNoOption
-                0x0000000000014050        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014050        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gConfirmOptYes
-                0x0000000000014058        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014058        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gConfirmOptNo
-                0x0000000000014060        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014060        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gConfirmOptOk
-                0x0000000000014068        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014068        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gConfirmOptCancel
-                0x0000000000014070        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014070        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gMessageString
-                0x0000000000014078        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014078        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gMesStrLineNum
-                0x0000000000014080        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014080        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gMaxRowWidth
-                0x0000000000014088        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014088        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gErrorPopup
-                0x0000000000014090        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014090        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gWarningPopup
-                0x0000000000014098        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014098        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gInfoPopup
-                0x00000000000140a0        0x8 /tmp/lto-llvm-0f84c1.o
- .bss.gRT       0x00000000000140a8        0x8 /tmp/lto-llvm-0f84c1.o
- .bss.mHobList  0x00000000000140b0        0x8 /tmp/lto-llvm-0f84c1.o
- .bss.gHiiFont  0x00000000000140b8        0x8 /tmp/lto-llvm-0f84c1.o
+                0x00000000000140a0        0x8 /tmp/lto-llvm-be5b91.o
+ .bss.gRT       0x00000000000140a8        0x8 /tmp/lto-llvm-be5b91.o
+ .bss.mHobList  0x00000000000140b0        0x8 /tmp/lto-llvm-be5b91.o
+ .bss.gHiiFont  0x00000000000140b8        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gHiiImage
-                0x00000000000140c0        0x8 /tmp/lto-llvm-0f84c1.o
+                0x00000000000140c0        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gHiiDatabase
-                0x00000000000140c8        0x8 /tmp/lto-llvm-0f84c1.o
+                0x00000000000140c8        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gHiiConfigRouting
-                0x00000000000140d0        0x8 /tmp/lto-llvm-0f84c1.o
+                0x00000000000140d0        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gHiiString
-                0x00000000000140d8        0x8 /tmp/lto-llvm-0f84c1.o
+                0x00000000000140d8        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gLibIsFirstForm
-                0x00000000000140e0        0x1 /tmp/lto-llvm-0f84c1.o
+                0x00000000000140e0        0x1 /tmp/lto-llvm-be5b91.o
  *fill*         0x00000000000140e1        0x7 
  .bss.gScreenDimensions
-                0x00000000000140e8       0x20 /tmp/lto-llvm-0f84c1.o
+                0x00000000000140e8       0x20 /tmp/lto-llvm-be5b91.o
  .bss.gBannerData
-                0x0000000000014108        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014108        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gClassOfVfr
-                0x0000000000014110        0x2 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014110        0x2 /tmp/lto-llvm-be5b91.o
  *fill*         0x0000000000014112        0x6 
  .bss.gFooterHeight
-                0x0000000000014118        0x8 /tmp/lto-llvm-0f84c1.o
- .bss.gST       0x0000000000014120        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014118        0x8 /tmp/lto-llvm-be5b91.o
+ .bss.gST       0x0000000000014120        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gLibEmptyString
-                0x0000000000014128        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014128        0x8 /tmp/lto-llvm-be5b91.o
  .bss.mLibUnknownString
-                0x0000000000014130        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014130        0x8 /tmp/lto-llvm-be5b91.o
  .bss.mCDLStringPackHandle
-                0x0000000000014138        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014138        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gEnterString
-                0x0000000000014140        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014140        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gEnterCommitString
-                0x0000000000014148        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014148        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gEnterEscapeString
-                0x0000000000014150        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014150        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gEscapeString
-                0x0000000000014158        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014158        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gMoveHighlight
-                0x0000000000014160        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014160        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gDecNumericInput
-                0x0000000000014168        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014168        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gHexNumericInput
-                0x0000000000014170        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014170        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gToggleCheckBox
-                0x0000000000014178        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014178        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gAreYouSure
-                0x0000000000014180        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014180        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gYesResponse
-                0x0000000000014188        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014188        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gNoResponse
-                0x0000000000014190        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014190        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gPlusString
-                0x0000000000014198        0x8 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014198        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gMinusString
-                0x00000000000141a0        0x8 /tmp/lto-llvm-0f84c1.o
+                0x00000000000141a0        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gAdjustNumber
-                0x00000000000141a8        0x8 /tmp/lto-llvm-0f84c1.o
+                0x00000000000141a8        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gSaveChanges
-                0x00000000000141b0        0x8 /tmp/lto-llvm-0f84c1.o
+                0x00000000000141b0        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gNvUpdateMessage
-                0x00000000000141b8        0x8 /tmp/lto-llvm-0f84c1.o
+                0x00000000000141b8        0x8 /tmp/lto-llvm-be5b91.o
  .bss.gInputErrorMessage
-                0x00000000000141c0        0x8 /tmp/lto-llvm-0f84c1.o
+                0x00000000000141c0        0x8 /tmp/lto-llvm-be5b91.o
  .bss.mSpaceBuffer
-                0x00000000000141c8        0x8 /tmp/lto-llvm-0f84c1.o
+                0x00000000000141c8        0x8 /tmp/lto-llvm-be5b91.o
  .bss.m_Initialized
-                0x00000000000141d0        0x1 /tmp/lto-llvm-0f84c1.o
+                0x00000000000141d0        0x1 /tmp/lto-llvm-be5b91.o
  *fill*         0x00000000000141d1        0x7 
  .bss.m_Position.0
-                0x00000000000141d8        0x8 /tmp/lto-llvm-0f84c1.o
+                0x00000000000141d8        0x8 /tmp/lto-llvm-be5b91.o
  .bss.m_Position.1
-                0x00000000000141e0        0x8 /tmp/lto-llvm-0f84c1.o
+                0x00000000000141e0        0x8 /tmp/lto-llvm-be5b91.o
  .bss.m_MaxPosition.0
-                0x00000000000141e8        0x1 /tmp/lto-llvm-0f84c1.o
+                0x00000000000141e8        0x1 /tmp/lto-llvm-be5b91.o
  *fill*         0x00000000000141e9        0x7 
  .bss.m_MaxPosition.1
-                0x00000000000141f0        0x1 /tmp/lto-llvm-0f84c1.o
+                0x00000000000141f0        0x1 /tmp/lto-llvm-be5b91.o
  *fill*         0x00000000000141f1        0x7 
  .bss.m_Color.0
-                0x00000000000141f8        0x1 /tmp/lto-llvm-0f84c1.o
+                0x00000000000141f8        0x1 /tmp/lto-llvm-be5b91.o
  *fill*         0x00000000000141f9        0x7 
  .bss.m_Color.1
-                0x0000000000014200        0x1 /tmp/lto-llvm-0f84c1.o
+                0x0000000000014200        0x1 /tmp/lto-llvm-be5b91.o
  *fill*         0x0000000000014201        0x7 
- .bss.gBS       0x0000000000014208        0x8 /tmp/lto-llvm-0f84c1.o
+ .bss.gBS       0x0000000000014208        0x8 /tmp/lto-llvm-be5b91.o
 
 .dynbss         0x0000000000014210        0x0
  .dynbss        0x0000000000014210        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
@@ -922,41 +922,41 @@ OUTPUT(/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeMo
 LOAD linker stubs
 
 .debug_loclists
-                0x0000000000000000     0xa8cf
+                0x0000000000000000     0xa90e
  .debug_loclists
-                0x0000000000000000     0xa8cf /tmp/lto-llvm-0f84c1.o
+                0x0000000000000000     0xa90e /tmp/lto-llvm-be5b91.o
 
 .debug_abbrev   0x0000000000000000      0xc68
- .debug_abbrev  0x0000000000000000      0xc68 /tmp/lto-llvm-0f84c1.o
+ .debug_abbrev  0x0000000000000000      0xc68 /tmp/lto-llvm-be5b91.o
 
-.debug_info     0x0000000000000000    0x1a15f
- .debug_info    0x0000000000000000    0x1a15f /tmp/lto-llvm-0f84c1.o
+.debug_info     0x0000000000000000    0x1a172
+ .debug_info    0x0000000000000000    0x1a172 /tmp/lto-llvm-be5b91.o
 
 .debug_rnglists
                 0x0000000000000000     0x1628
  .debug_rnglists
-                0x0000000000000000     0x1628 /tmp/lto-llvm-0f84c1.o
+                0x0000000000000000     0x1628 /tmp/lto-llvm-be5b91.o
 
 .debug_str_offsets
-                0x0000000000000000     0x1e08
+                0x0000000000000000     0x1e10
  .debug_str_offsets
-                0x0000000000000000     0x1e08 /tmp/lto-llvm-0f84c1.o
+                0x0000000000000000     0x1e10 /tmp/lto-llvm-be5b91.o
 
-.debug_str      0x0000000000000000     0x8274
- .debug_str     0x0000000000000000     0x8274 /tmp/lto-llvm-0f84c1.o
-                                       0x8d08 (松开之前的大小)
+.debug_str      0x0000000000000000     0x8295
+ .debug_str     0x0000000000000000     0x8295 /tmp/lto-llvm-be5b91.o
+                                       0x8d29 (松开之前的大小)
 
-.debug_addr     0x0000000000000000     0x2fb0
- .debug_addr    0x0000000000000000     0x2fb0 /tmp/lto-llvm-0f84c1.o
+.debug_addr     0x0000000000000000     0x2fa8
+ .debug_addr    0x0000000000000000     0x2fa8 /tmp/lto-llvm-be5b91.o
 
 .debug_frame    0x0000000000000000      0xc50
- .debug_frame   0x0000000000000000      0xc50 /tmp/lto-llvm-0f84c1.o
+ .debug_frame   0x0000000000000000      0xc50 /tmp/lto-llvm-be5b91.o
 
-.debug_line     0x0000000000000000     0xcc73
- .debug_line    0x0000000000000000     0xcc73 /tmp/lto-llvm-0f84c1.o
+.debug_line     0x0000000000000000     0xcc3b
+ .debug_line    0x0000000000000000     0xcc3b /tmp/lto-llvm-be5b91.o
 
 .debug_line_str
                 0x0000000000000000     0x23d5
  .debug_line_str
-                0x0000000000000000     0x23d5 /tmp/lto-llvm-0f84c1.o
+                0x0000000000000000     0x23d5 /tmp/lto-llvm-be5b91.o
                                        0x2f6d (松开之前的大小)

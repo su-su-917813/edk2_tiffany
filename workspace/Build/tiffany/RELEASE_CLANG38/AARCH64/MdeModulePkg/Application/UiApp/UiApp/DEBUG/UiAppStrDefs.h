@@ -93,7 +93,7 @@ extern unsigned char UiAppStrings[];
 #define FixedPcdGet64(TokenName) _PCD_VALUE_##TokenName
 #define FeaturePcdGet(TokenName) _PCD_VALUE_##TokenName
 #define _PCD_VALUE_PcdUefiVariableDefaultPlatformLangCodes "en;fr;en-US;fr-FR"
-#define _PCD_VALUE_PcdFirmwareVersionString L"2302.1-mh2lm-169-ge195262"
+#define _PCD_VALUE_PcdFirmwareVersionString L"67c870f7"
 #endif
 
 #endif

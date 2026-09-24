@@ -111,7 +111,7 @@ extern const UINT64 _gPcd_FixedAtBuild_PcdBootFdtAddressEnd;
 extern const UINT64 _gPcd_FixedAtBuild_PcdGicDistributorBase;
 #define _PCD_GET_MODE_64_PcdGicDistributorBase  _gPcd_FixedAtBuild_PcdGicDistributorBase
 //#define _PCD_SET_MODE_64_PcdGicDistributorBase  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
-#define _PCD_VALUE_PcdGicDistributorBase 0x17a00000
+#define _PCD_VALUE_PcdGicDistributorBase 0x0B000000
 #define _PCD_SIZE_PcdGicDistributorBase 8
 #define _PCD_GET_MODE_SIZE_PcdGicDistributorBase _PCD_SIZE_PcdGicDistributorBase
 #define _PCD_TOKEN_PcdGicSgiIntId  0U

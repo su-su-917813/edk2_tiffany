@@ -78,7 +78,7 @@ extern UINT64 _gPcd_SkuId_Array[];
 #define _PCD_TOKEN_PcdGicDistributorBase  0U
 #define _PCD_SIZE_PcdGicDistributorBase 8
 #define _PCD_GET_MODE_SIZE_PcdGicDistributorBase  _PCD_SIZE_PcdGicDistributorBase 
-#define _PCD_VALUE_PcdGicDistributorBase  0x17a00000ULL
+#define _PCD_VALUE_PcdGicDistributorBase  0x0B000000ULL
 extern const  UINT64  _gPcd_FixedAtBuild_PcdGicDistributorBase;
 #define _PCD_GET_MODE_64_PcdGicDistributorBase  _gPcd_FixedAtBuild_PcdGicDistributorBase
 //#define _PCD_SET_MODE_64_PcdGicDistributorBase  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
@@ -86,7 +86,7 @@ extern const  UINT64  _gPcd_FixedAtBuild_PcdGicDistributorBase;
 #define _PCD_TOKEN_PcdGicRedistributorsBase  0U
 #define _PCD_SIZE_PcdGicRedistributorsBase 8
 #define _PCD_GET_MODE_SIZE_PcdGicRedistributorsBase  _PCD_SIZE_PcdGicRedistributorsBase 
-#define _PCD_VALUE_PcdGicRedistributorsBase  0x17b00000ULL
+#define _PCD_VALUE_PcdGicRedistributorsBase  0x0B002000ULL
 extern const  UINT64  _gPcd_FixedAtBuild_PcdGicRedistributorsBase;
 #define _PCD_GET_MODE_64_PcdGicRedistributorsBase  _gPcd_FixedAtBuild_PcdGicRedistributorsBase
 //#define _PCD_SET_MODE_64_PcdGicRedistributorsBase  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
@@ -94,7 +94,7 @@ extern const  UINT64  _gPcd_FixedAtBuild_PcdGicRedistributorsBase;
 #define _PCD_TOKEN_PcdGicInterruptInterfaceBase  0U
 #define _PCD_SIZE_PcdGicInterruptInterfaceBase 8
 #define _PCD_GET_MODE_SIZE_PcdGicInterruptInterfaceBase  _PCD_SIZE_PcdGicInterruptInterfaceBase 
-#define _PCD_VALUE_PcdGicInterruptInterfaceBase  0ULL
+#define _PCD_VALUE_PcdGicInterruptInterfaceBase  0x0B002000ULL
 extern const  UINT64  _gPcd_FixedAtBuild_PcdGicInterruptInterfaceBase;
 #define _PCD_GET_MODE_64_PcdGicInterruptInterfaceBase  _gPcd_FixedAtBuild_PcdGicInterruptInterfaceBase
 //#define _PCD_SET_MODE_64_PcdGicInterruptInterfaceBase  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
@@ -102,7 +102,7 @@ extern const  UINT64  _gPcd_FixedAtBuild_PcdGicInterruptInterfaceBase;
 #define _PCD_TOKEN_PcdArmGicV3WithV2Legacy  0U
 #define _PCD_SIZE_PcdArmGicV3WithV2Legacy 1
 #define _PCD_GET_MODE_SIZE_PcdArmGicV3WithV2Legacy  _PCD_SIZE_PcdArmGicV3WithV2Legacy 
-#define _PCD_VALUE_PcdArmGicV3WithV2Legacy  ((BOOLEAN)0U)
+#define _PCD_VALUE_PcdArmGicV3WithV2Legacy  ((BOOLEAN)1U)
 extern const  BOOLEAN  _gPcd_FixedAtBuild_PcdArmGicV3WithV2Legacy;
 #define _PCD_GET_MODE_BOOL_PcdArmGicV3WithV2Legacy  _gPcd_FixedAtBuild_PcdArmGicV3WithV2Legacy
 //#define _PCD_SET_MODE_BOOL_PcdArmGicV3WithV2Legacy  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD

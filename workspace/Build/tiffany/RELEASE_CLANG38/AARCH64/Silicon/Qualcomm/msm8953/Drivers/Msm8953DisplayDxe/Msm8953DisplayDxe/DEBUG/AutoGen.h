@@ -46,6 +46,7 @@ extern EFI_GUID gEfiHobListGuid;
 extern EFI_GUID gArmTokenSpaceGuid;
 
 // Protocols
+extern EFI_GUID gEfiCpuArchProtocolGuid;
 extern EFI_GUID gPcdProtocolGuid;
 extern EFI_GUID gEfiPcdProtocolGuid;
 extern EFI_GUID gGetPcdInfoProtocolGuid;

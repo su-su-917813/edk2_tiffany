@@ -39,6 +39,7 @@ GLOBAL_REMOVE_IF_UNREFERENCED EFI_GUID gEfiHobListGuid = { 0x7739F24C, 0x93D7, 0
 GLOBAL_REMOVE_IF_UNREFERENCED EFI_GUID gArmTokenSpaceGuid = { 0xBB11ECFE, 0x820F, 0x4968, { 0xBB, 0xA6, 0xF7, 0x6A, 0xFE, 0x30, 0x25, 0x96 } };
 
 // Protocols
+GLOBAL_REMOVE_IF_UNREFERENCED EFI_GUID gEfiCpuArchProtocolGuid = { 0x26BACCB1, 0x6F42, 0x11D4, { 0xBC, 0xE7, 0x00, 0x80, 0xC7, 0x3C, 0x88, 0x81 }};
 GLOBAL_REMOVE_IF_UNREFERENCED EFI_GUID gPcdProtocolGuid = { 0x11B34006, 0xD85B, 0x4D0A, { 0xA2, 0x90, 0xD5, 0xA5, 0x71, 0x31, 0x0E, 0xF7 }};
 GLOBAL_REMOVE_IF_UNREFERENCED EFI_GUID gEfiPcdProtocolGuid = { 0x13a3f0f6, 0x264a, 0x3ef0, { 0xf2, 0xe0, 0xde, 0xc5, 0x12, 0x34, 0x2f, 0x34 } };
 GLOBAL_REMOVE_IF_UNREFERENCED EFI_GUID gGetPcdInfoProtocolGuid = { 0x5be40f57, 0xfa68, 0x4610, { 0xbb, 0xbf, 0xe9, 0xc5, 0xfc, 0xda, 0xd3, 0x65 } };
@@ -157,7 +158,7 @@ extern const  UINT32  _gPcd_FixedAtBuild_PcdMipiFrameBufferHeight;
 #define _PCD_TOKEN_PcdMipiFrameBufferPixelBpp  0U
 #define _PCD_SIZE_PcdMipiFrameBufferPixelBpp 4
 #define _PCD_GET_MODE_SIZE_PcdMipiFrameBufferPixelBpp  _PCD_SIZE_PcdMipiFrameBufferPixelBpp 
-#define _PCD_VALUE_PcdMipiFrameBufferPixelBpp  32U
+#define _PCD_VALUE_PcdMipiFrameBufferPixelBpp  24U
 GLOBAL_REMOVE_IF_UNREFERENCED const UINT32 _gPcd_FixedAtBuild_PcdMipiFrameBufferPixelBpp = _PCD_VALUE_PcdMipiFrameBufferPixelBpp;
 extern const  UINT32  _gPcd_FixedAtBuild_PcdMipiFrameBufferPixelBpp;
 #define _PCD_GET_MODE_32_PcdMipiFrameBufferPixelBpp  _gPcd_FixedAtBuild_PcdMipiFrameBufferPixelBpp

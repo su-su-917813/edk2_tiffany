@@ -53,7 +53,7 @@ extern const UINT32 _gPcd_FixedAtBuild_PcdMipiFrameBufferHeight;
 extern const UINT32 _gPcd_FixedAtBuild_PcdMipiFrameBufferPixelBpp;
 #define _PCD_GET_MODE_32_PcdMipiFrameBufferPixelBpp  _gPcd_FixedAtBuild_PcdMipiFrameBufferPixelBpp
 //#define _PCD_SET_MODE_32_PcdMipiFrameBufferPixelBpp  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
-#define _PCD_VALUE_PcdMipiFrameBufferPixelBpp 32
+#define _PCD_VALUE_PcdMipiFrameBufferPixelBpp 24
 #define _PCD_SIZE_PcdMipiFrameBufferPixelBpp 4
 #define _PCD_GET_MODE_SIZE_PcdMipiFrameBufferPixelBpp _PCD_SIZE_PcdMipiFrameBufferPixelBpp
 #define _PCD_TOKEN_PcdMipiFrameBufferDelay  0U

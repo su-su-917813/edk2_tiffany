@@ -9,6 +9,22 @@
 
 #define REG_WR(addr, val)  MmioWrite32((UINTN)(addr), (UINT32)(val))
 #define REG_RD(addr)       MmioRead32((UINTN)(addr))
+VOID
+Mark (
+  IN UINT32 Idx,
+  IN UINT32 Color
+  )
+{
+  volatile UINT32 *Fb = (volatile UINT32 *)0x90000000;
+  UINT32 x, y;
+  /* 80 像素宽、全屏高的竖条 */
+  for (y = 0; y < 1920; y++) {
+    for (x = 0; x < 80; x++) {
+      Fb[y * 1080 + (Idx * 80 + x)] = Color;
+    }
+  }
+}
+
 
 // PHY calibration data from lk2nd target/msm8953/include/target/display.h
 STATIC CONST UINT32 mStrengthCtrl[] = {
@@ -510,72 +526,65 @@ DsiPhyInit (
   UINTN      PhyBase = MSM8953_DSI0_PHY_BASE;
   UINTN      CtlBase = MSM8953_DSI0_CTRL_BASE;
   DSI_PLL_DB Pdb;
+  UINT32     St;
+  UINTN      i;
 
-  DEBUG((DEBUG_ERROR, "Msm8953Display: DSI PHY init start\n"));
+  Mark(0,  0x00FF0000);
 
-  // 1. PHY software reset
   DsiPhySwReset(CtlBase);
+  Mark(1,  0x0000FF00);
 
-  // 2. PHY 14nm init (lane config, timing, strength, regulator)
   DsiPhy14nmInit(PhyBase);
+  Mark(2,  0x000000FF);
 
-  // 3. PLL input fixed parameters
   DsiPllInputInit(&Pdb);
+  Mark(3,  0x00FFFF00);
 
-  // 4. Set VCO postdiv and output dividers
-  //    vco = fref * (n1div * n2div * 2) / postdiv
-  //    1612.8 MHz = 19.2 * (7 * 12 * 2) / 2
   Pdb.Out.pll_postdiv = 2;
   Pdb.Out.pll_n1div = 7;
   Pdb.Out.pll_n2div = 12;
 
-  // 5. Calculate PLL parameters
   DsiPllDecFracCalc(&Pdb, PANEL_VCO_CLOCK, VCO_REF_CLK_RATE);
+  Mark(4,  0x0000FFFF);
+
   if (Pdb.In.ssc_en) {
     DsiPllSscCalc(&Pdb, PANEL_VCO_CLOCK, VCO_REF_CLK_RATE);
   }
   DsiPllCalcVcoCount(&Pdb, PANEL_VCO_CLOCK, VCO_REF_CLK_RATE);
+  Mark(5,  0x00FF00FF);
 
-  // 6. Configure PLL registers
   DsiPllAssertAndDivCfg(PhyBase, &Pdb);
   REG_WR(PhyBase + DSIPHY_CMN_CLK_CFG1, Pdb.In.dsiclk_sel);
+  Mark(6,  0x00FFFFFF);
+
   DsiPllNonFreqConfig(PhyBase, &Pdb);
+  Mark(7,  0x00808080);
+
   DsiPllFreqConfig(PhyBase, &Pdb);
+  Mark(8,  0x00800000);
+
   if (Pdb.In.ssc_en) {
     DsiPllSscConfig(PhyBase, &Pdb);
   }
+  Mark(9,  0x00008000);
 
-  // 7. Start PLL
   REG_WR(PhyBase + 0x045C, 0x10);
   REG_WR(PhyBase + DSIPHY_CMN_PLL_CNTRL, 0x01);
+  Mark(10, 0x00000080);
 
-  // 8. Wait for PLL lock (DSIPHY_PLL_RESET_SM_READY_STATUS bit 5)
-  {
-    UINT32 i;
-    UINT32 Status = 0;
-
-    for (i = 0; i < 15; i++) {
-      Status = REG_RD(PhyBase + DSIPHY_PLL_RESET_SM_READY_STATUS);
-      if (Status & BIT5) {
-        break;
-      }
-      MicroSecondDelay(1000);
-    }
-
-    if (Status & BIT5) {
-      // Double check bit 0
-      Status = REG_RD(PhyBase + DSIPHY_PLL_RESET_SM_READY_STATUS);
-      if (Status & BIT0) {
-        DEBUG((DEBUG_ERROR, "Msm8953Display: DSI PLL locked (status=0x%x)\n", Status));
-      } else {
-        DEBUG((DEBUG_ERROR, "Msm8953Display: DSI PLL locked but bit0 clear\n"));
-      }
-    } else {
-      DEBUG((DEBUG_ERROR, "Msm8953Display: DSI PLL LOCK FAILED (status=0x%x)\n", Status));
-      return EFI_DEVICE_ERROR;
-    }
+  St = 0;
+  for (i = 0; i < 15; i++) {
+    St = REG_RD(PhyBase + DSIPHY_PLL_RESET_SM_READY_STATUS);
+    if (St & BIT5) break;
+    MicroSecondDelay(1000);
+  }
+  if (St & BIT5) {
+    Mark(11, 0x0000FF00);
+  } else {
+    Mark(11, 0x00FF0000);
   }
 
-  DEBUG((DEBUG_ERROR, "Msm8953Display: DSI PHY init done\n"));
+  Mark(12, 0x00FFFFFF);
+
   return EFI_SUCCESS;
 }

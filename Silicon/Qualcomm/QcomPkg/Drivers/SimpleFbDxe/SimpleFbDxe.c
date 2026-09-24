@@ -195,6 +195,17 @@ SimpleFbDxeInitialize(
   EFI_STATUS Status             = EFI_SUCCESS;
   EFI_HANDLE hUEFIDisplayHandle = NULL;
 
+  /* DEBUG_RED_BLOCK_MARK */
+  {
+    volatile UINT32 *Fb = (volatile UINT32 *)0x90000000;
+    UINT32 x, y;
+    for (y = 0; y < 200; y++) {
+      for (x = 0; x < 200; x++) {
+        Fb[y * 1080 + x] = 0x00FF0000;
+      }
+    }
+  }
+
   /* Retrieve simple frame buffer from lk2nd */
   DEBUG(
       (EFI_D_ERROR,

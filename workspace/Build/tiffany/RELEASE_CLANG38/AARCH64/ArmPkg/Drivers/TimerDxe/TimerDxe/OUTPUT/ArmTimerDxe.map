@@ -112,13 +112,13 @@
  .text          0x0000000000000000       0x10 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
  .data          0x0000000000000000        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
  .bss           0x0000000000000000        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
- .text          0x0000000000000000        0x0 /tmp/lto-llvm-79fb55.o
- .text.memcpy   0x0000000000000000       0x1c /tmp/lto-llvm-79fb55.o
+ .text          0x0000000000000000        0x0 /tmp/lto-llvm-519a96.o
+ .text.memcpy   0x0000000000000000       0x1c /tmp/lto-llvm-519a96.o
  .text.__memset
-                0x0000000000000000       0x18 /tmp/lto-llvm-79fb55.o
- .comment       0x0000000000000000      0x72a /tmp/lto-llvm-79fb55.o
+                0x0000000000000000       0x18 /tmp/lto-llvm-519a96.o
+ .comment       0x0000000000000000      0x72a /tmp/lto-llvm-519a96.o
  .note.GNU-stack
-                0x0000000000000000        0x0 /tmp/lto-llvm-79fb55.o
+                0x0000000000000000        0x0 /tmp/lto-llvm-519a96.o
  .text          0x0000000000000000       0x30 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
  .text          0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
  .text          0x0000000000000000        0x0 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
@@ -305,7 +305,7 @@
 
 LOAD /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
 START GROUP
-LOAD /tmp/lto-llvm-79fb55.o
+LOAD /tmp/lto-llvm-519a96.o
 LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Drivers/TimerDxe/TimerDxe/OUTPUT/ArmTimerDxe.lib
 LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/DxePcdLib/DxePcdLib/OUTPUT/DxePcdLib.lib
 LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib
@@ -343,145 +343,146 @@ END GROUP
  .gnu.version_r
                 0x0000000000000228        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
 
-.text           0x0000000000001000     0x1ed8
+.text           0x0000000000001000     0x1e88
  *(.text .text.* .stub .gnu.linkonce.t.*)
  .text._ModuleEntryPoint
-                0x0000000000001000      0x2cc /tmp/lto-llvm-79fb55.o
+                0x0000000000001000      0x2cc /tmp/lto-llvm-519a96.o
                 0x0000000000001000                _ModuleEntryPoint
  .text.__stack_chk_fail
-                0x00000000000012cc       0x1c /tmp/lto-llvm-79fb55.o
+                0x00000000000012cc       0x1c /tmp/lto-llvm-519a96.o
                 0x00000000000012cc                __stack_chk_fail
  .text.TimerDriverRegisterHandler
-                0x00000000000012e8       0x34 /tmp/lto-llvm-79fb55.o
+                0x00000000000012e8       0x34 /tmp/lto-llvm-519a96.o
  .text.ExitBootServicesEvent
-                0x000000000000131c       0x18 /tmp/lto-llvm-79fb55.o
+                0x000000000000131c       0x18 /tmp/lto-llvm-519a96.o
  .text.TimerDriverSetTimerPeriod
-                0x0000000000001334       0xcc /tmp/lto-llvm-79fb55.o
+                0x0000000000001334       0xcc /tmp/lto-llvm-519a96.o
  .text.TimerDriverGetTimerPeriod
-                0x0000000000001400       0x24 /tmp/lto-llvm-79fb55.o
+                0x0000000000001400       0x24 /tmp/lto-llvm-519a96.o
  .text.TimerDriverGenerateSoftInterrupt
-                0x0000000000001424        0x8 /tmp/lto-llvm-79fb55.o
+                0x0000000000001424        0x8 /tmp/lto-llvm-519a96.o
  .text.TimerInterruptHandler
-                0x000000000000142c       0xc0 /tmp/lto-llvm-79fb55.o
+                0x000000000000142c       0xc0 /tmp/lto-llvm-519a96.o
  .text.DebugPrint
-                0x00000000000014ec      0x47c /tmp/lto-llvm-79fb55.o
+                0x00000000000014ec      0x428 /tmp/lto-llvm-519a96.o
  .text.ReadUnaligned32
-                0x0000000000001968       0x44 /tmp/lto-llvm-79fb55.o
+                0x0000000000001914       0x44 /tmp/lto-llvm-519a96.o
  .text.BasePrintLibSPrintMarker
-                0x00000000000019ac      0xc38 /tmp/lto-llvm-79fb55.o
+                0x0000000000001958      0xc38 /tmp/lto-llvm-519a96.o
  .text.BasePrintLibSPrint
-                0x00000000000025e4       0x54 /tmp/lto-llvm-79fb55.o
+                0x0000000000002590       0x54 /tmp/lto-llvm-519a96.o
  .text.WriteBackInvalidateDataCacheRange
-                0x0000000000002638       0x50 /tmp/lto-llvm-79fb55.o
+                0x00000000000025e4       0x50 /tmp/lto-llvm-519a96.o
  .text.ArmCleanInvalidateDataCacheEntryByMVA
-                0x0000000000002688        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
-                0x0000000000002688                ArmCleanInvalidateDataCacheEntryByMVA
+                0x0000000000002634        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x0000000000002634                ArmCleanInvalidateDataCacheEntryByMVA
  .text.ArmDataSynchronizationBarrier
-                0x0000000000002690        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
-                0x0000000000002690                ArmDataSynchronizationBarrier
+                0x000000000000263c        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x000000000000263c                ArmDataSynchronizationBarrier
  .text.ArmInstructionSynchronizationBarrier
-                0x0000000000002698        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
-                0x0000000000002698                ArmInstructionSynchronizationBarrier
+                0x0000000000002644        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x0000000000002644                ArmInstructionSynchronizationBarrier
  .text.ArmIsArchTimerImplemented
-                0x00000000000026a0        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
-                0x00000000000026a0                ArmIsArchTimerImplemented
+                0x000000000000264c        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x000000000000264c                ArmIsArchTimerImplemented
  .text.ArmReadCntFrq
-                0x00000000000026a8        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
-                0x00000000000026a8                ArmReadCntFrq
+                0x0000000000002654        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+                0x0000000000002654                ArmReadCntFrq
  .text.ArmReadCntPct
-                0x00000000000026b0        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
-                0x00000000000026b0                ArmReadCntPct
+                0x000000000000265c        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+                0x000000000000265c                ArmReadCntPct
  .text.ArmReadCntpCtl
-                0x00000000000026b8        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
-                0x00000000000026b8                ArmReadCntpCtl
+                0x0000000000002664        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+                0x0000000000002664                ArmReadCntpCtl
  .text.ArmWriteCntpCtl
-                0x00000000000026c0        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
-                0x00000000000026c0                ArmWriteCntpCtl
+                0x000000000000266c        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+                0x000000000000266c                ArmWriteCntpCtl
  .text.ArmReadCntpCval
-                0x00000000000026c8        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
-                0x00000000000026c8                ArmReadCntpCval
+                0x0000000000002674        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+                0x0000000000002674                ArmReadCntpCval
  .text.ArmWriteCntpCval
-                0x00000000000026d0        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
-                0x00000000000026d0                ArmWriteCntpCval
+                0x000000000000267c        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+                0x000000000000267c                ArmWriteCntpCval
  .text.ArmCacheInfo
-                0x00000000000026d8        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
-                0x00000000000026d8                ArmCacheInfo
+                0x0000000000002684        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+                0x0000000000002684                ArmCacheInfo
  .text.ArmGetInterruptState
-                0x00000000000026e0       0x10 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
-                0x00000000000026e0                ArmGetInterruptState
+                0x000000000000268c       0x10 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+                0x000000000000268c                ArmGetInterruptState
  .text.ArmEnableInterrupts
-                0x00000000000026f0        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
-                0x00000000000026f0                ArmEnableInterrupts
+                0x000000000000269c        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+                0x000000000000269c                ArmEnableInterrupts
  .text.ArmDisableInterrupts
-                0x00000000000026fc        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
-                0x00000000000026fc                ArmDisableInterrupts
+                0x00000000000026a8        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+                0x00000000000026a8                ArmDisableInterrupts
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.str1.1
-                0x0000000000002708      0x155 /tmp/lto-llvm-79fb55.o
- .rodata.cst16  0x000000000000285d       0x10 /tmp/lto-llvm-79fb55.o
+                0x00000000000026b4      0x155 /tmp/lto-llvm-519a96.o
+ .rodata.cst16  0x0000000000002809       0x10 /tmp/lto-llvm-519a96.o
  .rodata.mWarningString
-                0x000000000000286d       0x96 /tmp/lto-llvm-79fb55.o
+                0x0000000000002819       0x96 /tmp/lto-llvm-519a96.o
  .rodata.mErrorString
-                0x0000000000002903      0x2b5 /tmp/lto-llvm-79fb55.o
+                0x00000000000028af      0x2b5 /tmp/lto-llvm-519a96.o
  .rodata.font5x12
-                0x0000000000002bb8      0x300 /tmp/lto-llvm-79fb55.o
+                0x0000000000002b64      0x300 /tmp/lto-llvm-519a96.o
  *(.got .got.*)
- .got           0x0000000000002eb8        0x8 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
-                0x0000000000002eb8                _GLOBAL_OFFSET_TABLE_
- .got.plt       0x0000000000002ec0       0x18 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ *fill*         0x0000000000002e64        0x4 
+ .got           0x0000000000002e68        0x8 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+                0x0000000000002e68                _GLOBAL_OFFSET_TABLE_
+ .got.plt       0x0000000000002e70       0x18 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
  *:AutoGen.obj(.data.g*Guid)
 
-.plt            0x0000000000002ed8        0x0
- .plt           0x0000000000002ed8        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+.plt            0x0000000000002e88        0x0
+ .plt           0x0000000000002e88        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
 
 .data           0x0000000000003000       0xd8
  *(.data .data.* .gnu.linkonce.d.*)
  .data.rel.ro   0x0000000000003000        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
  .data.__stack_chk_guard
-                0x0000000000003000        0x8 /tmp/lto-llvm-79fb55.o
+                0x0000000000003000        0x8 /tmp/lto-llvm-519a96.o
                 0x0000000000003000                __stack_chk_guard
  .data.mElapsedPeriod
-                0x0000000000003008        0x8 /tmp/lto-llvm-79fb55.o
- .data.gTimer   0x0000000000003010       0x20 /tmp/lto-llvm-79fb55.o
+                0x0000000000003008        0x8 /tmp/lto-llvm-519a96.o
+ .data.gTimer   0x0000000000003010       0x20 /tmp/lto-llvm-519a96.o
  .data.gHardwareInterruptProtocolGuid
-                0x0000000000003030       0x10 /tmp/lto-llvm-79fb55.o
+                0x0000000000003030       0x10 /tmp/lto-llvm-519a96.o
  .data.gEfiTimerArchProtocolGuid
-                0x0000000000003040       0x10 /tmp/lto-llvm-79fb55.o
+                0x0000000000003040       0x10 /tmp/lto-llvm-519a96.o
  .data.gEfiHobListGuid
-                0x0000000000003050       0x10 /tmp/lto-llvm-79fb55.o
+                0x0000000000003050       0x10 /tmp/lto-llvm-519a96.o
  *(.bss .bss.*)
  .bss.mTimerNotifyFunction
-                0x0000000000003060        0x8 /tmp/lto-llvm-79fb55.o
+                0x0000000000003060        0x8 /tmp/lto-llvm-519a96.o
  .bss.EfiExitBootServicesEvent
-                0x0000000000003068        0x8 /tmp/lto-llvm-79fb55.o
+                0x0000000000003068        0x8 /tmp/lto-llvm-519a96.o
  .bss.mTimerPeriod
-                0x0000000000003070        0x8 /tmp/lto-llvm-79fb55.o
+                0x0000000000003070        0x8 /tmp/lto-llvm-519a96.o
  .bss.mTimerTicks
-                0x0000000000003078        0x8 /tmp/lto-llvm-79fb55.o
+                0x0000000000003078        0x8 /tmp/lto-llvm-519a96.o
  .bss.gInterrupt
-                0x0000000000003080        0x8 /tmp/lto-llvm-79fb55.o
- .bss.gST       0x0000000000003088        0x8 /tmp/lto-llvm-79fb55.o
- .bss.mHobList  0x0000000000003090        0x8 /tmp/lto-llvm-79fb55.o
+                0x0000000000003080        0x8 /tmp/lto-llvm-519a96.o
+ .bss.gST       0x0000000000003088        0x8 /tmp/lto-llvm-519a96.o
+ .bss.mHobList  0x0000000000003090        0x8 /tmp/lto-llvm-519a96.o
  .bss.m_Initialized
-                0x0000000000003098        0x1 /tmp/lto-llvm-79fb55.o
+                0x0000000000003098        0x1 /tmp/lto-llvm-519a96.o
  *fill*         0x0000000000003099        0x7 
  .bss.m_Position.0
-                0x00000000000030a0        0x8 /tmp/lto-llvm-79fb55.o
+                0x00000000000030a0        0x8 /tmp/lto-llvm-519a96.o
  .bss.m_Position.1
-                0x00000000000030a8        0x8 /tmp/lto-llvm-79fb55.o
+                0x00000000000030a8        0x8 /tmp/lto-llvm-519a96.o
  .bss.m_MaxPosition.0
-                0x00000000000030b0        0x1 /tmp/lto-llvm-79fb55.o
+                0x00000000000030b0        0x1 /tmp/lto-llvm-519a96.o
  *fill*         0x00000000000030b1        0x7 
  .bss.m_MaxPosition.1
-                0x00000000000030b8        0x1 /tmp/lto-llvm-79fb55.o
+                0x00000000000030b8        0x1 /tmp/lto-llvm-519a96.o
  *fill*         0x00000000000030b9        0x7 
  .bss.m_Color.0
-                0x00000000000030c0        0x1 /tmp/lto-llvm-79fb55.o
+                0x00000000000030c0        0x1 /tmp/lto-llvm-519a96.o
  *fill*         0x00000000000030c1        0x7 
  .bss.m_Color.1
-                0x00000000000030c8        0x1 /tmp/lto-llvm-79fb55.o
+                0x00000000000030c8        0x1 /tmp/lto-llvm-519a96.o
  *fill*         0x00000000000030c9        0x7 
- .bss.gBS       0x00000000000030d0        0x8 /tmp/lto-llvm-79fb55.o
+ .bss.gBS       0x00000000000030d0        0x8 /tmp/lto-llvm-519a96.o
 
 .dynbss         0x00000000000030d8        0x0
  .dynbss        0x00000000000030d8        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
@@ -522,41 +523,41 @@ OUTPUT(/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPk
 LOAD linker stubs
 
 .debug_loclists
-                0x0000000000000000      0xda5
+                0x0000000000000000      0xde4
  .debug_loclists
-                0x0000000000000000      0xda5 /tmp/lto-llvm-79fb55.o
+                0x0000000000000000      0xde4 /tmp/lto-llvm-519a96.o
 
 .debug_abbrev   0x0000000000000000      0x966
- .debug_abbrev  0x0000000000000000      0x966 /tmp/lto-llvm-79fb55.o
+ .debug_abbrev  0x0000000000000000      0x966 /tmp/lto-llvm-519a96.o
 
-.debug_info     0x0000000000000000     0xb36f
- .debug_info    0x0000000000000000     0xb36f /tmp/lto-llvm-79fb55.o
+.debug_info     0x0000000000000000     0xb381
+ .debug_info    0x0000000000000000     0xb381 /tmp/lto-llvm-519a96.o
 
 .debug_rnglists
                 0x0000000000000000      0x126
  .debug_rnglists
-                0x0000000000000000      0x126 /tmp/lto-llvm-79fb55.o
+                0x0000000000000000      0x126 /tmp/lto-llvm-519a96.o
 
 .debug_str_offsets
-                0x0000000000000000     0x12e4
+                0x0000000000000000     0x12f0
  .debug_str_offsets
-                0x0000000000000000     0x12e4 /tmp/lto-llvm-79fb55.o
+                0x0000000000000000     0x12f0 /tmp/lto-llvm-519a96.o
 
-.debug_str      0x0000000000000000     0x50c1
- .debug_str     0x0000000000000000     0x50c1 /tmp/lto-llvm-79fb55.o
-                                       0x5478 (松开之前的大小)
+.debug_str      0x0000000000000000     0x50f5
+ .debug_str     0x0000000000000000     0x50f5 /tmp/lto-llvm-519a96.o
+                                       0x54ac (松开之前的大小)
 
-.debug_addr     0x0000000000000000      0x4e8
- .debug_addr    0x0000000000000000      0x4e8 /tmp/lto-llvm-79fb55.o
+.debug_addr     0x0000000000000000      0x4e0
+ .debug_addr    0x0000000000000000      0x4e0 /tmp/lto-llvm-519a96.o
 
 .debug_frame    0x0000000000000000      0x230
- .debug_frame   0x0000000000000000      0x230 /tmp/lto-llvm-79fb55.o
+ .debug_frame   0x0000000000000000      0x230 /tmp/lto-llvm-519a96.o
 
-.debug_line     0x0000000000000000     0x25fc
- .debug_line    0x0000000000000000     0x25fc /tmp/lto-llvm-79fb55.o
+.debug_line     0x0000000000000000     0x25c4
+ .debug_line    0x0000000000000000     0x25c4 /tmp/lto-llvm-519a96.o
 
 .debug_line_str
                 0x0000000000000000     0x1b42
  .debug_line_str
-                0x0000000000000000     0x1b42 /tmp/lto-llvm-79fb55.o
+                0x0000000000000000     0x1b42 /tmp/lto-llvm-519a96.o
                                        0x23d3 (松开之前的大小)

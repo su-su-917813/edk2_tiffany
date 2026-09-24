@@ -122,13 +122,13 @@
  .text          0x0000000000000000       0x10 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
  .data          0x0000000000000000        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
  .bss           0x0000000000000000        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
- .text          0x0000000000000000        0x0 /tmp/lto-llvm-a50cce.o
- .text.memcpy   0x0000000000000000       0x1c /tmp/lto-llvm-a50cce.o
+ .text          0x0000000000000000        0x0 /tmp/lto-llvm-50da32.o
+ .text.memcpy   0x0000000000000000       0x1c /tmp/lto-llvm-50da32.o
  .text.__memset
-                0x0000000000000000       0x18 /tmp/lto-llvm-a50cce.o
- .comment       0x0000000000000000      0x7ed /tmp/lto-llvm-a50cce.o
+                0x0000000000000000       0x18 /tmp/lto-llvm-50da32.o
+ .comment       0x0000000000000000      0x7ed /tmp/lto-llvm-50da32.o
  .note.GNU-stack
-                0x0000000000000000        0x0 /tmp/lto-llvm-a50cce.o
+                0x0000000000000000        0x0 /tmp/lto-llvm-50da32.o
  .text          0x0000000000000000       0x30 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
  .text          0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
  .text          0x0000000000000000        0x0 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
@@ -327,7 +327,7 @@
 
 LOAD /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
 START GROUP
-LOAD /tmp/lto-llvm-a50cce.o
+LOAD /tmp/lto-llvm-50da32.o
 LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Universal/Console/ConSplitterDxe/ConSplitterDxe/OUTPUT/ConSplitterDxe.lib
 LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/DxePcdLib/DxePcdLib/OUTPUT/DxePcdLib.lib
 LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
@@ -365,262 +365,262 @@ END GROUP
  .gnu.version_r
                 0x0000000000000228        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
 
-.text           0x0000000000001000     0x5870
+.text           0x0000000000001000     0x5820
  *(.text .text.* .stub .gnu.linkonce.t.*)
  .text._ModuleEntryPoint
-                0x0000000000001000      0x524 /tmp/lto-llvm-a50cce.o
+                0x0000000000001000      0x524 /tmp/lto-llvm-50da32.o
                 0x0000000000001000                _ModuleEntryPoint
  .text.__stack_chk_fail
-                0x0000000000001524       0x20 /tmp/lto-llvm-a50cce.o
+                0x0000000000001524       0x20 /tmp/lto-llvm-50da32.o
                 0x0000000000001524                __stack_chk_fail
  .text.ConSplitterTextInReset
-                0x0000000000001544       0xb8 /tmp/lto-llvm-a50cce.o
+                0x0000000000001544       0xb8 /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextInReadKeyStroke
-                0x00000000000015fc       0xf0 /tmp/lto-llvm-a50cce.o
+                0x00000000000015fc       0xf0 /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextInExDequeueKey
-                0x00000000000016ec       0x64 /tmp/lto-llvm-a50cce.o
+                0x00000000000016ec       0x64 /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextInResetEx
-                0x0000000000001750       0xbc /tmp/lto-llvm-a50cce.o
+                0x0000000000001750       0xbc /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextInReadKeyStrokeEx
-                0x000000000000180c      0x1b0 /tmp/lto-llvm-a50cce.o
+                0x000000000000180c      0x1b0 /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextInSetState
-                0x00000000000019bc       0x90 /tmp/lto-llvm-a50cce.o
+                0x00000000000019bc       0x90 /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextInRegisterKeyNotify
-                0x0000000000001a4c      0x20c /tmp/lto-llvm-a50cce.o
+                0x0000000000001a4c      0x20c /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextInUnregisterKeyNotify
-                0x0000000000001c58       0xc0 /tmp/lto-llvm-a50cce.o
+                0x0000000000001c58       0xc0 /tmp/lto-llvm-50da32.o
  .text.ConSplitterSimplePointerReset
-                0x0000000000001d18       0x74 /tmp/lto-llvm-a50cce.o
+                0x0000000000001d18       0x74 /tmp/lto-llvm-50da32.o
  .text.ConSplitterSimplePointerGetState
-                0x0000000000001d8c      0x174 /tmp/lto-llvm-a50cce.o
+                0x0000000000001d8c      0x174 /tmp/lto-llvm-50da32.o
  .text.ConSplitterAbsolutePointerReset
-                0x0000000000001f00       0x74 /tmp/lto-llvm-a50cce.o
+                0x0000000000001f00       0x74 /tmp/lto-llvm-50da32.o
  .text.ConSplitterAbsolutePointerGetState
-                0x0000000000001f74      0x15c /tmp/lto-llvm-a50cce.o
+                0x0000000000001f74      0x15c /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextOutReset
-                0x00000000000020d0       0xa8 /tmp/lto-llvm-a50cce.o
+                0x00000000000020d0       0xa8 /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextOutOutputString
-                0x0000000000002178      0x180 /tmp/lto-llvm-a50cce.o
+                0x0000000000002178      0x180 /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextOutTestString
-                0x00000000000022f8       0x80 /tmp/lto-llvm-a50cce.o
+                0x00000000000022f8       0x80 /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextOutQueryMode
-                0x0000000000002378       0x6c /tmp/lto-llvm-a50cce.o
+                0x0000000000002378       0x6c /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextOutSetMode
-                0x00000000000023e4      0x10c /tmp/lto-llvm-a50cce.o
+                0x00000000000023e4      0x10c /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextOutClearScreen
-                0x00000000000024f0       0x7c /tmp/lto-llvm-a50cce.o
+                0x00000000000024f0       0x7c /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextOutSetAttribute
-                0x000000000000256c       0x94 /tmp/lto-llvm-a50cce.o
+                0x000000000000256c       0x94 /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextOutSetCursorPosition
-                0x0000000000002600       0xe0 /tmp/lto-llvm-a50cce.o
+                0x0000000000002600       0xe0 /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextOutEnableCursor
-                0x00000000000026e0       0x7c /tmp/lto-llvm-a50cce.o
+                0x00000000000026e0       0x7c /tmp/lto-llvm-50da32.o
  .text.ConSplitterConInDriverBindingSupported
-                0x000000000000275c        0xc /tmp/lto-llvm-a50cce.o
+                0x000000000000275c        0xc /tmp/lto-llvm-50da32.o
  .text.ConSplitterSupported
-                0x0000000000002768       0xb0 /tmp/lto-llvm-a50cce.o
+                0x0000000000002768       0xb0 /tmp/lto-llvm-50da32.o
  .text.ConSplitterConInDriverBindingStart
-                0x0000000000002818      0x258 /tmp/lto-llvm-a50cce.o
+                0x0000000000002818      0x258 /tmp/lto-llvm-50da32.o
  .text.ConSplitterStart
-                0x0000000000002a70      0x124 /tmp/lto-llvm-a50cce.o
+                0x0000000000002a70      0x124 /tmp/lto-llvm-50da32.o
  .text.ConSplitterGrowBuffer
-                0x0000000000002b94       0x64 /tmp/lto-llvm-a50cce.o
+                0x0000000000002b94       0x64 /tmp/lto-llvm-50da32.o
  .text.ConSplitterConInDriverBindingStop
-                0x0000000000002bf8      0x194 /tmp/lto-llvm-a50cce.o
+                0x0000000000002bf8      0x194 /tmp/lto-llvm-50da32.o
  .text.ConSplitterStop
-                0x0000000000002d8c       0xa0 /tmp/lto-llvm-a50cce.o
+                0x0000000000002d8c       0xa0 /tmp/lto-llvm-50da32.o
  .text.ConSplitterConOutDriverBindingSupported
-                0x0000000000002e2c        0xc /tmp/lto-llvm-a50cce.o
+                0x0000000000002e2c        0xc /tmp/lto-llvm-50da32.o
  .text.ConSplitterConOutDriverBindingStart
-                0x0000000000002e38      0x134 /tmp/lto-llvm-a50cce.o
+                0x0000000000002e38      0x134 /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextOutAddDevice
-                0x0000000000002f6c      0x7a4 /tmp/lto-llvm-a50cce.o
+                0x0000000000002f6c      0x7a4 /tmp/lto-llvm-50da32.o
  .text.ConSplitterGrowMapTable
-                0x0000000000003710      0x100 /tmp/lto-llvm-a50cce.o
+                0x0000000000003710      0x100 /tmp/lto-llvm-50da32.o
  .text.ConSplitterAddOutputMode
-                0x0000000000003810       0xe8 /tmp/lto-llvm-a50cce.o
+                0x0000000000003810       0xe8 /tmp/lto-llvm-50da32.o
  .text.ConSplitterSyncOutputMode
-                0x00000000000038f8      0x128 /tmp/lto-llvm-a50cce.o
+                0x00000000000038f8      0x128 /tmp/lto-llvm-50da32.o
  .text.ConSplitterGetIntersectionBetweenConOutAndStrErr
-                0x0000000000003a20      0x27c /tmp/lto-llvm-a50cce.o
+                0x0000000000003a20      0x27c /tmp/lto-llvm-50da32.o
  .text.ConSplitterGetIntersection
-                0x0000000000003c9c       0xe4 /tmp/lto-llvm-a50cce.o
+                0x0000000000003c9c       0xe4 /tmp/lto-llvm-50da32.o
  .text.ConSplitterConOutDriverBindingStop
-                0x0000000000003d80       0x58 /tmp/lto-llvm-a50cce.o
+                0x0000000000003d80       0x58 /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextOutDeleteDevice
-                0x0000000000003dd8      0x198 /tmp/lto-llvm-a50cce.o
+                0x0000000000003dd8      0x198 /tmp/lto-llvm-50da32.o
  .text.ConSplitterStdErrDriverBindingSupported
-                0x0000000000003f70        0xc /tmp/lto-llvm-a50cce.o
+                0x0000000000003f70        0xc /tmp/lto-llvm-50da32.o
  .text.ConSplitterStdErrDriverBindingStart
-                0x0000000000003f7c       0xcc /tmp/lto-llvm-a50cce.o
+                0x0000000000003f7c       0xcc /tmp/lto-llvm-50da32.o
  .text.ConSplitterStdErrDriverBindingStop
-                0x0000000000004048       0x58 /tmp/lto-llvm-a50cce.o
+                0x0000000000004048       0x58 /tmp/lto-llvm-50da32.o
  .text.ConSplitterSimplePointerDriverBindingSupported
-                0x00000000000040a0        0xc /tmp/lto-llvm-a50cce.o
+                0x00000000000040a0        0xc /tmp/lto-llvm-50da32.o
  .text.ConSplitterSimplePointerDriverBindingStart
-                0x00000000000040ac       0xa0 /tmp/lto-llvm-a50cce.o
+                0x00000000000040ac       0xa0 /tmp/lto-llvm-50da32.o
  .text.ConSplitterSimplePointerDriverBindingStop
-                0x000000000000414c       0xc8 /tmp/lto-llvm-a50cce.o
+                0x000000000000414c       0xc8 /tmp/lto-llvm-50da32.o
  .text.ConSplitterAbsolutePointerDriverBindingSupported
-                0x0000000000004214        0xc /tmp/lto-llvm-a50cce.o
+                0x0000000000004214        0xc /tmp/lto-llvm-50da32.o
  .text.ConSplitterAbsolutePointerDriverBindingStart
-                0x0000000000004220       0xa0 /tmp/lto-llvm-a50cce.o
+                0x0000000000004220       0xa0 /tmp/lto-llvm-50da32.o
  .text.ConSplitterAbsolutePointerDriverBindingStop
-                0x00000000000042c0       0xc8 /tmp/lto-llvm-a50cce.o
+                0x00000000000042c0       0xc8 /tmp/lto-llvm-50da32.o
  .text.ToggleStateSyncKeyNotify
-                0x0000000000004388       0x94 /tmp/lto-llvm-a50cce.o
+                0x0000000000004388       0x94 /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextOutConstructor
-                0x000000000000441c      0x164 /tmp/lto-llvm-a50cce.o
+                0x000000000000441c      0x164 /tmp/lto-llvm-50da32.o
  .text.ConSplitterTextInWaitForKey
-                0x0000000000004580       0xb0 /tmp/lto-llvm-a50cce.o
+                0x0000000000004580       0xb0 /tmp/lto-llvm-50da32.o
  .text.ConSplitterAbsolutePointerWaitForInput
-                0x0000000000004630       0xb0 /tmp/lto-llvm-a50cce.o
+                0x0000000000004630       0xb0 /tmp/lto-llvm-50da32.o
  .text.ConSplitterSimplePointerWaitForInput
-                0x00000000000046e0       0xb0 /tmp/lto-llvm-a50cce.o
+                0x00000000000046e0       0xb0 /tmp/lto-llvm-50da32.o
  .text.ConSplitterGraphicsOutputQueryMode
-                0x0000000000004790      0x114 /tmp/lto-llvm-a50cce.o
+                0x0000000000004790      0x114 /tmp/lto-llvm-50da32.o
  .text.ConSplitterGraphicsOutputSetMode
-                0x00000000000048a4      0x1fc /tmp/lto-llvm-a50cce.o
+                0x00000000000048a4      0x1fc /tmp/lto-llvm-50da32.o
  .text.ConSplitterGraphicsOutputBlt
-                0x0000000000004aa0      0x134 /tmp/lto-llvm-a50cce.o
- .text.CopyMem  0x0000000000004bd4      0x184 /tmp/lto-llvm-a50cce.o
+                0x0000000000004aa0      0x134 /tmp/lto-llvm-50da32.o
+ .text.CopyMem  0x0000000000004bd4      0x184 /tmp/lto-llvm-50da32.o
  .text.InternalMemSetMem
-                0x0000000000004d58       0x94 /tmp/lto-llvm-a50cce.o
+                0x0000000000004d58       0x94 /tmp/lto-llvm-50da32.o
  .text.DebugPrint
-                0x0000000000004dec      0x480 /tmp/lto-llvm-a50cce.o
+                0x0000000000004dec      0x42c /tmp/lto-llvm-50da32.o
  .text.InternalAllocateZeroPool
-                0x000000000000526c       0x60 /tmp/lto-llvm-a50cce.o
+                0x0000000000005218       0x60 /tmp/lto-llvm-50da32.o
  .text.ReallocatePool
-                0x00000000000052cc       0x6c /tmp/lto-llvm-a50cce.o
+                0x0000000000005278       0x6c /tmp/lto-llvm-50da32.o
  .text.EfiEventEmptyFunction
-                0x0000000000005338        0x4 /tmp/lto-llvm-a50cce.o
+                0x00000000000052e4        0x4 /tmp/lto-llvm-50da32.o
  .text.ReadUnaligned32
-                0x000000000000533c       0x44 /tmp/lto-llvm-a50cce.o
+                0x00000000000052e8       0x44 /tmp/lto-llvm-50da32.o
  .text.BasePrintLibSPrintMarker
-                0x0000000000005380      0xc38 /tmp/lto-llvm-a50cce.o
+                0x000000000000532c      0xc38 /tmp/lto-llvm-50da32.o
  .text.BasePrintLibSPrint
-                0x0000000000005fb8       0x54 /tmp/lto-llvm-a50cce.o
+                0x0000000000005f64       0x54 /tmp/lto-llvm-50da32.o
  .text.WriteBackInvalidateDataCacheRange
-                0x000000000000600c       0x50 /tmp/lto-llvm-a50cce.o
+                0x0000000000005fb8       0x50 /tmp/lto-llvm-50da32.o
  .text.ArmCleanInvalidateDataCacheEntryByMVA
-                0x000000000000605c        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
-                0x000000000000605c                ArmCleanInvalidateDataCacheEntryByMVA
+                0x0000000000006008        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x0000000000006008                ArmCleanInvalidateDataCacheEntryByMVA
  .text.ArmDataSynchronizationBarrier
-                0x0000000000006064        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
-                0x0000000000006064                ArmDataSynchronizationBarrier
+                0x0000000000006010        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x0000000000006010                ArmDataSynchronizationBarrier
  .text.ArmIsArchTimerImplemented
-                0x000000000000606c        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
-                0x000000000000606c                ArmIsArchTimerImplemented
+                0x0000000000006018        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x0000000000006018                ArmIsArchTimerImplemented
  .text.ArmCacheInfo
-                0x0000000000006074        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
-                0x0000000000006074                ArmCacheInfo
+                0x0000000000006020        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+                0x0000000000006020                ArmCacheInfo
  .text.ArmGetInterruptState
-                0x000000000000607c       0x10 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
-                0x000000000000607c                ArmGetInterruptState
+                0x0000000000006028       0x10 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+                0x0000000000006028                ArmGetInterruptState
  .text.ArmEnableInterrupts
-                0x000000000000608c        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
-                0x000000000000608c                ArmEnableInterrupts
+                0x0000000000006038        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+                0x0000000000006038                ArmEnableInterrupts
  .text.ArmDisableInterrupts
-                0x0000000000006098        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
-                0x0000000000006098                ArmDisableInterrupts
+                0x0000000000006044        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+                0x0000000000006044                ArmDisableInterrupts
  .text.ArmReadCntPct
-                0x00000000000060a4        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
-                0x00000000000060a4                ArmReadCntPct
+                0x0000000000006050        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+                0x0000000000006050                ArmReadCntPct
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- *fill*         0x00000000000060ac        0x4 
- .rodata.cst16  0x00000000000060b0       0x30 /tmp/lto-llvm-a50cce.o
+ *fill*         0x0000000000006058        0x8 
+ .rodata.cst16  0x0000000000006060       0x30 /tmp/lto-llvm-50da32.o
  .rodata.str1.1
-                0x00000000000060e0      0x122 /tmp/lto-llvm-a50cce.o
+                0x0000000000006090      0x122 /tmp/lto-llvm-50da32.o
  .rodata.mWarningString
-                0x0000000000006202       0x96 /tmp/lto-llvm-a50cce.o
+                0x00000000000061b2       0x96 /tmp/lto-llvm-50da32.o
  .rodata.mErrorString
-                0x0000000000006298      0x2b5 /tmp/lto-llvm-a50cce.o
- *fill*         0x000000000000654d        0x3 
+                0x0000000000006248      0x2b5 /tmp/lto-llvm-50da32.o
+ *fill*         0x00000000000064fd        0x3 
  .rodata.font5x12
-                0x0000000000006550      0x300 /tmp/lto-llvm-a50cce.o
+                0x0000000000006500      0x300 /tmp/lto-llvm-50da32.o
  *(.got .got.*)
- .got           0x0000000000006850        0x8 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
-                0x0000000000006850                _GLOBAL_OFFSET_TABLE_
- .got.plt       0x0000000000006858       0x18 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .got           0x0000000000006800        0x8 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+                0x0000000000006800                _GLOBAL_OFFSET_TABLE_
+ .got.plt       0x0000000000006808       0x18 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
  *:AutoGen.obj(.data.g*Guid)
 
-.plt            0x0000000000006870        0x0
- .plt           0x0000000000006870        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+.plt            0x0000000000006820        0x0
+ .plt           0x0000000000006820        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
 
 .data           0x0000000000007000      0x5e8
  *(.data .data.* .gnu.linkonce.d.*)
  .data.rel.ro   0x0000000000007000        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
  .data.__stack_chk_guard
-                0x0000000000007000        0x8 /tmp/lto-llvm-a50cce.o
+                0x0000000000007000        0x8 /tmp/lto-llvm-50da32.o
                 0x0000000000007000                __stack_chk_guard
- .data.mConIn   0x0000000000007008      0x188 /tmp/lto-llvm-a50cce.o
+ .data.mConIn   0x0000000000007008      0x188 /tmp/lto-llvm-50da32.o
  .data.mGraphicsOutputProtocolTemplate
-                0x0000000000007190       0x20 /tmp/lto-llvm-a50cce.o
- .data.mConOut  0x00000000000071b0      0x110 /tmp/lto-llvm-a50cce.o
- .data.mStdErr  0x00000000000072c0      0x110 /tmp/lto-llvm-a50cce.o
+                0x0000000000007190       0x20 /tmp/lto-llvm-50da32.o
+ .data.mConOut  0x00000000000071b0      0x110 /tmp/lto-llvm-50da32.o
+ .data.mStdErr  0x00000000000072c0      0x110 /tmp/lto-llvm-50da32.o
  .data.gEfiSimpleTextInProtocolGuid
-                0x00000000000073d0       0x10 /tmp/lto-llvm-a50cce.o
+                0x00000000000073d0       0x10 /tmp/lto-llvm-50da32.o
  .data.gEfiSimpleTextInputExProtocolGuid
-                0x00000000000073e0       0x10 /tmp/lto-llvm-a50cce.o
+                0x00000000000073e0       0x10 /tmp/lto-llvm-50da32.o
  .data.gEfiSimpleTextOutProtocolGuid
-                0x00000000000073f0       0x10 /tmp/lto-llvm-a50cce.o
+                0x00000000000073f0       0x10 /tmp/lto-llvm-50da32.o
  .data.gConnectConInEventGuid
-                0x0000000000007400       0x10 /tmp/lto-llvm-a50cce.o
+                0x0000000000007400       0x10 /tmp/lto-llvm-50da32.o
  .data.gEfiGraphicsOutputProtocolGuid
-                0x0000000000007410       0x10 /tmp/lto-llvm-a50cce.o
+                0x0000000000007410       0x10 /tmp/lto-llvm-50da32.o
  .data.gEfiUgaDrawProtocolGuid
-                0x0000000000007420       0x10 /tmp/lto-llvm-a50cce.o
+                0x0000000000007420       0x10 /tmp/lto-llvm-50da32.o
  .data._gPcd_BinaryPatch_PcdConOutColumn
-                0x0000000000007430        0x4 /tmp/lto-llvm-a50cce.o
+                0x0000000000007430        0x4 /tmp/lto-llvm-50da32.o
  .data._gPcd_BinaryPatch_PcdConOutRow
-                0x0000000000007434        0x4 /tmp/lto-llvm-a50cce.o
+                0x0000000000007434        0x4 /tmp/lto-llvm-50da32.o
  .data.gConSplitterConInDriverBinding
-                0x0000000000007438       0x30 /tmp/lto-llvm-a50cce.o
+                0x0000000000007438       0x30 /tmp/lto-llvm-50da32.o
  .data.gEfiConsoleInDeviceGuid
-                0x0000000000007468       0x10 /tmp/lto-llvm-a50cce.o
+                0x0000000000007468       0x10 /tmp/lto-llvm-50da32.o
  .data.gConSplitterSimplePointerDriverBinding
-                0x0000000000007478       0x30 /tmp/lto-llvm-a50cce.o
+                0x0000000000007478       0x30 /tmp/lto-llvm-50da32.o
  .data.gEfiSimplePointerProtocolGuid
-                0x00000000000074a8       0x10 /tmp/lto-llvm-a50cce.o
+                0x00000000000074a8       0x10 /tmp/lto-llvm-50da32.o
  .data.gConSplitterAbsolutePointerDriverBinding
-                0x00000000000074b8       0x30 /tmp/lto-llvm-a50cce.o
+                0x00000000000074b8       0x30 /tmp/lto-llvm-50da32.o
  .data.gEfiAbsolutePointerProtocolGuid
-                0x00000000000074e8       0x10 /tmp/lto-llvm-a50cce.o
+                0x00000000000074e8       0x10 /tmp/lto-llvm-50da32.o
  .data.gConSplitterConOutDriverBinding
-                0x00000000000074f8       0x30 /tmp/lto-llvm-a50cce.o
+                0x00000000000074f8       0x30 /tmp/lto-llvm-50da32.o
  .data.gEfiConsoleOutDeviceGuid
-                0x0000000000007528       0x10 /tmp/lto-llvm-a50cce.o
+                0x0000000000007528       0x10 /tmp/lto-llvm-50da32.o
  .data.gConSplitterStdErrDriverBinding
-                0x0000000000007538       0x30 /tmp/lto-llvm-a50cce.o
+                0x0000000000007538       0x30 /tmp/lto-llvm-50da32.o
  .data.gEfiStandardErrorDeviceGuid
-                0x0000000000007568       0x10 /tmp/lto-llvm-a50cce.o
+                0x0000000000007568       0x10 /tmp/lto-llvm-50da32.o
  .data.gEfiDriverBindingProtocolGuid
-                0x0000000000007578       0x10 /tmp/lto-llvm-a50cce.o
+                0x0000000000007578       0x10 /tmp/lto-llvm-50da32.o
  .data.gEfiHobListGuid
-                0x0000000000007588       0x10 /tmp/lto-llvm-a50cce.o
+                0x0000000000007588       0x10 /tmp/lto-llvm-50da32.o
  *(.bss .bss.*)
- .bss.gST       0x0000000000007598        0x8 /tmp/lto-llvm-a50cce.o
- .bss.mHobList  0x00000000000075a0        0x8 /tmp/lto-llvm-a50cce.o
+ .bss.gST       0x0000000000007598        0x8 /tmp/lto-llvm-50da32.o
+ .bss.mHobList  0x00000000000075a0        0x8 /tmp/lto-llvm-50da32.o
  .bss.m_Initialized
-                0x00000000000075a8        0x1 /tmp/lto-llvm-a50cce.o
+                0x00000000000075a8        0x1 /tmp/lto-llvm-50da32.o
  *fill*         0x00000000000075a9        0x7 
  .bss.m_Position.0
-                0x00000000000075b0        0x8 /tmp/lto-llvm-a50cce.o
+                0x00000000000075b0        0x8 /tmp/lto-llvm-50da32.o
  .bss.m_Position.1
-                0x00000000000075b8        0x8 /tmp/lto-llvm-a50cce.o
+                0x00000000000075b8        0x8 /tmp/lto-llvm-50da32.o
  .bss.m_MaxPosition.0
-                0x00000000000075c0        0x1 /tmp/lto-llvm-a50cce.o
+                0x00000000000075c0        0x1 /tmp/lto-llvm-50da32.o
  *fill*         0x00000000000075c1        0x7 
  .bss.m_MaxPosition.1
-                0x00000000000075c8        0x1 /tmp/lto-llvm-a50cce.o
+                0x00000000000075c8        0x1 /tmp/lto-llvm-50da32.o
  *fill*         0x00000000000075c9        0x7 
  .bss.m_Color.0
-                0x00000000000075d0        0x1 /tmp/lto-llvm-a50cce.o
+                0x00000000000075d0        0x1 /tmp/lto-llvm-50da32.o
  *fill*         0x00000000000075d1        0x7 
  .bss.m_Color.1
-                0x00000000000075d8        0x1 /tmp/lto-llvm-a50cce.o
+                0x00000000000075d8        0x1 /tmp/lto-llvm-50da32.o
  *fill*         0x00000000000075d9        0x7 
- .bss.gBS       0x00000000000075e0        0x8 /tmp/lto-llvm-a50cce.o
+ .bss.gBS       0x00000000000075e0        0x8 /tmp/lto-llvm-50da32.o
 
 .dynbss         0x00000000000075e8        0x0
  .dynbss        0x00000000000075e8        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
@@ -677,41 +677,41 @@ OUTPUT(/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeMo
 LOAD linker stubs
 
 .debug_loclists
-                0x0000000000000000     0x3b80
+                0x0000000000000000     0x3bbf
  .debug_loclists
-                0x0000000000000000     0x3b80 /tmp/lto-llvm-a50cce.o
+                0x0000000000000000     0x3bbf /tmp/lto-llvm-50da32.o
 
 .debug_abbrev   0x0000000000000000      0xacd
- .debug_abbrev  0x0000000000000000      0xacd /tmp/lto-llvm-a50cce.o
+ .debug_abbrev  0x0000000000000000      0xacd /tmp/lto-llvm-50da32.o
 
-.debug_info     0x0000000000000000     0xebdc
- .debug_info    0x0000000000000000     0xebdc /tmp/lto-llvm-a50cce.o
+.debug_info     0x0000000000000000     0xebef
+ .debug_info    0x0000000000000000     0xebef /tmp/lto-llvm-50da32.o
 
 .debug_rnglists
                 0x0000000000000000      0x476
  .debug_rnglists
-                0x0000000000000000      0x476 /tmp/lto-llvm-a50cce.o
+                0x0000000000000000      0x476 /tmp/lto-llvm-50da32.o
 
 .debug_str_offsets
-                0x0000000000000000     0x144c
+                0x0000000000000000     0x1458
  .debug_str_offsets
-                0x0000000000000000     0x144c /tmp/lto-llvm-a50cce.o
+                0x0000000000000000     0x1458 /tmp/lto-llvm-50da32.o
 
-.debug_str      0x0000000000000000     0x67af
- .debug_str     0x0000000000000000     0x67af /tmp/lto-llvm-a50cce.o
-                                       0x6e9c (松开之前的大小)
+.debug_str      0x0000000000000000     0x67e3
+ .debug_str     0x0000000000000000     0x67e3 /tmp/lto-llvm-50da32.o
+                                       0x6ed0 (松开之前的大小)
 
-.debug_addr     0x0000000000000000      0xda8
- .debug_addr    0x0000000000000000      0xda8 /tmp/lto-llvm-a50cce.o
+.debug_addr     0x0000000000000000      0xda0
+ .debug_addr    0x0000000000000000      0xda0 /tmp/lto-llvm-50da32.o
 
 .debug_frame    0x0000000000000000      0xb58
- .debug_frame   0x0000000000000000      0xb58 /tmp/lto-llvm-a50cce.o
+ .debug_frame   0x0000000000000000      0xb58 /tmp/lto-llvm-50da32.o
 
-.debug_line     0x0000000000000000     0x5429
- .debug_line    0x0000000000000000     0x5429 /tmp/lto-llvm-a50cce.o
+.debug_line     0x0000000000000000     0x53f1
+ .debug_line    0x0000000000000000     0x53f1 /tmp/lto-llvm-50da32.o
 
 .debug_line_str
                 0x0000000000000000     0x1eec
  .debug_line_str
-                0x0000000000000000     0x1eec /tmp/lto-llvm-a50cce.o
+                0x0000000000000000     0x1eec /tmp/lto-llvm-50da32.o
                                        0x2900 (松开之前的大小)

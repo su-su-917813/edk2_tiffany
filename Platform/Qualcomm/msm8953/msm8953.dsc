@@ -22,6 +22,9 @@
 
 !include Silicon/Qualcomm/QcomPkg/QcomCommonDsc.inc
 
+[PcdsFeatureFlag.common]
+  gArmTokenSpaceGuid.PcdArmGicV3WithV2Legacy|TRUE
+
 [PcdsFixedAtBuild.common]
   gArmTokenSpaceGuid.PcdSystemMemoryBase|0x80000000         # Starting address
   gArmTokenSpaceGuid.PcdSystemMemorySize|0xFDFA0000         # Limit to 4GB Size here
@@ -30,8 +33,9 @@
   gArmTokenSpaceGuid.PcdArmArchTimerFreqInHz|19200000
   gArmTokenSpaceGuid.PcdArmArchTimerSecIntrNum|17
   gArmTokenSpaceGuid.PcdArmArchTimerIntrNum|18
-  gArmTokenSpaceGuid.PcdGicDistributorBase|0x17a00000
-  gArmTokenSpaceGuid.PcdGicRedistributorsBase|0x17b00000
+  gArmTokenSpaceGuid.PcdGicDistributorBase|0x0B000000
+  gArmTokenSpaceGuid.PcdGicRedistributorsBase|0x0B002000
+  gArmTokenSpaceGuid.PcdGicInterruptInterfaceBase|0x0B002000
 
   gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiDefaultOemRevision|0x00000850
   gEmbeddedTokenSpaceGuid.PcdPrePiStackBase|0x9FF90000      # UEFI Stack

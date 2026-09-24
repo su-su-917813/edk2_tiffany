@@ -218,13 +218,13 @@
  .text          0x0000000000000000       0x10 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
  .data          0x0000000000000000        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
  .bss           0x0000000000000000        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
- .text          0x0000000000000000        0x0 /tmp/lto-llvm-886130.o
- .text.memcpy   0x0000000000000000       0x1c /tmp/lto-llvm-886130.o
+ .text          0x0000000000000000        0x0 /tmp/lto-llvm-b42c2c.o
+ .text.memcpy   0x0000000000000000       0x1c /tmp/lto-llvm-b42c2c.o
  .text.__memset
-                0x0000000000000000       0x18 /tmp/lto-llvm-886130.o
- .comment       0x0000000000000000      0xf3d /tmp/lto-llvm-886130.o
+                0x0000000000000000       0x18 /tmp/lto-llvm-b42c2c.o
+ .comment       0x0000000000000000      0xf3d /tmp/lto-llvm-b42c2c.o
  .note.GNU-stack
-                0x0000000000000000        0x0 /tmp/lto-llvm-886130.o
+                0x0000000000000000        0x0 /tmp/lto-llvm-b42c2c.o
  .text          0x0000000000000000       0x30 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
  .text          0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
  .text          0x0000000000000000        0x0 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
@@ -423,7 +423,7 @@
 
 LOAD /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
 START GROUP
-LOAD /tmp/lto-llvm-886130.o
+LOAD /tmp/lto-llvm-b42c2c.o
 LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/UiApp.lib
 LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/DxePcdLib/DxePcdLib/OUTPUT/DxePcdLib.lib
 LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib
@@ -475,985 +475,986 @@ END GROUP
  .gnu.version_r
                 0x0000000000000228        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
 
-.text           0x0000000000001000    0x1c7c0
+.text           0x0000000000001000    0x1c750
  *(.text .text.* .stub .gnu.linkonce.t.*)
  .text._ModuleEntryPoint
-                0x0000000000001000     0x25ec /tmp/lto-llvm-886130.o
+                0x0000000000001000     0x25ec /tmp/lto-llvm-b42c2c.o
                 0x0000000000001000                _ModuleEntryPoint
  .text.__stack_chk_fail
-                0x00000000000035ec       0x20 /tmp/lto-llvm-886130.o
+                0x00000000000035ec       0x20 /tmp/lto-llvm-b42c2c.o
                 0x00000000000035ec                __stack_chk_fail
  .text.FakeExtractConfig
-                0x000000000000360c       0x1c /tmp/lto-llvm-886130.o
+                0x000000000000360c       0x1c /tmp/lto-llvm-b42c2c.o
  .text.FakeRouteConfig
-                0x0000000000003628       0x1c /tmp/lto-llvm-886130.o
+                0x0000000000003628       0x1c /tmp/lto-llvm-b42c2c.o
  .text.FrontPageCallback
-                0x0000000000003644      0x20c /tmp/lto-llvm-886130.o
+                0x0000000000003644      0x20c /tmp/lto-llvm-b42c2c.o
  .text.GetOptionalStringByIndex
-                0x0000000000003850       0xf8 /tmp/lto-llvm-886130.o
+                0x0000000000003850       0xf8 /tmp/lto-llvm-b42c2c.o
  .text.UiSetConsoleMode
-                0x0000000000003948      0x354 /tmp/lto-llvm-886130.o
+                0x0000000000003948      0x354 /tmp/lto-llvm-b42c2c.o
  .text.GetNextLanguage
-                0x0000000000003c9c       0x70 /tmp/lto-llvm-886130.o
- .text.CopyMem  0x0000000000003d0c      0x190 /tmp/lto-llvm-886130.o
+                0x0000000000003c9c       0x70 /tmp/lto-llvm-b42c2c.o
+ .text.CopyMem  0x0000000000003d0c      0x190 /tmp/lto-llvm-b42c2c.o
  .text.CopyGuid
-                0x0000000000003e9c       0xc8 /tmp/lto-llvm-886130.o
+                0x0000000000003e9c       0xc8 /tmp/lto-llvm-b42c2c.o
  .text.CompareGuid
-                0x0000000000003f64       0xa8 /tmp/lto-llvm-886130.o
- .text.StrCpyS  0x000000000000400c      0x1cc /tmp/lto-llvm-886130.o
- .text.StrCatS  0x00000000000041d8      0x264 /tmp/lto-llvm-886130.o
+                0x0000000000003f64       0xa8 /tmp/lto-llvm-b42c2c.o
+ .text.StrCpyS  0x000000000000400c      0x1cc /tmp/lto-llvm-b42c2c.o
+ .text.StrCatS  0x00000000000041d8      0x264 /tmp/lto-llvm-b42c2c.o
  .text.AsciiStrToUnicodeStrS
-                0x000000000000443c      0x1d0 /tmp/lto-llvm-886130.o
- .text.StrStr   0x000000000000460c       0x6c /tmp/lto-llvm-886130.o
+                0x000000000000443c      0x1d0 /tmp/lto-llvm-b42c2c.o
+ .text.StrStr   0x000000000000460c       0x6c /tmp/lto-llvm-b42c2c.o
  .text.ReadUnaligned32
-                0x0000000000004678       0x44 /tmp/lto-llvm-886130.o
+                0x0000000000004678       0x44 /tmp/lto-llvm-b42c2c.o
  .text.UnicodeSPrint
-                0x00000000000046bc       0x60 /tmp/lto-llvm-886130.o
+                0x00000000000046bc       0x60 /tmp/lto-llvm-b42c2c.o
  .text.UnicodeValueToStringS
-                0x000000000000471c      0x2c8 /tmp/lto-llvm-886130.o
+                0x000000000000471c      0x2c8 /tmp/lto-llvm-b42c2c.o
  .text.BasePrintLibSPrintMarker
-                0x00000000000049e4      0xeb8 /tmp/lto-llvm-886130.o
+                0x00000000000049e4      0xeb8 /tmp/lto-llvm-b42c2c.o
  .text.BasePrintLibSPrint
-                0x000000000000589c       0x54 /tmp/lto-llvm-886130.o
+                0x000000000000589c       0x54 /tmp/lto-llvm-b42c2c.o
  .text.DebugPrint
-                0x00000000000058f0      0x484 /tmp/lto-llvm-886130.o
+                0x00000000000058f0      0x430 /tmp/lto-llvm-b42c2c.o
  .text.InternalAllocateZeroPool
-                0x0000000000005d74       0x60 /tmp/lto-llvm-886130.o
+                0x0000000000005d20       0x60 /tmp/lto-llvm-b42c2c.o
  .text.AllocateCopyPool
-                0x0000000000005dd4       0x68 /tmp/lto-llvm-886130.o
+                0x0000000000005d80       0x68 /tmp/lto-llvm-b42c2c.o
  .text.ReallocatePool
-                0x0000000000005e3c       0x6c /tmp/lto-llvm-886130.o
+                0x0000000000005de8       0x6c /tmp/lto-llvm-b42c2c.o
  .text.GetDevicePathSize
-                0x0000000000005ea8       0xa4 /tmp/lto-llvm-886130.o
+                0x0000000000005e54       0xa4 /tmp/lto-llvm-b42c2c.o
  .text.DuplicateDevicePath
-                0x0000000000005f4c       0x34 /tmp/lto-llvm-886130.o
+                0x0000000000005ef8       0x34 /tmp/lto-llvm-b42c2c.o
  .text.AppendDevicePath
-                0x0000000000005f80      0x108 /tmp/lto-llvm-886130.o
+                0x0000000000005f2c      0x108 /tmp/lto-llvm-b42c2c.o
  .text.AppendDevicePathNode
-                0x0000000000006088      0x114 /tmp/lto-llvm-886130.o
+                0x0000000000006034      0x114 /tmp/lto-llvm-b42c2c.o
  .text.AppendDevicePathInstance
-                0x000000000000619c      0x154 /tmp/lto-llvm-886130.o
+                0x0000000000006148      0x154 /tmp/lto-llvm-b42c2c.o
  .text.GetNextDevicePathInstance
-                0x00000000000062f0       0xf0 /tmp/lto-llvm-886130.o
+                0x000000000000629c       0xf0 /tmp/lto-llvm-b42c2c.o
  .text.ConvertDevicePathToText
-                0x00000000000063e0      0x18c /tmp/lto-llvm-886130.o
+                0x000000000000638c      0x18c /tmp/lto-llvm-b42c2c.o
  .text.IsDevicePathValid
-                0x000000000000656c       0xe8 /tmp/lto-llvm-886130.o
+                0x0000000000006518       0xe8 /tmp/lto-llvm-b42c2c.o
  .text.FileDevicePath
-                0x0000000000006654      0x13c /tmp/lto-llvm-886130.o
+                0x0000000000006600      0x13c /tmp/lto-llvm-b42c2c.o
  .text.UefiDevicePathLibCatPrint
-                0x0000000000006790      0x114 /tmp/lto-llvm-886130.o
+                0x000000000000673c      0x114 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextPci
-                0x00000000000068a4       0x14 /tmp/lto-llvm-886130.o
+                0x0000000000006850       0x14 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextPccard
-                0x00000000000068b8       0x10 /tmp/lto-llvm-886130.o
+                0x0000000000006864       0x10 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextMemMap
-                0x00000000000068c8       0xc0 /tmp/lto-llvm-886130.o
+                0x0000000000006874       0xc0 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextVendor
-                0x0000000000006988      0x430 /tmp/lto-llvm-886130.o
+                0x0000000000006934      0x430 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextController
-                0x0000000000006db8       0x30 /tmp/lto-llvm-886130.o
+                0x0000000000006d64       0x30 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextBmc
-                0x0000000000006de8       0x58 /tmp/lto-llvm-886130.o
+                0x0000000000006d94       0x58 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextAcpi
-                0x0000000000006e40      0x10c /tmp/lto-llvm-886130.o
+                0x0000000000006dec      0x10c /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextAcpiEx
-                0x0000000000006f4c      0x410 /tmp/lto-llvm-886130.o
+                0x0000000000006ef8      0x410 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextAcpiAdr
-                0x000000000000735c       0xc0 /tmp/lto-llvm-886130.o
+                0x0000000000007308       0xc0 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextAtapi
-                0x000000000000741c       0x70 /tmp/lto-llvm-886130.o
+                0x00000000000073c8       0x70 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextScsi
-                0x000000000000748c       0x24 /tmp/lto-llvm-886130.o
+                0x0000000000007438       0x24 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextFibre
-                0x00000000000074b0       0x98 /tmp/lto-llvm-886130.o
+                0x000000000000745c       0x98 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextFibreEx
-                0x0000000000007548       0xb0 /tmp/lto-llvm-886130.o
+                0x00000000000074f4       0xb0 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextSasEx
-                0x00000000000075f8      0x1ac /tmp/lto-llvm-886130.o
+                0x00000000000075a4      0x1ac /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextNVMe
-                0x00000000000077a4       0x70 /tmp/lto-llvm-886130.o
+                0x0000000000007750       0x70 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextUfs
-                0x0000000000007814       0x14 /tmp/lto-llvm-886130.o
+                0x00000000000077c0       0x14 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextSd
-                0x0000000000007828       0x10 /tmp/lto-llvm-886130.o
+                0x00000000000077d4       0x10 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextEmmc
-                0x0000000000007838       0x10 /tmp/lto-llvm-886130.o
+                0x00000000000077e4       0x10 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToText1394
-                0x0000000000007848       0x50 /tmp/lto-llvm-886130.o
+                0x00000000000077f4       0x50 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextUsb
-                0x0000000000007898       0x14 /tmp/lto-llvm-886130.o
+                0x0000000000007844       0x14 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextUsbWWID
-                0x00000000000078ac       0xb4 /tmp/lto-llvm-886130.o
+                0x0000000000007858       0xb4 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextLogicalUnit
-                0x0000000000007960       0x10 /tmp/lto-llvm-886130.o
+                0x000000000000790c       0x10 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextUsbClass
-                0x0000000000007970      0x214 /tmp/lto-llvm-886130.o
+                0x000000000000791c      0x214 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextSata
-                0x0000000000007b84       0x34 /tmp/lto-llvm-886130.o
+                0x0000000000007b30       0x34 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextI2O
-                0x0000000000007bb8       0x30 /tmp/lto-llvm-886130.o
+                0x0000000000007b64       0x30 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextMacAddr
-                0x0000000000007be8       0x84 /tmp/lto-llvm-886130.o
+                0x0000000000007b94       0x84 /tmp/lto-llvm-b42c2c.o
  .text.CatNetworkProtocol
-                0x0000000000007c6c       0x40 /tmp/lto-llvm-886130.o
+                0x0000000000007c18       0x40 /tmp/lto-llvm-b42c2c.o
  .text.CatIPv6Address
-                0x0000000000007cac       0x8c /tmp/lto-llvm-886130.o
+                0x0000000000007c58       0x8c /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextIPv4
-                0x0000000000007d38      0x164 /tmp/lto-llvm-886130.o
+                0x0000000000007ce4      0x164 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextIPv6
-                0x0000000000007e9c       0xfc /tmp/lto-llvm-886130.o
+                0x0000000000007e48       0xfc /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextInfiniBand
-                0x0000000000007f98      0x114 /tmp/lto-llvm-886130.o
+                0x0000000000007f44      0x114 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextUart
-                0x00000000000080ac      0x120 /tmp/lto-llvm-886130.o
+                0x0000000000008058      0x120 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextiSCSI
-                0x00000000000081cc      0x124 /tmp/lto-llvm-886130.o
+                0x0000000000008178      0x124 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextVlan
-                0x00000000000082f0       0x18 /tmp/lto-llvm-886130.o
+                0x000000000000829c       0x18 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextBluetooth
-                0x0000000000008308       0x28 /tmp/lto-llvm-886130.o
+                0x00000000000082b4       0x28 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextWiFi
-                0x0000000000008330       0x70 /tmp/lto-llvm-886130.o
+                0x00000000000082dc       0x70 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextBluetoothLE
-                0x00000000000083a0       0x44 /tmp/lto-llvm-886130.o
+                0x000000000000834c       0x44 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextDns
-                0x00000000000083e4      0x10c /tmp/lto-llvm-886130.o
+                0x0000000000008390      0x10c /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextUri
-                0x00000000000084f0       0xb4 /tmp/lto-llvm-886130.o
+                0x000000000000849c       0xb4 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextHardDrive
-                0x00000000000085a4      0x19c /tmp/lto-llvm-886130.o
+                0x0000000000008550      0x19c /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextCDROM
-                0x0000000000008740       0xd4 /tmp/lto-llvm-886130.o
+                0x00000000000086ec       0xd4 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextFilePath
-                0x0000000000008814       0x14 /tmp/lto-llvm-886130.o
+                0x00000000000087c0       0x14 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextMediaProtocol
-                0x0000000000008828       0x14 /tmp/lto-llvm-886130.o
+                0x00000000000087d4       0x14 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextFv
-                0x000000000000883c       0x14 /tmp/lto-llvm-886130.o
+                0x00000000000087e8       0x14 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextFvFile
-                0x0000000000008850       0x14 /tmp/lto-llvm-886130.o
+                0x00000000000087fc       0x14 /tmp/lto-llvm-b42c2c.o
  .text.DevPathRelativeOffsetRange
-                0x0000000000008864       0x98 /tmp/lto-llvm-886130.o
+                0x0000000000008810       0x98 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextRamDisk
-                0x00000000000088fc      0x220 /tmp/lto-llvm-886130.o
+                0x00000000000088a8      0x220 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextBBS
-                0x0000000000008b1c       0xc0 /tmp/lto-llvm-886130.o
+                0x0000000000008ac8       0xc0 /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextEndInstance
-                0x0000000000008bdc        0xc /tmp/lto-llvm-886130.o
+                0x0000000000008b88        0xc /tmp/lto-llvm-b42c2c.o
  .text.DevPathToTextNodeGeneric
-                0x0000000000008be8      0x118 /tmp/lto-llvm-886130.o
+                0x0000000000008b94      0x118 /tmp/lto-llvm-b42c2c.o
  .text.CreatePopUp
-                0x0000000000008d00      0x7d8 /tmp/lto-llvm-886130.o
+                0x0000000000008cac      0x7d8 /tmp/lto-llvm-b42c2c.o
  .text.EfiGetSystemConfigurationTable
-                0x00000000000094d8       0xa0 /tmp/lto-llvm-886130.o
+                0x0000000000009484       0xa0 /tmp/lto-llvm-b42c2c.o
  .text.EfiEventEmptyFunction
-                0x0000000000009578        0x4 /tmp/lto-llvm-886130.o
+                0x0000000000009524        0x4 /tmp/lto-llvm-b42c2c.o
  .text.GetVariable2
-                0x000000000000957c       0xfc /tmp/lto-llvm-886130.o
+                0x0000000000009528       0xfc /tmp/lto-llvm-b42c2c.o
  .text.GetBestLanguage
-                0x0000000000009678      0x22c /tmp/lto-llvm-886130.o
+                0x0000000000009624      0x22c /tmp/lto-llvm-b42c2c.o
  .text.HiiAddPackages
-                0x00000000000098a4      0x200 /tmp/lto-llvm-886130.o
+                0x0000000000009850      0x200 /tmp/lto-llvm-b42c2c.o
  .text.HiiGetHiiHandles
-                0x0000000000009aa4       0xa8 /tmp/lto-llvm-886130.o
+                0x0000000000009a50       0xa8 /tmp/lto-llvm-b42c2c.o
  .text.HiiGetFormSetFromHiiHandle
-                0x0000000000009b4c      0x1f0 /tmp/lto-llvm-886130.o
+                0x0000000000009af8      0x1f0 /tmp/lto-llvm-b42c2c.o
  .text.InternalHiiBrowserCallback
-                0x0000000000009d3c      0x11c /tmp/lto-llvm-886130.o
+                0x0000000000009ce8      0x11c /tmp/lto-llvm-b42c2c.o
  .text.HiiConstructConfigHdr
-                0x0000000000009e58      0x380 /tmp/lto-llvm-886130.o
+                0x0000000000009e04      0x380 /tmp/lto-llvm-b42c2c.o
  .text.InternalHiiCompareSubString
-                0x000000000000a1d8       0xe8 /tmp/lto-llvm-886130.o
+                0x000000000000a184       0xe8 /tmp/lto-llvm-b42c2c.o
  .text.HiiIsConfigHdrMatch
-                0x000000000000a2c0       0x98 /tmp/lto-llvm-886130.o
+                0x000000000000a26c       0x98 /tmp/lto-llvm-b42c2c.o
  .text.HiiGetBrowserData
-                0x000000000000a358       0xe4 /tmp/lto-llvm-886130.o
+                0x000000000000a304       0xe4 /tmp/lto-llvm-b42c2c.o
  .text.HiiAllocateOpCodeHandle
-                0x000000000000a43c       0xb0 /tmp/lto-llvm-886130.o
+                0x000000000000a3e8       0xb0 /tmp/lto-llvm-b42c2c.o
  .text.InternalHiiGrowOpCodeHandle
-                0x000000000000a4ec       0x64 /tmp/lto-llvm-886130.o
+                0x000000000000a498       0x64 /tmp/lto-llvm-b42c2c.o
  .text.HiiCreateOneOfOptionOpCode
-                0x000000000000a550       0xd8 /tmp/lto-llvm-886130.o
+                0x000000000000a4fc       0xd8 /tmp/lto-llvm-b42c2c.o
  .text.HiiCreateGuidOpCode
-                0x000000000000a628       0x8c /tmp/lto-llvm-886130.o
+                0x000000000000a5d4       0x8c /tmp/lto-llvm-b42c2c.o
  .text.HiiCreateActionOpCode
-                0x000000000000a6b4       0x80 /tmp/lto-llvm-886130.o
+                0x000000000000a660       0x80 /tmp/lto-llvm-b42c2c.o
  .text.HiiCreateSubTitleOpCode
-                0x000000000000a734       0x68 /tmp/lto-llvm-886130.o
+                0x000000000000a6e0       0x68 /tmp/lto-llvm-b42c2c.o
  .text.HiiCreateGotoOpCode
-                0x000000000000a79c       0x94 /tmp/lto-llvm-886130.o
+                0x000000000000a748       0x94 /tmp/lto-llvm-b42c2c.o
  .text.HiiCreateGotoExOpCode
-                0x000000000000a830       0xf8 /tmp/lto-llvm-886130.o
+                0x000000000000a7dc       0xf8 /tmp/lto-llvm-b42c2c.o
  .text.HiiCreateCheckBoxOpCode
-                0x000000000000a928       0xa4 /tmp/lto-llvm-886130.o
+                0x000000000000a8d4       0xa4 /tmp/lto-llvm-b42c2c.o
  .text.HiiCreateStringOpCode
-                0x000000000000a9cc       0x90 /tmp/lto-llvm-886130.o
+                0x000000000000a978       0x90 /tmp/lto-llvm-b42c2c.o
  .text.HiiCreateOneOfOpCode
-                0x000000000000aa5c      0x108 /tmp/lto-llvm-886130.o
+                0x000000000000aa08      0x108 /tmp/lto-llvm-b42c2c.o
  .text.HiiUpdateForm
-                0x000000000000ab64      0x558 /tmp/lto-llvm-886130.o
+                0x000000000000ab10      0x558 /tmp/lto-llvm-b42c2c.o
  .text.HiiSetString
-                0x000000000000b0bc      0x158 /tmp/lto-llvm-886130.o
+                0x000000000000b068      0x158 /tmp/lto-llvm-b42c2c.o
  .text.HiiGetString
-                0x000000000000b214      0x16c /tmp/lto-llvm-886130.o
+                0x000000000000b1c0      0x16c /tmp/lto-llvm-b42c2c.o
  .text.HiiGetSupportedLanguages
-                0x000000000000b380       0xac /tmp/lto-llvm-886130.o
+                0x000000000000b32c       0xac /tmp/lto-llvm-b42c2c.o
  .text.ReportStatusCodeEx
-                0x000000000000b42c      0x1a8 /tmp/lto-llvm-886130.o
+                0x000000000000b3d8      0x1a8 /tmp/lto-llvm-b42c2c.o
  .text.EfiBootManagerConnectAll
-                0x000000000000b5d4       0xb4 /tmp/lto-llvm-886130.o
+                0x000000000000b580       0xb4 /tmp/lto-llvm-b42c2c.o
  .text.EfiBootManagerConnectDevicePath
-                0x000000000000b688      0x13c /tmp/lto-llvm-886130.o
+                0x000000000000b634      0x13c /tmp/lto-llvm-b42c2c.o
  .text.BmConnectUsbShortFormDevicePath
-                0x000000000000b7c4      0x168 /tmp/lto-llvm-886130.o
+                0x000000000000b770      0x168 /tmp/lto-llvm-b42c2c.o
  .text.BmUpdateSystemTableConsole
-                0x000000000000b92c      0x18c /tmp/lto-llvm-886130.o
+                0x000000000000b8d8      0x18c /tmp/lto-llvm-b42c2c.o
  .text.EfiBootManagerConnectConsoleVariable
-                0x000000000000bab8      0x31c /tmp/lto-llvm-886130.o
+                0x000000000000ba64      0x31c /tmp/lto-llvm-b42c2c.o
  .text.EfiBootManagerConnectAllDefaultConsoles
-                0x000000000000bdd4      0x110 /tmp/lto-llvm-886130.o
+                0x000000000000bd80      0x110 /tmp/lto-llvm-b42c2c.o
  .text.BmAdjustFvFilePath
-                0x000000000000bee4      0x1e8 /tmp/lto-llvm-886130.o
+                0x000000000000be90      0x1e8 /tmp/lto-llvm-b42c2c.o
  .text.BmGetNextLoadOptionDevicePath
-                0x000000000000c0cc      0xe50 /tmp/lto-llvm-886130.o
+                0x000000000000c078      0xe50 /tmp/lto-llvm-b42c2c.o
  .text.BmExpandMediaDevicePath
-                0x000000000000cf1c      0x324 /tmp/lto-llvm-886130.o
+                0x000000000000cec8      0x324 /tmp/lto-llvm-b42c2c.o
  .text.BmExpandLoadFiles
-                0x000000000000d240      0x2fc /tmp/lto-llvm-886130.o
+                0x000000000000d1ec      0x2fc /tmp/lto-llvm-b42c2c.o
  .text.BmExpandLoadFile
-                0x000000000000d53c      0x354 /tmp/lto-llvm-886130.o
+                0x000000000000d4e8      0x354 /tmp/lto-llvm-b42c2c.o
  .text.BmDestroyRamDisk
-                0x000000000000d890      0x108 /tmp/lto-llvm-886130.o
+                0x000000000000d83c      0x108 /tmp/lto-llvm-b42c2c.o
  .text.BmGetRamDiskDevicePath
-                0x000000000000d998       0xc0 /tmp/lto-llvm-886130.o
+                0x000000000000d944       0xc0 /tmp/lto-llvm-b42c2c.o
  .text.BmMatchPartitionDevicePathNode
-                0x000000000000da58      0x12c /tmp/lto-llvm-886130.o
+                0x000000000000da04      0x12c /tmp/lto-llvm-b42c2c.o
  .text.BmCachePartitionDevicePath
-                0x000000000000db84      0x1c0 /tmp/lto-llvm-886130.o
+                0x000000000000db30      0x1c0 /tmp/lto-llvm-b42c2c.o
  .text.BmIsBootManagerMenuFilePath
-                0x000000000000dd44       0x74 /tmp/lto-llvm-886130.o
+                0x000000000000dcf0       0x74 /tmp/lto-llvm-b42c2c.o
  .text.EfiBootManagerBoot
-                0x000000000000ddb8     0x115c /tmp/lto-llvm-886130.o
+                0x000000000000dd64     0x115c /tmp/lto-llvm-b42c2c.o
  .text.EfiBootManagerRefreshAllBootOption
-                0x000000000000ef14      0x6bc /tmp/lto-llvm-886130.o
+                0x000000000000eec0      0x6bc /tmp/lto-llvm-b42c2c.o
  .text.BmGetDescriptionFromDiskInfo
-                0x000000000000f5d0      0x35c /tmp/lto-llvm-886130.o
+                0x000000000000f57c      0x35c /tmp/lto-llvm-b42c2c.o
  .text.BmGetUsbDescription
-                0x000000000000f92c      0x294 /tmp/lto-llvm-886130.o
+                0x000000000000f8d8      0x294 /tmp/lto-llvm-b42c2c.o
  .text.BmGetNetworkDescription
-                0x000000000000fbc0      0x370 /tmp/lto-llvm-886130.o
+                0x000000000000fb6c      0x370 /tmp/lto-llvm-b42c2c.o
  .text.BmGetLoadFileDescription
-                0x000000000000ff30       0xfc /tmp/lto-llvm-886130.o
+                0x000000000000fedc       0xfc /tmp/lto-llvm-b42c2c.o
  .text.BmGetNvmeDescription
-                0x000000000001002c      0x264 /tmp/lto-llvm-886130.o
+                0x000000000000ffd8      0x264 /tmp/lto-llvm-b42c2c.o
  .text.BmGetMiscDescription
-                0x0000000000010290      0x254 /tmp/lto-llvm-886130.o
+                0x000000000001023c      0x254 /tmp/lto-llvm-b42c2c.o
  .text.BmGetBootDescription
-                0x00000000000104e4      0x18c /tmp/lto-llvm-886130.o
+                0x0000000000010490      0x18c /tmp/lto-llvm-b42c2c.o
  .text.BmGetFreeOptionNumber
-                0x0000000000010670      0x134 /tmp/lto-llvm-886130.o
+                0x000000000001061c      0x134 /tmp/lto-llvm-b42c2c.o
  .text.EfiBootManagerLoadOptionToVariable
-                0x00000000000107a4      0x3d8 /tmp/lto-llvm-886130.o
+                0x0000000000010750      0x3d8 /tmp/lto-llvm-b42c2c.o
  .text.EfiBootManagerAddLoadOptionVariable
-                0x0000000000010b7c      0x1d0 /tmp/lto-llvm-886130.o
+                0x0000000000010b28      0x1d0 /tmp/lto-llvm-b42c2c.o
  .text.EfiBootManagerDeleteLoadOptionVariable
-                0x0000000000010d4c      0x158 /tmp/lto-llvm-886130.o
+                0x0000000000010cf8      0x158 /tmp/lto-llvm-b42c2c.o
  .text.EfiBootManagerGetLoadOptions
-                0x0000000000010ea4      0x190 /tmp/lto-llvm-886130.o
+                0x0000000000010e50      0x190 /tmp/lto-llvm-b42c2c.o
  .text.EfiBootManagerVariableToLoadOptionEx
-                0x0000000000011034      0x354 /tmp/lto-llvm-886130.o
+                0x0000000000010fe0      0x354 /tmp/lto-llvm-b42c2c.o
  .text.EfiBootManagerInitializeLoadOption
-                0x0000000000011388      0x10c /tmp/lto-llvm-886130.o
+                0x0000000000011334      0x10c /tmp/lto-llvm-b42c2c.o
  .text.EfiBootManagerFreeLoadOptions
-                0x0000000000011494       0x5c /tmp/lto-llvm-886130.o
+                0x0000000000011440       0x5c /tmp/lto-llvm-b42c2c.o
  .text.EfiBootManagerFreeLoadOption
-                0x00000000000114f0       0x68 /tmp/lto-llvm-886130.o
+                0x000000000001149c       0x68 /tmp/lto-llvm-b42c2c.o
  .text.EfiBootManagerFindLoadOption
-                0x0000000000011558      0x1a8 /tmp/lto-llvm-886130.o
+                0x0000000000011504      0x1a8 /tmp/lto-llvm-b42c2c.o
  .text.BmHotkeyCallback
-                0x0000000000011700      0x1b4 /tmp/lto-llvm-886130.o
+                0x00000000000116ac      0x1b4 /tmp/lto-llvm-b42c2c.o
  .text.BmGetControllerName
-                0x00000000000118b4      0x18c /tmp/lto-llvm-886130.o
+                0x0000000000011860      0x18c /tmp/lto-llvm-b42c2c.o
  .text.BmDisplayMessages
-                0x0000000000011a40      0x118 /tmp/lto-llvm-886130.o
+                0x00000000000119ec      0x118 /tmp/lto-llvm-b42c2c.o
  .text.BmRepairNotify
-                0x0000000000011b58       0x50 /tmp/lto-llvm-886130.o
+                0x0000000000011b04       0x50 /tmp/lto-llvm-b42c2c.o
  .text.BmGetSingleControllerHealthStatus
-                0x0000000000011ba8      0x1c0 /tmp/lto-llvm-886130.o
+                0x0000000000011b54      0x1c0 /tmp/lto-llvm-b42c2c.o
  .text.EfiBootManagerGetDriverHealthInfo
-                0x0000000000011d68      0x18c /tmp/lto-llvm-886130.o
+                0x0000000000011d14      0x18c /tmp/lto-llvm-b42c2c.o
  .text.BmRepairAllControllers
-                0x0000000000011ef4      0x420 /tmp/lto-llvm-886130.o
+                0x0000000000011ea0      0x420 /tmp/lto-llvm-b42c2c.o
  .text.BmDelPartMatchInstance
-                0x0000000000012314      0x150 /tmp/lto-llvm-886130.o
+                0x00000000000122c0      0x150 /tmp/lto-llvm-b42c2c.o
  .text.BmSetVariableAndReportStatusCodeOnError
-                0x0000000000012464      0x134 /tmp/lto-llvm-886130.o
+                0x0000000000012410      0x134 /tmp/lto-llvm-b42c2c.o
  .text.BmPrintDp
-                0x0000000000012598       0x54 /tmp/lto-llvm-886130.o
+                0x0000000000012544       0x54 /tmp/lto-llvm-b42c2c.o
  .text.LibExtractConfig
-                0x00000000000125ec       0x1c /tmp/lto-llvm-886130.o
+                0x0000000000012598       0x1c /tmp/lto-llvm-b42c2c.o
  .text.LibRouteConfig
-                0x0000000000012608       0x1c /tmp/lto-llvm-886130.o
+                0x00000000000125b4       0x1c /tmp/lto-llvm-b42c2c.o
  .text.LibCallback
-                0x0000000000012624      0x5dc /tmp/lto-llvm-886130.o
+                0x00000000000125d0      0x5dc /tmp/lto-llvm-b42c2c.o
  .text.LibCreateNewFile
-                0x0000000000012c00      0x2c8 /tmp/lto-llvm-886130.o
+                0x0000000000012bac      0x2c8 /tmp/lto-llvm-b42c2c.o
  .text.LibGetDevicePath
-                0x0000000000012ec8       0x74 /tmp/lto-llvm-886130.o
+                0x0000000000012e74       0x74 /tmp/lto-llvm-b42c2c.o
  .text.LibFreeMenu
-                0x0000000000012f3c       0x4c /tmp/lto-llvm-886130.o
+                0x0000000000012ee8       0x4c /tmp/lto-llvm-b42c2c.o
  .text.LibUpdateFileExplorePage
-                0x0000000000012f88      0x268 /tmp/lto-llvm-886130.o
+                0x0000000000012f34      0x268 /tmp/lto-llvm-b42c2c.o
  .text.LibDestroyMenuEntry
-                0x00000000000131f0       0xb4 /tmp/lto-llvm-886130.o
+                0x000000000001319c       0xb4 /tmp/lto-llvm-b42c2c.o
  .text.LibCreateMenuEntry
-                0x00000000000132a4       0x64 /tmp/lto-llvm-886130.o
+                0x0000000000013250       0x64 /tmp/lto-llvm-b42c2c.o
  .text.LibAppendFileName
-                0x0000000000013308      0x1dc /tmp/lto-llvm-886130.o
+                0x00000000000132b4      0x1dc /tmp/lto-llvm-b42c2c.o
  .text.LibStrDuplicate
-                0x00000000000134e4       0x64 /tmp/lto-llvm-886130.o
+                0x0000000000013490       0x64 /tmp/lto-llvm-b42c2c.o
  .text.ChooseFile
-                0x0000000000013548      0x3c8 /tmp/lto-llvm-886130.o
+                0x00000000000134f4      0x3c8 /tmp/lto-llvm-b42c2c.o
  .text.DeviceManagerExtractConfig
-                0x0000000000013910       0x1c /tmp/lto-llvm-886130.o
+                0x00000000000138bc       0x1c /tmp/lto-llvm-b42c2c.o
  .text.DeviceManagerRouteConfig
-                0x000000000001392c       0x1c /tmp/lto-llvm-886130.o
+                0x00000000000138d8       0x1c /tmp/lto-llvm-b42c2c.o
  .text.DeviceManagerCallback
-                0x0000000000013948       0xd8 /tmp/lto-llvm-886130.o
+                0x00000000000138f4       0xd8 /tmp/lto-llvm-b42c2c.o
  .text.CreateDeviceManagerForm
-                0x0000000000013a20      0x734 /tmp/lto-llvm-886130.o
+                0x00000000000139cc      0x734 /tmp/lto-llvm-b42c2c.o
  .text.DmExtractDevicePathFromHiiHandle
-                0x0000000000014154       0x70 /tmp/lto-llvm-886130.o
+                0x0000000000014100       0x70 /tmp/lto-llvm-b42c2c.o
  .text.IsMacAddressDevicePath
-                0x00000000000141c4      0x460 /tmp/lto-llvm-886130.o
+                0x0000000000014170      0x460 /tmp/lto-llvm-b42c2c.o
  .text.BootManagerExtractConfig
-                0x0000000000014624       0x1c /tmp/lto-llvm-886130.o
+                0x00000000000145d0       0x1c /tmp/lto-llvm-b42c2c.o
  .text.BootManagerRouteConfig
-                0x0000000000014640       0x1c /tmp/lto-llvm-886130.o
+                0x00000000000145ec       0x1c /tmp/lto-llvm-b42c2c.o
  .text.BootManagerCallback
-                0x000000000001465c      0x6e4 /tmp/lto-llvm-886130.o
+                0x0000000000014608      0x6e4 /tmp/lto-llvm-b42c2c.o
  .text.BmSetConsoleMode
-                0x0000000000014d40      0x354 /tmp/lto-llvm-886130.o
+                0x0000000000014cec      0x354 /tmp/lto-llvm-b42c2c.o
  .text.BootMaintExtractConfig
-                0x0000000000015094      0x1b0 /tmp/lto-llvm-886130.o
+                0x0000000000015040      0x1b0 /tmp/lto-llvm-b42c2c.o
  .text.BootMaintRouteConfig
-                0x0000000000015244      0xdbc /tmp/lto-llvm-886130.o
+                0x00000000000151f0      0xdbc /tmp/lto-llvm-b42c2c.o
  .text.BootMaintCallback
-                0x0000000000016000      0xe34 /tmp/lto-llvm-886130.o
+                0x0000000000015fac      0xe34 /tmp/lto-llvm-b42c2c.o
  .text.CleanUselessBeforeSubmit
-                0x0000000000016e34       0xb8 /tmp/lto-llvm-886130.o
+                0x0000000000016de0       0xb8 /tmp/lto-llvm-b42c2c.o
  .text.DiscardChangeHandler
-                0x0000000000016eec      0x124 /tmp/lto-llvm-886130.o
+                0x0000000000016e98      0x124 /tmp/lto-llvm-b42c2c.o
  .text.UpdateConsoleContent
-                0x0000000000017010      0x328 /tmp/lto-llvm-886130.o
+                0x0000000000016fbc      0x328 /tmp/lto-llvm-b42c2c.o
  .text.BmmSetConsoleMode
-                0x0000000000017338      0x354 /tmp/lto-llvm-886130.o
+                0x00000000000172e4      0x354 /tmp/lto-llvm-b42c2c.o
  .text.ExtractFileNameFromDevicePath
-                0x000000000001768c       0xf0 /tmp/lto-llvm-886130.o
+                0x0000000000017638       0xf0 /tmp/lto-llvm-b42c2c.o
  .text.BOpt_CreateMenuEntry
-                0x000000000001777c       0x90 /tmp/lto-llvm-886130.o
+                0x0000000000017728       0x90 /tmp/lto-llvm-b42c2c.o
  .text.BOpt_DestroyMenuEntry
-                0x000000000001780c      0x124 /tmp/lto-llvm-886130.o
+                0x00000000000177b8      0x124 /tmp/lto-llvm-b42c2c.o
  .text.BOpt_FreeMenu
-                0x0000000000017930       0x4c /tmp/lto-llvm-886130.o
+                0x00000000000178dc       0x4c /tmp/lto-llvm-b42c2c.o
  .text.BOpt_GetBootOptions
-                0x000000000001797c      0x3e4 /tmp/lto-llvm-886130.o
+                0x0000000000017928      0x3e4 /tmp/lto-llvm-b42c2c.o
  .text.BOpt_GetOptionNumber
-                0x0000000000017d60      0x128 /tmp/lto-llvm-886130.o
+                0x0000000000017d0c      0x128 /tmp/lto-llvm-b42c2c.o
  .text.BOpt_GetDriverOptions
-                0x0000000000017e88      0x288 /tmp/lto-llvm-886130.o
+                0x0000000000017e34      0x288 /tmp/lto-llvm-b42c2c.o
  .text.GetBootOrder
-                0x0000000000018110       0xc0 /tmp/lto-llvm-886130.o
+                0x00000000000180bc       0xc0 /tmp/lto-llvm-b42c2c.o
  .text.GetDriverOrder
-                0x00000000000181d0       0xc0 /tmp/lto-llvm-886130.o
+                0x000000000001817c       0xc0 /tmp/lto-llvm-b42c2c.o
  .text.BootFromFile
-                0x0000000000018290      0x1a0 /tmp/lto-llvm-886130.o
+                0x000000000001823c      0x1a0 /tmp/lto-llvm-b42c2c.o
  .text.CreateBootOptionFromFile
-                0x0000000000018430       0x60 /tmp/lto-llvm-886130.o
+                0x00000000000183dc       0x60 /tmp/lto-llvm-b42c2c.o
  .text.CreateDriverOptionFromFile
-                0x0000000000018490       0x60 /tmp/lto-llvm-886130.o
+                0x000000000001843c       0x60 /tmp/lto-llvm-b42c2c.o
  .text.MatchDevicePaths
-                0x00000000000184f0       0xe4 /tmp/lto-llvm-886130.o
+                0x000000000001849c       0xe4 /tmp/lto-llvm-b42c2c.o
  .text.ChangeTerminalDevicePath
-                0x00000000000185d4      0x1e8 /tmp/lto-llvm-886130.o
+                0x0000000000018580      0x1e8 /tmp/lto-llvm-b42c2c.o
  .text.RetrieveUartUid
-                0x00000000000187bc      0x100 /tmp/lto-llvm-886130.o
+                0x0000000000018768      0x100 /tmp/lto-llvm-b42c2c.o
  .text.UpdateComAttributeFromVariable
-                0x00000000000188bc      0x208 /tmp/lto-llvm-886130.o
+                0x0000000000018868      0x208 /tmp/lto-llvm-b42c2c.o
  .text.GetConsoleMenu
-                0x0000000000018ac4      0x350 /tmp/lto-llvm-886130.o
+                0x0000000000018a70      0x350 /tmp/lto-llvm-b42c2c.o
  .text.GetConsoleOutMode
-                0x0000000000018e14       0xa8 /tmp/lto-llvm-886130.o
+                0x0000000000018dc0       0xa8 /tmp/lto-llvm-b42c2c.o
  .text.Var_UpdateConsoleOption
-                0x0000000000018ebc      0x260 /tmp/lto-llvm-886130.o
+                0x0000000000018e68      0x260 /tmp/lto-llvm-b42c2c.o
  .text.Var_UpdateDriverOption
-                0x000000000001911c      0x2e8 /tmp/lto-llvm-886130.o
+                0x00000000000190c8      0x2e8 /tmp/lto-llvm-b42c2c.o
  .text.Var_UpdateBootOption
-                0x0000000000019404      0x2d0 /tmp/lto-llvm-886130.o
+                0x00000000000193b0      0x2d0 /tmp/lto-llvm-b42c2c.o
  .text.Var_UpdateConMode
-                0x00000000000196d4       0x5c /tmp/lto-llvm-886130.o
+                0x0000000000019680       0x5c /tmp/lto-llvm-b42c2c.o
  .text.RefreshUpdateData
-                0x0000000000019730       0x6c /tmp/lto-llvm-886130.o
+                0x00000000000196dc       0x6c /tmp/lto-llvm-b42c2c.o
  .text.UpdatePageStart
-                0x000000000001979c       0x68 /tmp/lto-llvm-886130.o
+                0x0000000000019748       0x68 /tmp/lto-llvm-b42c2c.o
  .text.UpdatePageEnd
-                0x0000000000019804       0x7c /tmp/lto-llvm-886130.o
+                0x00000000000197b0       0x7c /tmp/lto-llvm-b42c2c.o
  .text.CleanUpPage
-                0x0000000000019880       0x58 /tmp/lto-llvm-886130.o
+                0x000000000001982c       0x58 /tmp/lto-llvm-b42c2c.o
  .text.UpdateConCOMPage
-                0x00000000000198d8       0xa0 /tmp/lto-llvm-886130.o
+                0x0000000000019884       0xa0 /tmp/lto-llvm-b42c2c.o
  .text.UpdateBootDelPage
-                0x0000000000019978       0xec /tmp/lto-llvm-886130.o
+                0x0000000000019924       0xec /tmp/lto-llvm-b42c2c.o
  .text.UpdateDrvAddHandlePage
-                0x0000000000019a64       0x9c /tmp/lto-llvm-886130.o
+                0x0000000000019a10       0x9c /tmp/lto-llvm-b42c2c.o
  .text.UpdateDrvDelPage
-                0x0000000000019b00       0xe4 /tmp/lto-llvm-886130.o
+                0x0000000000019aac       0xe4 /tmp/lto-llvm-b42c2c.o
  .text.UpdateDriverAddHandleDescPage
-                0x0000000000019be4       0x98 /tmp/lto-llvm-886130.o
+                0x0000000000019b90       0x98 /tmp/lto-llvm-b42c2c.o
  .text.UpdateConsolePage
-                0x0000000000019c7c      0x1f0 /tmp/lto-llvm-886130.o
+                0x0000000000019c28      0x1f0 /tmp/lto-llvm-b42c2c.o
  .text.UpdateOrderPage
-                0x0000000000019e6c      0x288 /tmp/lto-llvm-886130.o
+                0x0000000000019e18      0x288 /tmp/lto-llvm-b42c2c.o
  .text.UpdateConModePage
-                0x000000000001a0f4      0x3c4 /tmp/lto-llvm-886130.o
+                0x000000000001a0a0      0x3c4 /tmp/lto-llvm-b42c2c.o
  .text.UpdateTerminalPage
-                0x000000000001a4b8      0x3c4 /tmp/lto-llvm-886130.o
+                0x000000000001a464      0x3c4 /tmp/lto-llvm-b42c2c.o
  .text.UpdateOptionPage
-                0x000000000001a87c      0x1cc /tmp/lto-llvm-886130.o
+                0x000000000001a828      0x1cc /tmp/lto-llvm-b42c2c.o
  .text.UpdatePageBody
-                0x000000000001aa48      0x110 /tmp/lto-llvm-886130.o
+                0x000000000001a9f4      0x110 /tmp/lto-llvm-b42c2c.o
  .text.InternalMemSetMem
-                0x000000000001ab58       0x94 /tmp/lto-llvm-886130.o
- .text.Print    0x000000000001abec       0xf4 /tmp/lto-llvm-886130.o
+                0x000000000001ab04       0x94 /tmp/lto-llvm-b42c2c.o
+ .text.Print    0x000000000001ab98       0xf4 /tmp/lto-llvm-b42c2c.o
  .text.EndPerformanceMeasurementEx
-                0x000000000001ace0       0x98 /tmp/lto-llvm-886130.o
+                0x000000000001ac8c       0x98 /tmp/lto-llvm-b42c2c.o
  .text.LogPerformanceMeasurement
-                0x000000000001ad78       0x98 /tmp/lto-llvm-886130.o
+                0x000000000001ad24       0x98 /tmp/lto-llvm-b42c2c.o
  .text.WriteBackInvalidateDataCacheRange
-                0x000000000001ae10       0x50 /tmp/lto-llvm-886130.o
+                0x000000000001adbc       0x50 /tmp/lto-llvm-b42c2c.o
  .text.ArmCleanInvalidateDataCacheEntryByMVA
-                0x000000000001ae60        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
-                0x000000000001ae60                ArmCleanInvalidateDataCacheEntryByMVA
+                0x000000000001ae0c        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x000000000001ae0c                ArmCleanInvalidateDataCacheEntryByMVA
  .text.ArmDataSynchronizationBarrier
-                0x000000000001ae68        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
-                0x000000000001ae68                ArmDataSynchronizationBarrier
+                0x000000000001ae14        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x000000000001ae14                ArmDataSynchronizationBarrier
  .text.ArmIsArchTimerImplemented
-                0x000000000001ae70        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
-                0x000000000001ae70                ArmIsArchTimerImplemented
+                0x000000000001ae1c        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x000000000001ae1c                ArmIsArchTimerImplemented
  .text.ArmCacheInfo
-                0x000000000001ae78        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
-                0x000000000001ae78                ArmCacheInfo
+                0x000000000001ae24        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+                0x000000000001ae24                ArmCacheInfo
  .text.ArmGetInterruptState
-                0x000000000001ae80       0x10 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
-                0x000000000001ae80                ArmGetInterruptState
+                0x000000000001ae2c       0x10 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+                0x000000000001ae2c                ArmGetInterruptState
  .text.ArmEnableInterrupts
-                0x000000000001ae90        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
-                0x000000000001ae90                ArmEnableInterrupts
+                0x000000000001ae3c        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+                0x000000000001ae3c                ArmEnableInterrupts
  .text.ArmDisableInterrupts
-                0x000000000001ae9c        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
-                0x000000000001ae9c                ArmDisableInterrupts
+                0x000000000001ae48        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+                0x000000000001ae48                ArmDisableInterrupts
  .text.ArmReadCntPct
-                0x000000000001aea8        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
-                0x000000000001aea8                ArmReadCntPct
+                0x000000000001ae54        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+                0x000000000001ae54                ArmReadCntPct
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata.cst16  0x000000000001aeb0       0x50 /tmp/lto-llvm-886130.o
- .rodata.cst8   0x000000000001af00       0x18 /tmp/lto-llvm-886130.o
+ *fill*         0x000000000001ae5c        0x4 
+ .rodata.cst16  0x000000000001ae60       0x50 /tmp/lto-llvm-b42c2c.o
+ .rodata.cst8   0x000000000001aeb0       0x18 /tmp/lto-llvm-b42c2c.o
  .rodata.str1.1
-                0x000000000001af18      0x839 /tmp/lto-llvm-886130.o
+                0x000000000001aec8      0x839 /tmp/lto-llvm-b42c2c.o
                                         0x83c (松开之前的大小)
- *fill*         0x000000000001b751        0x1 
+ *fill*         0x000000000001b701        0x1 
  .rodata.str2.2
-                0x000000000001b752     0x16d0 /tmp/lto-llvm-886130.o
+                0x000000000001b702     0x16d0 /tmp/lto-llvm-b42c2c.o
                                        0x1868 (松开之前的大小)
  .rodata._gPcd_FixedAtBuild_PcdFirmwareVersionString
-                0x000000000001ce22       0x34 /tmp/lto-llvm-886130.o
+                0x000000000001cdd2       0x12 /tmp/lto-llvm-b42c2c.o
  .rodata._gPcd_FixedAtBuild_PcdUefiVariableDefaultPlatformLangCodes
-                0x000000000001ce56       0x12 /tmp/lto-llvm-886130.o
+                0x000000000001cde4       0x12 /tmp/lto-llvm-b42c2c.o
  .rodata.mWarningString
-                0x000000000001ce68       0x96 /tmp/lto-llvm-886130.o
+                0x000000000001cdf6       0x96 /tmp/lto-llvm-b42c2c.o
  .rodata.mErrorString
-                0x000000000001cefe      0x2b5 /tmp/lto-llvm-886130.o
+                0x000000000001ce8c      0x2b5 /tmp/lto-llvm-b42c2c.o
  .rodata.mUefiDevicePathLibEndDevicePath
-                0x000000000001d1b3        0x4 /tmp/lto-llvm-886130.o
- *fill*         0x000000000001d1b7        0x1 
+                0x000000000001d141        0x4 /tmp/lto-llvm-b42c2c.o
+ *fill*         0x000000000001d145        0x3 
  .rodata..Lswitch.table.DevPathToTextUart
-                0x000000000001d1b8       0x18 /tmp/lto-llvm-886130.o
+                0x000000000001d148       0x18 /tmp/lto-llvm-b42c2c.o
  .rodata.mConfigHdrTemplate
-                0x000000000001d1d0       0x70 /tmp/lto-llvm-886130.o
+                0x000000000001d160       0x70 /tmp/lto-llvm-b42c2c.o
  .rodata.mEndOfPakageList
-                0x000000000001d240        0x4 /tmp/lto-llvm-886130.o
+                0x000000000001d1d0        0x4 /tmp/lto-llvm-b42c2c.o
  .rodata._gPcd_FixedAtBuild_PcdBootManagerMenuFile
-                0x000000000001d244       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001d1d4       0x10 /tmp/lto-llvm-b42c2c.o
  .rodata._gPcd_FixedAtBuild_PcdDriverHealthConfigureForm
-                0x000000000001d254       0x10 /tmp/lto-llvm-886130.o
- *fill*         0x000000000001d264        0x4 
+                0x000000000001d1e4       0x10 /tmp/lto-llvm-b42c2c.o
+ *fill*         0x000000000001d1f4        0x4 
  .rodata..Lswitch.table.BOpt_CreateMenuEntry
-                0x000000000001d268       0x30 /tmp/lto-llvm-886130.o
+                0x000000000001d1f8       0x30 /tmp/lto-llvm-b42c2c.o
  .rodata.BaudRateList
-                0x000000000001d298      0x130 /tmp/lto-llvm-886130.o
+                0x000000000001d228      0x130 /tmp/lto-llvm-b42c2c.o
  .rodata.DataBitsList
-                0x000000000001d3c8       0x40 /tmp/lto-llvm-886130.o
+                0x000000000001d358       0x40 /tmp/lto-llvm-b42c2c.o
  .rodata.ParityList
-                0x000000000001d408       0x50 /tmp/lto-llvm-886130.o
+                0x000000000001d398       0x50 /tmp/lto-llvm-b42c2c.o
  .rodata.StopBitsList
-                0x000000000001d458       0x30 /tmp/lto-llvm-886130.o
+                0x000000000001d3e8       0x30 /tmp/lto-llvm-b42c2c.o
  .rodata.TerminalType
-                0x000000000001d488       0x12 /tmp/lto-llvm-886130.o
- *fill*         0x000000000001d49a        0x2 
+                0x000000000001d418       0x12 /tmp/lto-llvm-b42c2c.o
+ *fill*         0x000000000001d42a        0x2 
  .rodata.font5x12
-                0x000000000001d49c      0x300 /tmp/lto-llvm-886130.o
+                0x000000000001d42c      0x300 /tmp/lto-llvm-b42c2c.o
  *(.got .got.*)
- *fill*         0x000000000001d79c        0x4 
- .got           0x000000000001d7a0        0x8 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
-                0x000000000001d7a0                _GLOBAL_OFFSET_TABLE_
- .got.plt       0x000000000001d7a8       0x18 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ *fill*         0x000000000001d72c        0x4 
+ .got           0x000000000001d730        0x8 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+                0x000000000001d730                _GLOBAL_OFFSET_TABLE_
+ .got.plt       0x000000000001d738       0x18 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
  *:AutoGen.obj(.data.g*Guid)
 
-.plt            0x000000000001d7c0        0x0
- .plt           0x000000000001d7c0        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+.plt            0x000000000001d750        0x0
+ .plt           0x000000000001d750        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
 
 .data           0x000000000001e000     0x7488
  *(.data .data.* .gnu.linkonce.d.*)
  .data.rel.ro   0x000000000001e000        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
  .data.__stack_chk_guard
-                0x000000000001e000        0x8 /tmp/lto-llvm-886130.o
+                0x000000000001e000        0x8 /tmp/lto-llvm-b42c2c.o
                 0x000000000001e000                __stack_chk_guard
  .data.mFrontPageGuid
-                0x000000000001e008       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001e008       0x10 /tmp/lto-llvm-b42c2c.o
  .data.mFrontPageHiiVendorDevicePath
-                0x000000000001e018       0x18 /tmp/lto-llvm-886130.o
+                0x000000000001e018       0x18 /tmp/lto-llvm-b42c2c.o
  .data.gEfiSmbiosProtocolGuid
-                0x000000000001e030       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001e030       0x10 /tmp/lto-llvm-b42c2c.o
  .data.mUiStringPackGuid
-                0x000000000001e040       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001e040       0x10 /tmp/lto-llvm-b42c2c.o
  .data.mFontPackageGuid
-                0x000000000001e050       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001e050       0x10 /tmp/lto-llvm-b42c2c.o
  .data.mFontBin
-                0x000000000001e060      0xda0 /tmp/lto-llvm-886130.o
+                0x000000000001e060      0xda0 /tmp/lto-llvm-b42c2c.o
  .data.UiAppStrings
-                0x000000000001ee00      0x426 /tmp/lto-llvm-886130.o
+                0x000000000001ee00      0x426 /tmp/lto-llvm-b42c2c.o
  *fill*         0x000000000001f226        0x2 
  .data.gEfiIfrFrontPageGuid
-                0x000000000001f228       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f228       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gFrontPagePrivate
-                0x000000000001f238       0x38 /tmp/lto-llvm-886130.o
+                0x000000000001f238       0x38 /tmp/lto-llvm-b42c2c.o
  .data.FrontPageVfrBin
-                0x000000000001f270      0x147 /tmp/lto-llvm-886130.o
+                0x000000000001f270      0x147 /tmp/lto-llvm-b42c2c.o
  *fill*         0x000000000001f3b7        0x1 
  .data.gPcdProtocolGuid
-                0x000000000001f3b8       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f3b8       0x10 /tmp/lto-llvm-b42c2c.o
  .data.rel.ro.mUefiDevicePathLibToTextTableGeneric
-                0x000000000001f3c8       0x60 /tmp/lto-llvm-886130.o
+                0x000000000001f3c8       0x60 /tmp/lto-llvm-b42c2c.o
  .data.rel.ro.mUefiDevicePathLibToTextTable
-                0x000000000001f428      0x320 /tmp/lto-llvm-886130.o
+                0x000000000001f428      0x320 /tmp/lto-llvm-b42c2c.o
  .data.rel.ro..Lswitch.table.DevPathToTextUart.174
-                0x000000000001f748       0x20 /tmp/lto-llvm-886130.o
+                0x000000000001f748       0x20 /tmp/lto-llvm-b42c2c.o
  .data.rel.ro..Lswitch.table.DevPathToTextBBS
-                0x000000000001f768       0x30 /tmp/lto-llvm-886130.o
+                0x000000000001f768       0x30 /tmp/lto-llvm-b42c2c.o
  .data.gEfiPcAnsiGuid
-                0x000000000001f798       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f798       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiVT100Guid
-                0x000000000001f7a8       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f7a8       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiVT100PlusGuid
-                0x000000000001f7b8       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f7b8       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiVTUTF8Guid
-                0x000000000001f7c8       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f7c8       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiUartDevicePathGuid
-                0x000000000001f7d8       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f7d8       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiSasDevicePathGuid
-                0x000000000001f7e8       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f7e8       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiDebugPortProtocolGuid
-                0x000000000001f7f8       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f7f8       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiVirtualDiskGuid
-                0x000000000001f808       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f808       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiVirtualCdGuid
-                0x000000000001f818       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f818       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiPersistentVirtualDiskGuid
-                0x000000000001f828       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f828       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiPersistentVirtualCdGuid
-                0x000000000001f838       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f838       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiHobListGuid
-                0x000000000001f848       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f848       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiHiiStringProtocolGuid
-                0x000000000001f858       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f858       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiHiiDatabaseProtocolGuid
-                0x000000000001f868       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f868       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiHiiImageProtocolGuid
-                0x000000000001f878       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f878       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiDxeServicesTableGuid
-                0x000000000001f888       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f888       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiStatusCodeRuntimeProtocolGuid
-                0x000000000001f898       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f898       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiStatusCodeSpecificDataGuid
-                0x000000000001f8a8       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f8a8       0x10 /tmp/lto-llvm-b42c2c.o
  .data.rel.ro.mConVarName
-                0x000000000001f8b8       0x30 /tmp/lto-llvm-886130.o
+                0x000000000001f8b8       0x30 /tmp/lto-llvm-b42c2c.o
  .data.gEfiSimpleTextInProtocolGuid
-                0x000000000001f8e8       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f8e8       0x10 /tmp/lto-llvm-b42c2c.o
  .data.mBmHardDriveBootVariableGuid
-                0x000000000001f8f8       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f8f8       0x10 /tmp/lto-llvm-b42c2c.o
  .data.mBmAutoCreateBootOptionGuid
-                0x000000000001f908       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f908       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiRamDiskProtocolGuid
-                0x000000000001f918       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f918       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiBootLogoProtocolGuid
-                0x000000000001f928       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f928       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEdkiiPlatformBootManagerProtocolGuid
-                0x000000000001f938       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f938       0x10 /tmp/lto-llvm-b42c2c.o
  .data.mBmUefiPrefix
-                0x000000000001f948        0xc /tmp/lto-llvm-886130.o
+                0x000000000001f948        0xc /tmp/lto-llvm-b42c2c.o
  *fill*         0x000000000001f954        0x4 
  .data.mPlatformBootDescriptionHandlers
-                0x000000000001f958       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f958       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiDiskInfoProtocolGuid
-                0x000000000001f968       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f968       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiDiskInfoAhciInterfaceGuid
-                0x000000000001f978       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f978       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiDiskInfoIdeInterfaceGuid
-                0x000000000001f988       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f988       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiDiskInfoScsiInterfaceGuid
-                0x000000000001f998       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f998       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiDiskInfoUfsInterfaceGuid
-                0x000000000001f9a8       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f9a8       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiDiskInfoSdMmcInterfaceGuid
-                0x000000000001f9b8       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f9b8       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiUsbIoProtocolGuid
-                0x000000000001f9c8       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f9c8       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiNvmExpressPassThruProtocolGuid
-                0x000000000001f9d8       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f9d8       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiBlockIoProtocolGuid
-                0x000000000001f9e8       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001f9e8       0x10 /tmp/lto-llvm-b42c2c.o
  .data.rel.ro.mBmBootDescriptionHandlers
-                0x000000000001f9f8       0x30 /tmp/lto-llvm-886130.o
+                0x000000000001f9f8       0x30 /tmp/lto-llvm-b42c2c.o
  .data.rel.ro.mBmLoadOptionOrderName
-                0x000000000001fa28       0x20 /tmp/lto-llvm-886130.o
+                0x000000000001fa28       0x20 /tmp/lto-llvm-b42c2c.o
  .data.gEdkiiVariablePolicyProtocolGuid
-                0x000000000001fa48       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001fa48       0x10 /tmp/lto-llvm-b42c2c.o
  .data.mBmHotkeyLock.1
-                0x000000000001fa58        0x8 /tmp/lto-llvm-886130.o
+                0x000000000001fa58        0x8 /tmp/lto-llvm-b42c2c.o
  .data.mBmHotkeyList
-                0x000000000001fa60       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001fa60       0x10 /tmp/lto-llvm-b42c2c.o
  .data.mBmHotkeyBootOption
-                0x000000000001fa70       0x58 /tmp/lto-llvm-886130.o
+                0x000000000001fa70       0x58 /tmp/lto-llvm-b42c2c.o
  .data.rel.ro.mBmLoadOptionName
-                0x000000000001fac8       0x20 /tmp/lto-llvm-886130.o
+                0x000000000001fac8       0x20 /tmp/lto-llvm-b42c2c.o
  .data.gEfiSimpleTextInputExProtocolGuid
-                0x000000000001fae8       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001fae8       0x10 /tmp/lto-llvm-b42c2c.o
  .data.rel.ro.mBmHealthStatusText
-                0x000000000001faf8       0x30 /tmp/lto-llvm-886130.o
+                0x000000000001faf8       0x30 /tmp/lto-llvm-b42c2c.o
  .data.gEfiComponentName2ProtocolGuid
-                0x000000000001fb28       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001fb28       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiComponentNameProtocolGuid
-                0x000000000001fb38       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001fb38       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiDriverHealthProtocolGuid
-                0x000000000001fb48       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001fb48       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiMemoryTypeInformationGuid
-                0x000000000001fb58       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001fb58       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEdkiiStatusCodeDataTypeVariableGuid
-                0x000000000001fb68       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001fb68       0x10 /tmp/lto-llvm-b42c2c.o
  .data.FileExplorerGuid
-                0x000000000001fb78       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001fb78       0x10 /tmp/lto-llvm-b42c2c.o
  .data.mFsOptionMenu
-                0x000000000001fb88       0x28 /tmp/lto-llvm-886130.o
+                0x000000000001fb88       0x28 /tmp/lto-llvm-b42c2c.o
  .data.gFileExplorerPrivate
-                0x000000000001fbb0       0x58 /tmp/lto-llvm-886130.o
+                0x000000000001fbb0       0x58 /tmp/lto-llvm-b42c2c.o
  .data.FeHiiVendorDevicePath
-                0x000000000001fc08       0x18 /tmp/lto-llvm-886130.o
+                0x000000000001fc08       0x18 /tmp/lto-llvm-b42c2c.o
  .data.mNewFileQuestionId
-                0x000000000001fc20        0x8 /tmp/lto-llvm-886130.o
+                0x000000000001fc20        0x8 /tmp/lto-llvm-b42c2c.o
  .data.mNewFolderQuestionId
-                0x000000000001fc28        0x8 /tmp/lto-llvm-886130.o
+                0x000000000001fc28        0x8 /tmp/lto-llvm-b42c2c.o
  .data.gEfiFileSystemVolumeLabelInfoIdGuid
-                0x000000000001fc30       0x10 /tmp/lto-llvm-886130.o
+                0x000000000001fc30       0x10 /tmp/lto-llvm-b42c2c.o
  .data.FileExplorerLibStrings
-                0x000000000001fc40      0x81a /tmp/lto-llvm-886130.o
+                0x000000000001fc40      0x81a /tmp/lto-llvm-b42c2c.o
  .data.FileExplorerVfrBin
-                0x000000000002045a       0xf9 /tmp/lto-llvm-886130.o
+                0x000000000002045a       0xf9 /tmp/lto-llvm-b42c2c.o
  *fill*         0x0000000000020553        0x5 
  .data.gDeviceManagerPrivate
-                0x0000000000020558       0x38 /tmp/lto-llvm-886130.o
+                0x0000000000020558       0x38 /tmp/lto-llvm-b42c2c.o
  .data.mDeviceManagerGuid
-                0x0000000000020590       0x10 /tmp/lto-llvm-886130.o
+                0x0000000000020590       0x10 /tmp/lto-llvm-b42c2c.o
  .data.mDeviceManagerHiiVendorDevicePath
-                0x00000000000205a0       0x18 /tmp/lto-llvm-886130.o
+                0x00000000000205a0       0x18 /tmp/lto-llvm-b42c2c.o
  .data.gEfiPciIoProtocolGuid
-                0x00000000000205b8       0x10 /tmp/lto-llvm-886130.o
+                0x00000000000205b8       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiHiiPlatformSetupFormsetGuid
-                0x00000000000205c8       0x10 /tmp/lto-llvm-886130.o
+                0x00000000000205c8       0x10 /tmp/lto-llvm-b42c2c.o
  .data.DeviceManagerUiLibStrings
-                0x00000000000205d8      0x4b8 /tmp/lto-llvm-886130.o
+                0x00000000000205d8      0x4b8 /tmp/lto-llvm-b42c2c.o
  .data.DeviceManagerVfrBin
-                0x0000000000020a90      0x12d /tmp/lto-llvm-886130.o
+                0x0000000000020a90      0x12d /tmp/lto-llvm-b42c2c.o
  *fill*         0x0000000000020bbd        0x3 
  .data.mBootManagerGuid
-                0x0000000000020bc0       0x10 /tmp/lto-llvm-886130.o
+                0x0000000000020bc0       0x10 /tmp/lto-llvm-b42c2c.o
  .data.rel.ro.mDeviceTypeStr
-                0x0000000000020bd0       0x40 /tmp/lto-llvm-886130.o
+                0x0000000000020bd0       0x40 /tmp/lto-llvm-b42c2c.o
  .data.mBootManagerHiiVendorDevicePath
-                0x0000000000020c10       0x18 /tmp/lto-llvm-886130.o
+                0x0000000000020c10       0x18 /tmp/lto-llvm-b42c2c.o
  .data.gBootManagerPrivate
-                0x0000000000020c28       0x30 /tmp/lto-llvm-886130.o
+                0x0000000000020c28       0x30 /tmp/lto-llvm-b42c2c.o
  .data.BootManagerUiLibStrings
-                0x0000000000020c58      0x434 /tmp/lto-llvm-886130.o
+                0x0000000000020c58      0x434 /tmp/lto-llvm-b42c2c.o
  .data.BootManagerVfrBin
-                0x000000000002108c       0xb3 /tmp/lto-llvm-886130.o
+                0x000000000002108c       0xb3 /tmp/lto-llvm-b42c2c.o
  *fill*         0x000000000002113f        0x1 
  .data.mBmmHiiVendorDevicePath
-                0x0000000000021140       0x18 /tmp/lto-llvm-886130.o
+                0x0000000000021140       0x18 /tmp/lto-llvm-b42c2c.o
  .data.mBootMaintStorageName
-                0x0000000000021158       0x10 /tmp/lto-llvm-886130.o
+                0x0000000000021158       0x10 /tmp/lto-llvm-b42c2c.o
  .data._gPcd_BinaryPatch_PcdConOutColumn
-                0x0000000000021168        0x4 /tmp/lto-llvm-886130.o
+                0x0000000000021168        0x4 /tmp/lto-llvm-b42c2c.o
  .data._gPcd_BinaryPatch_PcdConOutRow
-                0x000000000002116c        0x4 /tmp/lto-llvm-886130.o
+                0x000000000002116c        0x4 /tmp/lto-llvm-b42c2c.o
  .data._gPcd_BinaryPatch_PcdVideoHorizontalResolution
-                0x0000000000021170        0x4 /tmp/lto-llvm-886130.o
+                0x0000000000021170        0x4 /tmp/lto-llvm-b42c2c.o
  .data._gPcd_BinaryPatch_PcdVideoVerticalResolution
-                0x0000000000021174        0x4 /tmp/lto-llvm-886130.o
+                0x0000000000021174        0x4 /tmp/lto-llvm-b42c2c.o
  .data.gEfiDevicePathToTextProtocolGuid
-                0x0000000000021178       0x10 /tmp/lto-llvm-886130.o
+                0x0000000000021178       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiHiiConfigRoutingProtocolGuid
-                0x0000000000021188       0x10 /tmp/lto-llvm-886130.o
+                0x0000000000021188       0x10 /tmp/lto-llvm-b42c2c.o
  .data._gPcd_BinaryPatch_PcdSetupVideoHorizontalResolution
-                0x0000000000021198        0x4 /tmp/lto-llvm-886130.o
+                0x0000000000021198        0x4 /tmp/lto-llvm-b42c2c.o
  .data._gPcd_BinaryPatch_PcdSetupVideoVerticalResolution
-                0x000000000002119c        0x4 /tmp/lto-llvm-886130.o
+                0x000000000002119c        0x4 /tmp/lto-llvm-b42c2c.o
  .data.gEfiHiiConfigAccessProtocolGuid
-                0x00000000000211a0       0x10 /tmp/lto-llvm-886130.o
+                0x00000000000211a0       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiFormBrowser2ProtocolGuid
-                0x00000000000211b0       0x10 /tmp/lto-llvm-886130.o
+                0x00000000000211b0       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEdkiiFormBrowserEx2ProtocolGuid
-                0x00000000000211c0       0x10 /tmp/lto-llvm-886130.o
+                0x00000000000211c0       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gBootMaintenancePrivate
-                0x00000000000211d0     0x1c60 /tmp/lto-llvm-886130.o
+                0x00000000000211d0     0x1c60 /tmp/lto-llvm-b42c2c.o
  .data.gEfiSerialIoProtocolGuid
-                0x0000000000022e30       0x10 /tmp/lto-llvm-886130.o
+                0x0000000000022e30       0x10 /tmp/lto-llvm-b42c2c.o
  .data.rel.ro..Lswitch.table.GetConsoleMenu
-                0x0000000000022e40       0x18 /tmp/lto-llvm-886130.o
+                0x0000000000022e40       0x18 /tmp/lto-llvm-b42c2c.o
  .data.rel.ro..Lswitch.table.GetConsoleMenu.13
-                0x0000000000022e58       0x18 /tmp/lto-llvm-886130.o
+                0x0000000000022e58       0x18 /tmp/lto-llvm-b42c2c.o
  .data.rel.ro..Lswitch.table.GetConsoleMenu.14
-                0x0000000000022e70       0x18 /tmp/lto-llvm-886130.o
+                0x0000000000022e70       0x18 /tmp/lto-llvm-b42c2c.o
  .data.gEfiGlobalVariableGuid
-                0x0000000000022e88       0x10 /tmp/lto-llvm-886130.o
+                0x0000000000022e88       0x10 /tmp/lto-llvm-b42c2c.o
  .data.TerminalTypeGuid
-                0x0000000000022e98       0x90 /tmp/lto-llvm-886130.o
+                0x0000000000022e98       0x90 /tmp/lto-llvm-b42c2c.o
  .data._gPcd_BinaryPatch_PcdSetupConOutColumn
-                0x0000000000022f28        0x4 /tmp/lto-llvm-886130.o
+                0x0000000000022f28        0x4 /tmp/lto-llvm-b42c2c.o
  .data._gPcd_BinaryPatch_PcdSetupConOutRow
-                0x0000000000022f2c        0x4 /tmp/lto-llvm-886130.o
+                0x0000000000022f2c        0x4 /tmp/lto-llvm-b42c2c.o
  .data.gEfiIfrTianoGuid
-                0x0000000000022f30       0x10 /tmp/lto-llvm-886130.o
+                0x0000000000022f30       0x10 /tmp/lto-llvm-b42c2c.o
  .data.mBootMaintGuid
-                0x0000000000022f40       0x10 /tmp/lto-llvm-886130.o
+                0x0000000000022f40       0x10 /tmp/lto-llvm-b42c2c.o
  .data.TerminalMenu
-                0x0000000000022f50       0x20 /tmp/lto-llvm-886130.o
+                0x0000000000022f50       0x20 /tmp/lto-llvm-b42c2c.o
  .data.DriverMenu
-                0x0000000000022f70       0x20 /tmp/lto-llvm-886130.o
+                0x0000000000022f70       0x20 /tmp/lto-llvm-b42c2c.o
  .data.DriverOptionMenu
-                0x0000000000022f90       0x20 /tmp/lto-llvm-886130.o
+                0x0000000000022f90       0x20 /tmp/lto-llvm-b42c2c.o
  .data.ConsoleInpMenu
-                0x0000000000022fb0       0x20 /tmp/lto-llvm-886130.o
+                0x0000000000022fb0       0x20 /tmp/lto-llvm-b42c2c.o
  .data.ConsoleOutMenu
-                0x0000000000022fd0       0x20 /tmp/lto-llvm-886130.o
+                0x0000000000022fd0       0x20 /tmp/lto-llvm-b42c2c.o
  .data.ConsoleErrMenu
-                0x0000000000022ff0       0x20 /tmp/lto-llvm-886130.o
+                0x0000000000022ff0       0x20 /tmp/lto-llvm-b42c2c.o
  .data.gEfiIfrBootMaintenanceGuid
-                0x0000000000023010       0x10 /tmp/lto-llvm-886130.o
+                0x0000000000023010       0x10 /tmp/lto-llvm-b42c2c.o
  .data.BootOptionMenu
-                0x0000000000023020       0x20 /tmp/lto-llvm-886130.o
+                0x0000000000023020       0x20 /tmp/lto-llvm-b42c2c.o
  .data.BootMaintenanceManagerUiLibStrings
-                0x0000000000023040     0x1bbe /tmp/lto-llvm-886130.o
+                0x0000000000023040     0x1bbe /tmp/lto-llvm-b42c2c.o
  .data.BootMaintenanceManagerBin
-                0x0000000000024bfe      0x594 /tmp/lto-llvm-886130.o
+                0x0000000000024bfe      0x594 /tmp/lto-llvm-b42c2c.o
  *fill*         0x0000000000025192        0x2 
  .data.gEfiGraphicsOutputProtocolGuid
-                0x0000000000025194       0x10 /tmp/lto-llvm-886130.o
+                0x0000000000025194       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiSimpleTextOutProtocolGuid
-                0x00000000000251a4       0x10 /tmp/lto-llvm-886130.o
+                0x00000000000251a4       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiHiiFontProtocolGuid
-                0x00000000000251b4       0x10 /tmp/lto-llvm-886130.o
+                0x00000000000251b4       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiEventReadyToBootGuid
-                0x00000000000251c4       0x10 /tmp/lto-llvm-886130.o
+                0x00000000000251c4       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiLoadedImageProtocolGuid
-                0x00000000000251d4       0x10 /tmp/lto-llvm-886130.o
+                0x00000000000251d4       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiFirmwareVolume2ProtocolGuid
-                0x00000000000251e4       0x10 /tmp/lto-llvm-886130.o
+                0x00000000000251e4       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiCallerIdGuid
-                0x00000000000251f4       0x10 /tmp/lto-llvm-886130.o
+                0x00000000000251f4       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiSimpleFileSystemProtocolGuid
-                0x0000000000025204       0x10 /tmp/lto-llvm-886130.o
+                0x0000000000025204       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiFileInfoGuid
-                0x0000000000025214       0x10 /tmp/lto-llvm-886130.o
+                0x0000000000025214       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiLoadFileProtocolGuid
-                0x0000000000025224       0x10 /tmp/lto-llvm-886130.o
+                0x0000000000025224       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEfiDevicePathProtocolGuid
-                0x0000000000025234       0x10 /tmp/lto-llvm-886130.o
+                0x0000000000025234       0x10 /tmp/lto-llvm-b42c2c.o
  .data.gEdkiiPerformanceMeasurementProtocolGuid
-                0x0000000000025244       0x10 /tmp/lto-llvm-886130.o
+                0x0000000000025244       0x10 /tmp/lto-llvm-b42c2c.o
  *(.bss .bss.*)
  .bss.mResetRequired
-                0x0000000000025254        0x1 /tmp/lto-llvm-886130.o
+                0x0000000000025254        0x1 /tmp/lto-llvm-b42c2c.o
  *fill*         0x0000000000025255        0x3 
  .bss.mModeInitialized
-                0x0000000000025258        0x1 /tmp/lto-llvm-886130.o
+                0x0000000000025258        0x1 /tmp/lto-llvm-b42c2c.o
  *fill*         0x0000000000025259        0x3 
  .bss.mBootHorizontalResolution
-                0x000000000002525c        0x4 /tmp/lto-llvm-886130.o
+                0x000000000002525c        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBootVerticalResolution
-                0x0000000000025260        0x4 /tmp/lto-llvm-886130.o
+                0x0000000000025260        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBootTextModeColumn
-                0x0000000000025264        0x4 /tmp/lto-llvm-886130.o
+                0x0000000000025264        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBootTextModeRow
-                0x0000000000025268        0x4 /tmp/lto-llvm-886130.o
+                0x0000000000025268        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mSetupTextModeColumn
-                0x000000000002526c        0x4 /tmp/lto-llvm-886130.o
+                0x000000000002526c        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mSetupTextModeRow
-                0x0000000000025270        0x4 /tmp/lto-llvm-886130.o
+                0x0000000000025270        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mSetupHorizontalResolution
-                0x0000000000025274        0x4 /tmp/lto-llvm-886130.o
+                0x0000000000025274        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mSetupVerticalResolution
-                0x0000000000025278        0x4 /tmp/lto-llvm-886130.o
+                0x0000000000025278        0x4 /tmp/lto-llvm-b42c2c.o
  *fill*         0x000000000002527c        0x4 
  .bss.gFormBrowser2
-                0x0000000000025280        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025280        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.gLanguageString
-                0x0000000000025288        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025288        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.gCurrentLanguageIndex
-                0x0000000000025290        0x1 /tmp/lto-llvm-886130.o
+                0x0000000000025290        0x1 /tmp/lto-llvm-b42c2c.o
  *fill*         0x0000000000025291        0x7 
  .bss.gLanguageToken
-                0x0000000000025298        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025298        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.gHiiDriverList
-                0x00000000000252a0        0x8 /tmp/lto-llvm-886130.o
+                0x00000000000252a0        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.gStringPackHandle
-                0x00000000000252a8        0x8 /tmp/lto-llvm-886130.o
- .bss.mPcd      0x00000000000252b0        0x8 /tmp/lto-llvm-886130.o
- .bss.mHobList  0x00000000000252b8        0x8 /tmp/lto-llvm-886130.o
- .bss.gHiiFont  0x00000000000252c0        0x8 /tmp/lto-llvm-886130.o
+                0x00000000000252a8        0x8 /tmp/lto-llvm-b42c2c.o
+ .bss.mPcd      0x00000000000252b0        0x8 /tmp/lto-llvm-b42c2c.o
+ .bss.mHobList  0x00000000000252b8        0x8 /tmp/lto-llvm-b42c2c.o
+ .bss.gHiiFont  0x00000000000252c0        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.gHiiImage
-                0x00000000000252c8        0x8 /tmp/lto-llvm-886130.o
+                0x00000000000252c8        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.mUefiFormBrowser2
-                0x00000000000252d0        0x8 /tmp/lto-llvm-886130.o
+                0x00000000000252d0        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.gHiiString
-                0x00000000000252d8        0x8 /tmp/lto-llvm-886130.o
+                0x00000000000252d8        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.mReportStatusCodeLibStatusCodeProtocol
-                0x00000000000252e0        0x8 /tmp/lto-llvm-886130.o
- .bss.gDS       0x00000000000252e8        0x8 /tmp/lto-llvm-886130.o
- .bss.mRamDisk  0x00000000000252f0        0x8 /tmp/lto-llvm-886130.o
+                0x00000000000252e0        0x8 /tmp/lto-llvm-b42c2c.o
+ .bss.gDS       0x00000000000252e8        0x8 /tmp/lto-llvm-b42c2c.o
+ .bss.mRamDisk  0x00000000000252f0        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.mLibStartOpCodeHandle
-                0x00000000000252f8        0x8 /tmp/lto-llvm-886130.o
+                0x00000000000252f8        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.mLibEndOpCodeHandle
-                0x0000000000025300        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025300        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.mLibStartLabel
-                0x0000000000025308        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025308        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.mLibEndLabel
-                0x0000000000025310        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025310        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.mNewFileName
-                0x0000000000025318       0x28 /tmp/lto-llvm-886130.o
+                0x0000000000025318       0x28 /tmp/lto-llvm-b42c2c.o
  .bss.mNewFolderName
-                0x0000000000025340       0x28 /tmp/lto-llvm-886130.o
+                0x0000000000025340       0x28 /tmp/lto-llvm-b42c2c.o
  .bss.mQuestionIdUpdate
-                0x0000000000025368        0x2 /tmp/lto-llvm-886130.o
+                0x0000000000025368        0x2 /tmp/lto-llvm-b42c2c.o
  *fill*         0x000000000002536a        0x6 
  .bss.gHiiVendorDevicePath
-                0x0000000000025370        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025370        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.mMacDeviceList.0
-                0x0000000000025378        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025378        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.mMacDeviceList.1
-                0x0000000000025380        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025380        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.mMacDeviceList.2
-                0x0000000000025388        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025388        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.mSelectedMacAddrString
-                0x0000000000025390        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025390        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.mBmBootHorizontalResolution
-                0x0000000000025398        0x4 /tmp/lto-llvm-886130.o
+                0x0000000000025398        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBmBootVerticalResolution
-                0x000000000002539c        0x4 /tmp/lto-llvm-886130.o
+                0x000000000002539c        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBmBootTextModeColumn
-                0x00000000000253a0        0x4 /tmp/lto-llvm-886130.o
+                0x00000000000253a0        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBmBootTextModeRow
-                0x00000000000253a4        0x4 /tmp/lto-llvm-886130.o
+                0x00000000000253a4        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBmSetupTextModeColumn
-                0x00000000000253a8        0x4 /tmp/lto-llvm-886130.o
+                0x00000000000253a8        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBmSetupTextModeRow
-                0x00000000000253ac        0x4 /tmp/lto-llvm-886130.o
+                0x00000000000253ac        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBmSetupHorizontalResolution
-                0x00000000000253b0        0x4 /tmp/lto-llvm-886130.o
+                0x00000000000253b0        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBmSetupVerticalResolution
-                0x00000000000253b4        0x4 /tmp/lto-llvm-886130.o
+                0x00000000000253b4        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBmModeInitialized
-                0x00000000000253b8        0x1 /tmp/lto-llvm-886130.o
+                0x00000000000253b8        0x1 /tmp/lto-llvm-b42c2c.o
  *fill*         0x00000000000253b9        0x3 
  .bss.mKeyInput
-                0x00000000000253bc        0x2 /tmp/lto-llvm-886130.o
+                0x00000000000253bc        0x2 /tmp/lto-llvm-b42c2c.o
  *fill*         0x00000000000253be        0x2 
  .bss.mBmmBootHorizontalResolution
-                0x00000000000253c0        0x4 /tmp/lto-llvm-886130.o
+                0x00000000000253c0        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBmmBootVerticalResolution
-                0x00000000000253c4        0x4 /tmp/lto-llvm-886130.o
+                0x00000000000253c4        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBmmBootTextModeColumn
-                0x00000000000253c8        0x4 /tmp/lto-llvm-886130.o
+                0x00000000000253c8        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBmmBootTextModeRow
-                0x00000000000253cc        0x4 /tmp/lto-llvm-886130.o
+                0x00000000000253cc        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBmmSetupTextModeColumn
-                0x00000000000253d0        0x4 /tmp/lto-llvm-886130.o
+                0x00000000000253d0        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBmmSetupTextModeRow
-                0x00000000000253d4        0x4 /tmp/lto-llvm-886130.o
+                0x00000000000253d4        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBmmSetupHorizontalResolution
-                0x00000000000253d8        0x4 /tmp/lto-llvm-886130.o
+                0x00000000000253d8        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBmmSetupVerticalResolution
-                0x00000000000253dc        0x4 /tmp/lto-llvm-886130.o
+                0x00000000000253dc        0x4 /tmp/lto-llvm-b42c2c.o
  .bss.mBmmModeInitialized
-                0x00000000000253e0        0x1 /tmp/lto-llvm-886130.o
+                0x00000000000253e0        0x1 /tmp/lto-llvm-b42c2c.o
  *fill*         0x00000000000253e1        0x3 
  .bss.mAllMenuInit
-                0x00000000000253e4        0x1 /tmp/lto-llvm-886130.o
+                0x00000000000253e4        0x1 /tmp/lto-llvm-b42c2c.o
  *fill*         0x00000000000253e5        0x3 
  .bss.mFirstEnterBMMForm
-                0x00000000000253e8        0x1 /tmp/lto-llvm-886130.o
+                0x00000000000253e8        0x1 /tmp/lto-llvm-b42c2c.o
  *fill*         0x00000000000253e9        0x7 
  .bss.gHiiConfigRouting
-                0x00000000000253f0        0x8 /tmp/lto-llvm-886130.o
+                0x00000000000253f0        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.mStartOpCodeHandle
-                0x00000000000253f8        0x8 /tmp/lto-llvm-886130.o
+                0x00000000000253f8        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.mEndOpCodeHandle
-                0x0000000000025400        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025400        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.mStartLabel
-                0x0000000000025408        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025408        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.mEndLabel
-                0x0000000000025410        0x8 /tmp/lto-llvm-886130.o
- .bss.gRT       0x0000000000025418        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025410        0x8 /tmp/lto-llvm-b42c2c.o
+ .bss.gRT       0x0000000000025418        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.gHiiDatabase
-                0x0000000000025420        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025420        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.gHiiDriverList.929
-                0x0000000000025428        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025428        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.m_Initialized
-                0x0000000000025430        0x1 /tmp/lto-llvm-886130.o
+                0x0000000000025430        0x1 /tmp/lto-llvm-b42c2c.o
  *fill*         0x0000000000025431        0x7 
  .bss.m_Position.0
-                0x0000000000025438        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025438        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.m_Position.1
-                0x0000000000025440        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025440        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.m_MaxPosition.0
-                0x0000000000025448        0x1 /tmp/lto-llvm-886130.o
+                0x0000000000025448        0x1 /tmp/lto-llvm-b42c2c.o
  *fill*         0x0000000000025449        0x7 
  .bss.m_MaxPosition.1
-                0x0000000000025450        0x1 /tmp/lto-llvm-886130.o
+                0x0000000000025450        0x1 /tmp/lto-llvm-b42c2c.o
  *fill*         0x0000000000025451        0x7 
  .bss.m_Color.0
-                0x0000000000025458        0x1 /tmp/lto-llvm-886130.o
+                0x0000000000025458        0x1 /tmp/lto-llvm-b42c2c.o
  *fill*         0x0000000000025459        0x7 
  .bss.m_Color.1
-                0x0000000000025460        0x1 /tmp/lto-llvm-886130.o
+                0x0000000000025460        0x1 /tmp/lto-llvm-b42c2c.o
  *fill*         0x0000000000025461        0x7 
- .bss.gST       0x0000000000025468        0x8 /tmp/lto-llvm-886130.o
+ .bss.gST       0x0000000000025468        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.gImageHandle
-                0x0000000000025470        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025470        0x8 /tmp/lto-llvm-b42c2c.o
  .bss.mPerformanceMeasurement
-                0x0000000000025478        0x8 /tmp/lto-llvm-886130.o
- .bss.gBS       0x0000000000025480        0x8 /tmp/lto-llvm-886130.o
+                0x0000000000025478        0x8 /tmp/lto-llvm-b42c2c.o
+ .bss.gBS       0x0000000000025480        0x8 /tmp/lto-llvm-b42c2c.o
 
 .dynbss         0x0000000000025488        0x0
  .dynbss        0x0000000000025488        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
@@ -1532,41 +1533,41 @@ OUTPUT(/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeMo
 LOAD linker stubs
 
 .debug_loclists
-                0x0000000000000000    0x12384
+                0x0000000000000000    0x123c3
  .debug_loclists
-                0x0000000000000000    0x12384 /tmp/lto-llvm-886130.o
+                0x0000000000000000    0x123c3 /tmp/lto-llvm-b42c2c.o
 
 .debug_abbrev   0x0000000000000000      0xcfa
- .debug_abbrev  0x0000000000000000      0xcfa /tmp/lto-llvm-886130.o
+ .debug_abbrev  0x0000000000000000      0xcfa /tmp/lto-llvm-b42c2c.o
 
-.debug_info     0x0000000000000000    0x39aaa
- .debug_info    0x0000000000000000    0x39aaa /tmp/lto-llvm-886130.o
+.debug_info     0x0000000000000000    0x39abd
+ .debug_info    0x0000000000000000    0x39abd /tmp/lto-llvm-b42c2c.o
 
 .debug_rnglists
                 0x0000000000000000     0x23d4
  .debug_rnglists
-                0x0000000000000000     0x23d4 /tmp/lto-llvm-886130.o
+                0x0000000000000000     0x23d4 /tmp/lto-llvm-b42c2c.o
 
 .debug_str_offsets
-                0x0000000000000000     0x3bb8
+                0x0000000000000000     0x3bc0
  .debug_str_offsets
-                0x0000000000000000     0x3bb8 /tmp/lto-llvm-886130.o
+                0x0000000000000000     0x3bc0 /tmp/lto-llvm-b42c2c.o
 
-.debug_str      0x0000000000000000    0x10cd1
- .debug_str     0x0000000000000000    0x10cd1 /tmp/lto-llvm-886130.o
-                                      0x1273b (松开之前的大小)
+.debug_str      0x0000000000000000    0x10cf2
+ .debug_str     0x0000000000000000    0x10cf2 /tmp/lto-llvm-b42c2c.o
+                                      0x1275c (松开之前的大小)
 
-.debug_addr     0x0000000000000000     0x6d60
- .debug_addr    0x0000000000000000     0x6d60 /tmp/lto-llvm-886130.o
+.debug_addr     0x0000000000000000     0x6d58
+ .debug_addr    0x0000000000000000     0x6d58 /tmp/lto-llvm-b42c2c.o
 
 .debug_frame    0x0000000000000000     0x2500
- .debug_frame   0x0000000000000000     0x2500 /tmp/lto-llvm-886130.o
+ .debug_frame   0x0000000000000000     0x2500 /tmp/lto-llvm-b42c2c.o
 
-.debug_line     0x0000000000000000    0x1737f
- .debug_line    0x0000000000000000    0x1737f /tmp/lto-llvm-886130.o
+.debug_line     0x0000000000000000    0x17347
+ .debug_line    0x0000000000000000    0x17347 /tmp/lto-llvm-b42c2c.o
 
 .debug_line_str
                 0x0000000000000000     0x43ca
  .debug_line_str
-                0x0000000000000000     0x43ca /tmp/lto-llvm-886130.o
+                0x0000000000000000     0x43ca /tmp/lto-llvm-b42c2c.o
                                        0x584b (松开之前的大小)

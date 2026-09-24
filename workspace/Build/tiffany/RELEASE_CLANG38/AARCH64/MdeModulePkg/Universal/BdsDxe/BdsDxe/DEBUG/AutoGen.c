@@ -241,7 +241,7 @@ extern const  UINT32  _gPcd_FixedAtBuild_PcdMipiFrameBufferHeight;
 #define _PCD_TOKEN_PcdMipiFrameBufferPixelBpp  0U
 #define _PCD_SIZE_PcdMipiFrameBufferPixelBpp 4
 #define _PCD_GET_MODE_SIZE_PcdMipiFrameBufferPixelBpp  _PCD_SIZE_PcdMipiFrameBufferPixelBpp 
-#define _PCD_VALUE_PcdMipiFrameBufferPixelBpp  32U
+#define _PCD_VALUE_PcdMipiFrameBufferPixelBpp  24U
 GLOBAL_REMOVE_IF_UNREFERENCED const UINT32 _gPcd_FixedAtBuild_PcdMipiFrameBufferPixelBpp = _PCD_VALUE_PcdMipiFrameBufferPixelBpp;
 extern const  UINT32  _gPcd_FixedAtBuild_PcdMipiFrameBufferPixelBpp;
 #define _PCD_GET_MODE_32_PcdMipiFrameBufferPixelBpp  _gPcd_FixedAtBuild_PcdMipiFrameBufferPixelBpp
@@ -440,12 +440,12 @@ extern const  BOOLEAN  _gPcd_FixedAtBuild_PcdEmuVariableNvModeEnable;
 
 #define _PCD_TOKEN_PcdFirmwareVersionString  0U
 #define _PCD_VALUE_PcdFirmwareVersionString  _gPcd_FixedAtBuild_PcdFirmwareVersionString
-GLOBAL_REMOVE_IF_UNREFERENCED const UINT16 _gPcd_FixedAtBuild_PcdFirmwareVersionString[26] = {50, 51, 48, 50, 46, 49, 45, 109, 104, 50, 108, 109, 45, 49, 54, 57, 45, 103, 101, 49, 57, 53, 50, 54, 50, 0 };
-extern const UINT16 _gPcd_FixedAtBuild_PcdFirmwareVersionString[26];
+GLOBAL_REMOVE_IF_UNREFERENCED const UINT16 _gPcd_FixedAtBuild_PcdFirmwareVersionString[9] = {54, 55, 99, 56, 55, 48, 102, 55, 0 };
+extern const UINT16 _gPcd_FixedAtBuild_PcdFirmwareVersionString[9];
 #define _PCD_GET_MODE_PTR_PcdFirmwareVersionString  _gPcd_FixedAtBuild_PcdFirmwareVersionString
-#define _PCD_SIZE_PcdFirmwareVersionString 52
+#define _PCD_SIZE_PcdFirmwareVersionString 18
 #define _PCD_GET_MODE_SIZE_PcdFirmwareVersionString  _PCD_SIZE_PcdFirmwareVersionString 
-GLOBAL_REMOVE_IF_UNREFERENCED const UINTN _gPcd_FixedAtBuild_Size_PcdFirmwareVersionString = 52;
+GLOBAL_REMOVE_IF_UNREFERENCED const UINTN _gPcd_FixedAtBuild_Size_PcdFirmwareVersionString = 18;
 //#define _PCD_SET_MODE_PTR_PcdFirmwareVersionString  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
 
 #define _PCD_TOKEN_PcdUartDefaultBaudRate  0U

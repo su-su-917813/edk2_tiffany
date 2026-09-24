@@ -4856,7 +4856,7 @@ extern const BOOLEAN _gPcd_FixedAtBuild_PcdPrePiProduceMemoryTypeInformationHob;
 
 
 
-extern const UINT16 _gPcd_FixedAtBuild_PcdFirmwareVersionString[26];
+extern const UINT16 _gPcd_FixedAtBuild_PcdFirmwareVersionString[9];
 # 2 "<built-in>" 2
 # 1 "/home/hina/edk2-msm/Silicon/Qualcomm/QcomPkg/PrePi/ModuleEntryPoint.S" 2
 

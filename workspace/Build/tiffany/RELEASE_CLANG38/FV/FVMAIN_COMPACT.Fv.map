@@ -1,9 +1,9 @@
 EFI_FV_TOTAL_SIZE = 0x2000000
-EFI_FV_TAKEN_SIZE = 0x59ce48
-EFI_FV_SPACE_SIZE = 0x1a631b8
+EFI_FV_TAKEN_SIZE = 0x59cb78
+EFI_FV_SPACE_SIZE = 0x1a63488
 
-Sec (Fixed Flash Address, BaseAddress=0x008f601160, EntryPoint=0x008f6082a8, Type=TE)
-(GUID=8AF09F13-44C5-96EC-1437-DD899CB5EE5D .textbaseaddress=0x008f601240 .databaseaddress=0x008f609940)
+Sec (Fixed Flash Address, BaseAddress=0x008f601160, EntryPoint=0x008f608258, Type=TE)
+(GUID=8AF09F13-44C5-96EC-1437-DD899CB5EE5D .textbaseaddress=0x008f601240 .databaseaddress=0x008f6098c0)
 
 
 
