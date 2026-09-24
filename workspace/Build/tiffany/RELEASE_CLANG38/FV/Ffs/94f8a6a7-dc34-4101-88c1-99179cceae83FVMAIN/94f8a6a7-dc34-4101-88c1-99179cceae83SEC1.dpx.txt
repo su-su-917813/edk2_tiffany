@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/94f8a6a7-dc34-4101-88c1-99179cceae83FVMAIN/94f8a6a7-dc34-4101-88c1-99179cceae83SEC1.dpx /home/hina/edk2-msm/Platform/EFI_Binaries/Drivers/sdm660/UsbfnDwc3Dxe/UsbfnDwc3Dxe.depex

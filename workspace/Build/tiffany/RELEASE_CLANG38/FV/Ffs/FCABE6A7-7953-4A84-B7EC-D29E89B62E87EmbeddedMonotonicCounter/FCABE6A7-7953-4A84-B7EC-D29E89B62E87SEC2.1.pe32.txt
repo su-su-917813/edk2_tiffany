@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/FCABE6A7-7953-4A84-B7EC-D29E89B62E87EmbeddedMonotonicCounter/FCABE6A7-7953-4A84-B7EC-D29E89B62E87SEC2.1.pe32 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/EmbeddedPkg/EmbeddedMonotonicCounter/EmbeddedMonotonicCounter/OUTPUT/EmbeddedMonotonicCounter.efi

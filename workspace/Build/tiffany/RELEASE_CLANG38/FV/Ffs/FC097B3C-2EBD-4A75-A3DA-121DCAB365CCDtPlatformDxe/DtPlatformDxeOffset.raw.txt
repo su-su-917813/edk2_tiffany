@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_RAW -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/FC097B3C-2EBD-4A75-A3DA-121DCAB365CCDtPlatformDxe/DtPlatformDxeOffset.raw /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/FC097B3C-2EBD-4A75-A3DA-121DCAB365CCDtPlatformDxe/DtPlatformDxe.offset

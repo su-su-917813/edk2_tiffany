@@ -1,0 +1,11 @@
+/home/hina/edk2-msm/Common/edk2/MdeModulePkg/Library/UefiBootManagerLib/UefiBootManagerLib.inf
+/home/hina/edk2-msm/Common/edk2/MdeModulePkg/Library/UefiBootManagerLib/BmConnect.c
+/home/hina/edk2-msm/Common/edk2/MdeModulePkg/Library/UefiBootManagerLib/InternalBm.h
+/home/hina/edk2-msm/Common/edk2/MdeModulePkg/Library/UefiBootManagerLib/BmConsole.c
+/home/hina/edk2-msm/Common/edk2/MdeModulePkg/Library/UefiBootManagerLib/BmHotkey.c
+/home/hina/edk2-msm/Common/edk2/MdeModulePkg/Library/UefiBootManagerLib/BmBoot.c
+/home/hina/edk2-msm/Common/edk2/MdeModulePkg/Library/UefiBootManagerLib/BmDriverHealth.c
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Library/UefiBootManagerLib/UefiBootManagerLib/DEBUG/AutoGen.h
+/home/hina/edk2-msm/Common/edk2/MdeModulePkg/Library/UefiBootManagerLib/BmMisc.c
+/home/hina/edk2-msm/Common/edk2/MdeModulePkg/Library/UefiBootManagerLib/BmBootDescription.c
+/home/hina/edk2-msm/Common/edk2/MdeModulePkg/Library/UefiBootManagerLib/BmLoadOption.c

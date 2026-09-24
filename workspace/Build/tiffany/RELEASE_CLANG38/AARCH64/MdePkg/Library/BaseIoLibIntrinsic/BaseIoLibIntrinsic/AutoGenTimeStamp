@@ -1,0 +1,8 @@
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseIoLibIntrinsic/IoLibTdx.h
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsicInternal.h
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseIoLibIntrinsic/IoLibNoIo.c
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseIoLibIntrinsic/IoHighLevel.c
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic.inf
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseIoLibIntrinsic/IoLibInternalTdxNull.c
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/DEBUG/AutoGen.h
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseIoLibIntrinsic/IoLibMmioBuffer.c

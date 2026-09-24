@@ -1,0 +1,169 @@
+
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/aarch64/lse.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/frexp.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/wcrtomb.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/__rem_pio2f.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/snprintf.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/sscanf.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/sin.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/refill.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/misc.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/strftime.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/strtold_subr.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/asin.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/dtoa.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/vsnprintf.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/__rem_pio2.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/iconv.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/log.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/strerror.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/qsort.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/pow_data.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/sprintf.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/ctype.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/cos.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/scalbn.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/exp_data.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/sum.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/stub.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/wctomb.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/dmisc.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/mbrtowc.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/str.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/malloc.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/strtoimax.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/expm1.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/vfprintf.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/ceil.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/strtopx.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/acos.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/log2.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/__expo2.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/makebuf.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/exp.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/ldexp.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/fflush.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/ulp.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/strtoumax.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/log10.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/strtod.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/fread.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/time.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/log_data.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/mbtowc.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/gdtoa.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/vasprintf.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/rand.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/abs.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/sqrt.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/number.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/gmisc.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/__rem_pio2_large.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/strtof.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/mb.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/mem.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/strtodg.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/ungetc.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/atan.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/strcspn.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/fvwrite.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/findfp.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/log2_data.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/wsetup.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/errno.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/fmod.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/tan.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/vfscanf.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/localeconv.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/exit.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/fabs.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/zone.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/floor.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/modf.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/smisc.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/compatible/SimpleInitCompatible/OUTPUT/pow.obj.deps
+
+               

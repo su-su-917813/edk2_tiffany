@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/F1249C4E-8995-4BB6-9D44-E0CD4FF709FCKernelFdtDxe/F1249C4E-8995-4BB6-9D44-E0CD4FF709FCSEC2.1.pe32 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/kernelfdt/KernelFdtDxe/OUTPUT/KernelFdtDxe.efi

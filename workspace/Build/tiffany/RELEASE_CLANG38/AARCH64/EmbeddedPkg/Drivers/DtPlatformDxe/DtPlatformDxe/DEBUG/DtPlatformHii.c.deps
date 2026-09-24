@@ -1,0 +1,8 @@
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/EmbeddedPkg/Drivers/DtPlatformDxe/DtPlatformDxe/DEBUG/DtPlatformHii.c:   /home/hina/edk2-msm/Common/edk2/EmbeddedPkg/Drivers/DtPlatformDxe/DtPlatformHii.vfr \
+  /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/EmbeddedPkg/Drivers/DtPlatformDxe/DtPlatformDxe/DEBUG/DtPlatformDxeStrDefs.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h \
+  /home/hina/edk2-msm/Common/edk2/EmbeddedPkg/Drivers/DtPlatformDxe/DtPlatformDxe.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/Guid/HiiPlatformSetupFormset.h \
+  /home/hina/edk2-msm/Common/edk2/EmbeddedPkg/Include/Guid/DtPlatformFormSet.h
+
+# Updated 

@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/04DE8591-D2B3-4077-BBBE-B12070094EB6FVMAIN/04DE8591-D2B3-4077-BBBE-B12070094EB6SEC2.pe32 /home/hina/edk2-msm/Platform/EFI_Binaries/Drivers/sdm660/I2C/I2C.efi

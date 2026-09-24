@@ -1,0 +1,29 @@
+
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/boot/SimpleInitBoot/OUTPUT/linux.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/boot/SimpleInitBoot/OUTPUT/efi_path.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/boot/SimpleInitBoot/OUTPUT/lua.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/boot/SimpleInitBoot/OUTPUT/efi.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/boot/SimpleInitBoot/OUTPUT/uefi_option.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/boot/SimpleInitBoot/OUTPUT/prober.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/boot/SimpleInitBoot/OUTPUT/boot.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/boot/SimpleInitBoot/OUTPUT/bootdef.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/boot/SimpleInitBoot/OUTPUT/cpu.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/boot/SimpleInitBoot/OUTPUT/exit.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/boot/SimpleInitBoot/OUTPUT/reboot_uefi.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/boot/SimpleInitBoot/OUTPUT/drivers.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/boot/SimpleInitBoot/OUTPUT/splash.obj.deps
+
+               

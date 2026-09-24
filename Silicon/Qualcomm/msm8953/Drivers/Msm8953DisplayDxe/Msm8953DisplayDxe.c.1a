@@ -1,0 +1,37 @@
+/** @file
+ * MSM8953 Display DXE Driver - Phase 1a skeleton
+ */
+
+#include <Uefi.h>
+#include <Library/BaseLib.h>
+#include <Library/BaseMemoryLib.h>
+#include <Library/DebugLib.h>
+#include <Library/IoLib.h>
+#include <Library/TimerLib.h>
+#include <Library/UefiBootServicesTableLib.h>
+#include <Library/UefiDriverEntryPoint.h>
+
+#define MSM8953_MDP5_BASE        0x01A00000
+#define MSM8953_DSI0_CTRL_BASE   0x01A94000
+#define MSM8953_DSI0_PHY_BASE    0x01A94400
+#define MSM8953_DSI0_PLL_BASE    0x01A94800
+#define MSM8953_GCC_BASE         0x01800000
+#define MSM8953_TLMM_BASE        0x01000000
+#define MSM8953_MMSS_CC_BASE     0x01AB0000
+
+#define REG_READ(addr)  MmioRead32((UINTN)(addr))
+#define REG_WRITE(addr, val) MmioWrite32((UINTN)(addr), (UINT32)(val))
+
+EFI_STATUS
+EFIAPI
+Msm8953DisplayDxeInitialize(
+    IN EFI_HANDLE ImageHandle,
+    IN EFI_SYSTEM_TABLE *SystemTable)
+{
+  DEBUG((DEBUG_ERROR,
+         "Msm8953DisplayDxe: Phase 1a skeleton loaded (DOING NOTHING)\n"));
+
+  /* 阶段 1a 什么都不做，仅确认驱动被加载 */
+
+  return EFI_SUCCESS;
+}

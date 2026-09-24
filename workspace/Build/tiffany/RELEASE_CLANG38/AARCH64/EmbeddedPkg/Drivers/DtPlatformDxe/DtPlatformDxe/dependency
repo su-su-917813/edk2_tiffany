@@ -1,0 +1,11 @@
+
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/EmbeddedPkg/Drivers/DtPlatformDxe/DtPlatformDxe/DEBUG/DtPlatformHii.c.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/EmbeddedPkg/Drivers/DtPlatformDxe/DtPlatformDxe/OUTPUT/DtPlatformHii.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/EmbeddedPkg/Drivers/DtPlatformDxe/DtPlatformDxe/OUTPUT/AutoGen.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/EmbeddedPkg/Drivers/DtPlatformDxe/DtPlatformDxe/OUTPUT/DtPlatformDxe.obj.deps
+
+               

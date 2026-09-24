@@ -1,0 +1,46 @@
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_ll.obj:   /home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/libs/lvgl/src/misc/lv_ll.c \
+  /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/DEBUG/AutoGen.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/Uefi.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/Uefi/UefiBaseType.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/Base.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/AArch64/ProcessorBind.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/Uefi/UefiSpec.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/Guid/WinCertificate.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/Protocol/DevicePath.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/Guid/PcAnsi.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/IndustryStandard/Bluetooth.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/IndustryStandard/Acpi60.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/IndustryStandard/Acpi51.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/IndustryStandard/Acpi50.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/IndustryStandard/Acpi40.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/IndustryStandard/Acpi30.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/IndustryStandard/Acpi20.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/IndustryStandard/Acpi10.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/IndustryStandard/AcpiAml.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/Protocol/SimpleTextIn.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/Protocol/SimpleTextInEx.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/Protocol/SimpleTextOut.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/Uefi/UefiPxe.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/Uefi/UefiGpt.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h \
+  /home/hina/edk2-msm/Common/edk2/MdePkg/Include/Guid/HiiFormMapMethodGuid.h \
+  /home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/config-uefi.h \
+  /home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/libs/lvgl/src/misc/lv_ll.h \
+  /home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/libs/compatible/include/stdint.h \
+  /home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/libs/compatible/include/compatible.h \
+  /home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/libs/compatible/include/sys/types.h \
+  /home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/libs/compatible/include/arch/aarch64/bits/alltypes.h \
+  /home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/libs/compatible/include/arch/aarch64/bits/stdint.h \
+  /home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/libs/compatible/include/stddef.h \
+  /home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/libs/compatible/include/stdbool.h \
+  /home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/libs/lvgl/src/misc/lv_mem.h \
+  /home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/libs/lvgl/src/misc/../lv_conf_internal.h \
+  /home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/libs/lvgl/src/misc/../lv_conf_kconfig.h \
+  /home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/include/lv_conf.h \
+  /home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/libs/compatible/include/stdlib.h \
+  /home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/libs/compatible/include/string.h \
+  /home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/libs/compatible/include/strings.h \
+  /home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/libs/lvgl/src/misc/lv_types.h
+
+# Updated 

@@ -1,0 +1,9 @@
+
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/EmbeddedPkg/Drivers/VirtualKeyboardDxe/VirtualKeyboardDxe/OUTPUT/AutoGen.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/EmbeddedPkg/Drivers/VirtualKeyboardDxe/VirtualKeyboardDxe/OUTPUT/ComponentName.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/EmbeddedPkg/Drivers/VirtualKeyboardDxe/VirtualKeyboardDxe/OUTPUT/VirtualKeyboard.obj.deps
+
+               

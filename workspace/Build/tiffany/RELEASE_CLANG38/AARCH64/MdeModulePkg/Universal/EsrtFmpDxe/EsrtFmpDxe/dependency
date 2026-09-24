@@ -1,0 +1,9 @@
+
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Universal/EsrtFmpDxe/EsrtFmpDxe/OUTPUT/AutoGen.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Universal/EsrtFmpDxe/EsrtFmpDxe/OUTPUT/EsrtFmpDebugPrint.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Universal/EsrtFmpDxe/EsrtFmpDxe/OUTPUT/EsrtFmp.obj.deps
+
+               
