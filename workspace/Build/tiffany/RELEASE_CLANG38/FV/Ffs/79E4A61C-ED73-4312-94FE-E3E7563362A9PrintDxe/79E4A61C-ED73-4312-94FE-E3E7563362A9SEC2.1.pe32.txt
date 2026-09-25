@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/79E4A61C-ED73-4312-94FE-E3E7563362A9PrintDxe/79E4A61C-ED73-4312-94FE-E3E7563362A9SEC2.1.pe32 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Universal/PrintDxe/PrintDxe/OUTPUT/PrintDxe.efi

@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_RAW -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/E660EA85-058E-4b55-A54B-F02F83A24707DisplayEngine/DisplayEngineOffset.raw /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/E660EA85-058E-4b55-A54B-F02F83A24707DisplayEngine/DisplayEngine.offset

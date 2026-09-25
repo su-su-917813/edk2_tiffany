@@ -1,7 +1,0 @@
-
-
--include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/OUTPUT/AutoGen.obj.deps
-
--include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/OUTPUT/UefiHandleParsingLib.obj.deps
-
-               

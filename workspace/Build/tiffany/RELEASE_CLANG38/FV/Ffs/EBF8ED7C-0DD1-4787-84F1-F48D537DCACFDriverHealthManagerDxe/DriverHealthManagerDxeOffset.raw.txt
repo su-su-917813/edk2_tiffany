@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_RAW -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/EBF8ED7C-0DD1-4787-84F1-F48D537DCACFDriverHealthManagerDxe/DriverHealthManagerDxeOffset.raw /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/EBF8ED7C-0DD1-4787-84F1-F48D537DCACFDriverHealthManagerDxe/DriverHealthManagerDxe.offset
