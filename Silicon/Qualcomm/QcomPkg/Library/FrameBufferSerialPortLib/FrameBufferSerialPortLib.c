@@ -129,8 +129,8 @@ paint:
   ArmDisableInterrupts();
 
   Pixels = (void *)FixedPcdGet32(PcdMipiFrameBufferAddress);
-  Pixels += m_Position.y * ((gBpp / 8) * FONT_HEIGHT * gWidth);
-  Pixels += m_Position.x * scale_factor * ((gBpp / 8) * (FONT_WIDTH + 1));
+  Pixels += m_Position.y * (gWidth * 3 * FONT_HEIGHT);
+  Pixels += m_Position.x * scale_factor * (3 * (FONT_WIDTH + 1));
 
   FbConDrawglyph(
       Pixels, gWidth, (gBpp / 8), font5x12 + (c - 32) * 2, scale_factor);
@@ -158,7 +158,7 @@ newline:
   }
   else {
     Pixels = (void *)FixedPcdGet32(PcdMipiFrameBufferAddress);
-    Pixels += m_Position.y * ((gBpp / 8) * FONT_HEIGHT * gWidth);
+    Pixels += m_Position.y * (gWidth * 3 * FONT_HEIGHT);
     ZeroMem(Pixels, ((gBpp / 8) * FONT_HEIGHT * gWidth) * scale_factor);
     FbConFlush();
     if (intstate)
@@ -189,7 +189,7 @@ void FbConDrawglyph(
           }
         }
       }
-      bg_pixels += (stride * bpp);
+      bg_pixels += (stride * 3);
     }
   }
 
@@ -205,7 +205,7 @@ void FbConDrawglyph(
           }
         }
       }
-      bg_pixels += (stride * bpp);
+      bg_pixels += (stride * 3);
     }
   }
 
@@ -232,7 +232,7 @@ void FbConDrawglyph(
         }
         data >>= 1;
       }
-      pixels += (stride * bpp);
+      pixels += (stride * 3);
     }
   }
 
@@ -259,7 +259,7 @@ void FbConDrawglyph(
         }
         data >>= 1;
       }
-      pixels += (stride * bpp);
+      pixels += (stride * 3);
     }
   }
 }

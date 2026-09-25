@@ -480,6 +480,12 @@ VOID PlatformRegisterOptionsAndKeys(VOID)
 **/
 VOID EFIAPI PlatformBootManagerBeforeConsole(VOID)
 {
+  {
+    extern RETURN_STATUS EFIAPI SerialPortWrite(UINT8 *Buffer, UINTN NumberOfBytes);
+    CHAR8 Msg[] = "\r\n[BEFORE_CONSOLE_ENTER]\r\n";
+    SerialPortWrite((UINT8 *)Msg, sizeof(Msg) - 1);
+  }
+
   //
   // Signal EndOfDxe PI Event
   //
@@ -614,6 +620,19 @@ VOID HandleCapsules(VOID)
 **/
 VOID EFIAPI PlatformBootManagerAfterConsole(VOID)
 {
+  /* TEMP_BDS_TEST */
+  {
+    extern RETURN_STATUS EFIAPI SerialPortWrite(UINT8 *Buffer, UINTN NumberOfBytes);
+    CHAR8 Msg[] = "\r\n[AFTER_CONSOLE_ENTER]\r\n";
+    SerialPortWrite((UINT8 *)Msg, sizeof(Msg) - 1);
+  }
+
+  {
+    extern RETURN_STATUS EFIAPI SerialPortWrite(UINT8 *Buffer, UINTN NumberOfBytes);
+    CHAR8 Msg[] = "\r\n[AFTER_CONSOLE_ENTER]\r\n";
+    SerialPortWrite((UINT8 *)Msg, sizeof(Msg) - 1);
+  }
+
   EFI_STATUS                    Status;
   EFI_GRAPHICS_OUTPUT_PROTOCOL *GraphicsOutput;
   UINTN                         FirmwareVerLength;
@@ -712,11 +731,7 @@ VOID EFIAPI PlatformBootManagerWaitCallback(UINT16 TimeoutRemain)
 
   Timeout = PcdGet16(PcdPlatformBootTimeOut);
 
-  if (Timeout != 0 && TimeoutRemain <= 0) {
-    gST->ConOut->ClearScreen(gST->ConOut);
-    BootLogoEnableLogo ();
-    return;
-  }
+
 
   Black.Raw = 0x00000000;
   White.Raw = 0x00FFFFFF;

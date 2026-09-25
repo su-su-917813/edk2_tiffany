@@ -195,16 +195,15 @@ SimpleFbDxeInitialize(
   EFI_STATUS Status             = EFI_SUCCESS;
   EFI_HANDLE hUEFIDisplayHandle = NULL;
 
-  /* DEBUG_RED_BLOCK_MARK */
+  /* TEMP_SIMPLEFB_TEXT */
   {
-    volatile UINT32 *Fb = (volatile UINT32 *)0x90000000;
-    UINT32 x, y;
-    for (y = 0; y < 200; y++) {
-      for (x = 0; x < 200; x++) {
-        Fb[y * 1080 + x] = 0x00FF0000;
-      }
-    }
+    extern RETURN_STATUS EFIAPI SerialPortWrite(UINT8 *Buffer, UINTN NumberOfBytes);
+    CHAR8 Msg[] = "\r\n[SIMPLEFB_DXE_TEXT_VISIBLE]\r\n";
+    SerialPortWrite((UINT8 *)Msg, sizeof(Msg) - 1);
+    while (1) { __asm__ volatile ("wfi"); }
   }
+
+
 
   /* Retrieve simple frame buffer from lk2nd */
   DEBUG(
