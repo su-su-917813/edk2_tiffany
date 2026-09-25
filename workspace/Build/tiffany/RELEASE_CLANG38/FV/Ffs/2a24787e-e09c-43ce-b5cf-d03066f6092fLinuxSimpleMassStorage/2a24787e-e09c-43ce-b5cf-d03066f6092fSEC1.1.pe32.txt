@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/2a24787e-e09c-43ce-b5cf-d03066f6092fLinuxSimpleMassStorage/2a24787e-e09c-43ce-b5cf-d03066f6092fSEC1.1.pe32 /home/hina/edk2-msm/Platform/EFI_Binaries/Applications/LinuxSimpleMassStorage/LinuxSimpleMassStorage.efi

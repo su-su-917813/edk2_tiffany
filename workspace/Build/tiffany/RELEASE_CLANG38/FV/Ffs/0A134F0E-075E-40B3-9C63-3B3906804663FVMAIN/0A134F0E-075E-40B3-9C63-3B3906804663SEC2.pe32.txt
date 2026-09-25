@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/0A134F0E-075E-40B3-9C63-3B3906804663FVMAIN/0A134F0E-075E-40B3-9C63-3B3906804663SEC2.pe32 /home/hina/edk2-msm/Platform/EFI_Binaries/Drivers/sdm660/UsbInitDxe/UsbInitDxe.efi

@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_DXE_DEPEX -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/6696936D-3637-467C-87CB-14EA8248948CSimpleTextInOutSerial/6696936D-3637-467C-87CB-14EA8248948CSEC1.1.dpx /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/EmbeddedPkg/SimpleTextInOutSerial/SimpleTextInOutSerial/OUTPUT/SimpleTextInOutSerial.depex

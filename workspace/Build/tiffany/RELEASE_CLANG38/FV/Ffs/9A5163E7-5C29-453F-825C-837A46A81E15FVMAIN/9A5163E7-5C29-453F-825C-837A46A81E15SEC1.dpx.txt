@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_DXE_DEPEX -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/9A5163E7-5C29-453F-825C-837A46A81E15FVMAIN/9A5163E7-5C29-453F-825C-837A46A81E15SEC1.dpx /home/hina/edk2-msm/Platform/EFI_Binaries/Drivers/sdm660/SerialDxe/SerialDxe.depex

@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_RAW -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/7E374E25-8E01-4FEE-87F2-390C23C606CDFVMAIN/7E374E25-8E01-4FEE-87F2-390C23C606CDSEC2.raw /home/hina/edk2-msm/Silicon/Qualcomm/sdm660/AcpiTables/BuiltIn/CSRT.aml

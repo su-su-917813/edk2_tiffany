@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_DXE_DEPEX -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/2a7b4bef-80cd-49e1-b473-374ba4d673fcFVMAIN/2a7b4bef-80cd-49e1-b473-374ba4d673fcSEC1.dpx /home/hina/edk2-msm/Platform/EFI_Binaries/Drivers/sdm660/SPMI/SPMI.depex

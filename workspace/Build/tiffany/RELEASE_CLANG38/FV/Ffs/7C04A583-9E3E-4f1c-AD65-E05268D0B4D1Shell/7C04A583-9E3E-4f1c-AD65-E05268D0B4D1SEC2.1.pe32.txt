@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/7C04A583-9E3E-4f1c-AD65-E05268D0B4D1Shell/7C04A583-9E3E-4f1c-AD65-E05268D0B4D1SEC2.1.pe32 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ShellPkg/Application/Shell/Shell/OUTPUT/Shell.efi

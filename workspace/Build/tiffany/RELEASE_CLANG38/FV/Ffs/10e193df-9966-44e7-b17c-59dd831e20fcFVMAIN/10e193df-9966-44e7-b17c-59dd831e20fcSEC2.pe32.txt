@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/10e193df-9966-44e7-b17c-59dd831e20fcFVMAIN/10e193df-9966-44e7-b17c-59dd831e20fcSEC2.pe32 /home/hina/edk2-msm/Platform/EFI_Binaries/Drivers/sdm660/ChipInfo/ChipInfo.efi

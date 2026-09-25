@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_DXE_DEPEX -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/CB29F4D1-7F37-4692-A416-93E82E219711FVMAIN/CB29F4D1-7F37-4692-A416-93E82E219711SEC1.dpx /home/hina/edk2-msm/Platform/EFI_Binaries/Drivers/sdm660/NpaDxe/NpaDxe.depex

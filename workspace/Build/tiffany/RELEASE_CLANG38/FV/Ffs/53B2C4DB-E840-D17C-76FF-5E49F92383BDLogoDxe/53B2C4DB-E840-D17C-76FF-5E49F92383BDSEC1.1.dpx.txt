@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_DXE_DEPEX -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/53B2C4DB-E840-D17C-76FF-5E49F92383BDLogoDxe/53B2C4DB-E840-D17C-76FF-5E49F92383BDSEC1.1.dpx /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/Platform/RenegadePkg/Drivers/LogoDxe/LogoDxe/OUTPUT/LogoDxe.depex

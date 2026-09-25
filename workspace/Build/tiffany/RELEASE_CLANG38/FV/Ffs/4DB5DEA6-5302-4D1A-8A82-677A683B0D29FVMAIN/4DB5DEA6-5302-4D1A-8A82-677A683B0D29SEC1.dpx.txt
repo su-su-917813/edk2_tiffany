@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_DXE_DEPEX -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/4DB5DEA6-5302-4D1A-8A82-677A683B0D29FVMAIN/4DB5DEA6-5302-4D1A-8A82-677A683B0D29SEC1.dpx /home/hina/edk2-msm/Platform/EFI_Binaries/Drivers/sdm660/ClockDxe/ClockDxe.depex

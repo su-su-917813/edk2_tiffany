@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/a1b2c3d4-1111-2222-3333-444455556666Msm8953DisplayDxe/a1b2c3d4-1111-2222-3333-444455556666SEC2.1.pe32 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/Silicon/Qualcomm/msm8953/Drivers/Msm8953DisplayDxe/Msm8953DisplayDxe/OUTPUT/Msm8953DisplayDxe.efi

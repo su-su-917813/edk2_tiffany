@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/6D77B2BB-69EB-42AB-BECF-4F40C89568C3SimpleInitMain/6D77B2BB-69EB-42AB-BECF-4F40C89568C3SEC2.1.pe32 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/main/SimpleInitMain/OUTPUT/SimpleInitMain.efi

@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_DXE_DEPEX -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/AF9763A2-033B-4109-8E17-56A98D380C92FVMAIN/AF9763A2-033B-4109-8E17-56A98D380C92SEC1.dpx /home/hina/edk2-msm/Platform/EFI_Binaries/Drivers/sdm660/DALTLMM/DALTLMM.depex

@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_DXE_DEPEX -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/cb933912-df8f-4305-b1f9-7b44fa11395cAcpiPlatform/cb933912-df8f-4305-b1f9-7b44fa11395cSEC1.1.dpx /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Universal/Acpi/AcpiPlatformDxe/AcpiPlatformDxe/OUTPUT/AcpiPlatform.depex

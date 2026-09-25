@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_DXE_DEPEX -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/10e193df-9966-44e7-b17c-59dd831e20fcFVMAIN/10e193df-9966-44e7-b17c-59dd831e20fcSEC1.dpx /home/hina/edk2-msm/Platform/EFI_Binaries/Drivers/sdm660/ChipInfo/ChipInfo.depex
