@@ -37,28 +37,9 @@ InterruptDxeInitialize (
   )
 {
   EFI_STATUS             Status;
-  ARM_GIC_ARCH_REVISION  Revision;
 
-  /*Revision = ArmGicGetSupportedArchRevision ();
+  /* MSM8953 FORCE V2 */
+  Status = GicV2DxeInitialize (ImageHandle, SystemTable);
 
-  if (Revision == ARM_GIC_ARCH_REVISION_2) {
-    Status = GicV2DxeInitialize (ImageHandle, SystemTable);
-  } else if (Revision == ARM_GIC_ARCH_REVISION_3) {
-    Status = GicV3DxeInitialize (ImageHandle, SystemTable);
-  } else {
-    Status = EFI_UNSUPPORTED;
-  }
-
-  return Status;*/
-  /* MSM8953 is GICv2, force V2 path */
-  Revision = ARM_GIC_ARCH_REVISION_2;
-
-  if (Revision == ARM_GIC_ARCH_REVISION_2) {
-    Status = GicV2DxeInitialize (ImageHandle, SystemTable);
-  } else if (Revision == ARM_GIC_ARCH_REVISION_3) {
-    Status = GicV3DxeInitialize (ImageHandle, SystemTable);
-  } else {
-    Status = EFI_UNSUPPORTED;
-  }
   return Status;
 }
