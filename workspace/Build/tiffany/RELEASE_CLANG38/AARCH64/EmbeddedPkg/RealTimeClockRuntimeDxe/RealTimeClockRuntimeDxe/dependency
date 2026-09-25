@@ -1,0 +1,7 @@
+
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe/OUTPUT/AutoGen.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe/OUTPUT/RealTimeClock.obj.deps
+
+               

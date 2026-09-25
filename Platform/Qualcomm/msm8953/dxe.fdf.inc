@@ -1,8 +1,8 @@
-  FILE DRIVER = 9A5163E7-5C29-453F-825C-837A46A81E15 {
-    SECTION DXE_DEPEX = Platform/EFI_Binaries/Drivers/sdm660/SerialDxe/SerialDxe.depex
-    SECTION PE32 = Platform/EFI_Binaries/Drivers/sdm660/SerialDxe/SerialDxe.efi
-    SECTION UI = "SerialDxe"
-  } 
+#  FILE DRIVER = 9A5163E7-5C29-453F-825C-837A46A81E15 {
+#    SECTION DXE_DEPEX = Platform/EFI_Binaries/Drivers/sdm660/SerialDxe/SerialDxe.depex
+#    SECTION PE32 = Platform/EFI_Binaries/Drivers/sdm660/SerialDxe/SerialDxe.efi
+#    SECTION UI = "SerialDxe"
+#  } 
 
 #  FILE DRIVER = f541d663-4a48-40aa-aabf-ff158ccae34c {
 #    SECTION DXE_DEPEX = Platform/EFI_Binaries/Drivers/sdm660/SmemDxe/SmemDxe.depex

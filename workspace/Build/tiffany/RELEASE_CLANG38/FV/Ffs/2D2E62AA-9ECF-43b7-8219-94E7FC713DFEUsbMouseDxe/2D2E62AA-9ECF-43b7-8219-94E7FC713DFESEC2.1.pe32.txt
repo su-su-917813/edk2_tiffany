@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/2D2E62AA-9ECF-43b7-8219-94E7FC713DFEUsbMouseDxe/2D2E62AA-9ECF-43b7-8219-94E7FC713DFESEC2.1.pe32 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Bus/Usb/UsbMouseDxe/UsbMouseDxe/OUTPUT/UsbMouseDxe.efi

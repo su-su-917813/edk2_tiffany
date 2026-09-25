@@ -1,0 +1,6 @@
+Sec (Fixed Flash Address, BaseAddress=0x008f601160, EntryPoint=0x008f608258, Type=TE)
+(GUID=8AF09F13-44C5-96EC-1437-DD899CB5EE5D .textbaseaddress=0x008f601240 .databaseaddress=0x008f6098c0)
+(IMAGE=/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/Silicon/Qualcomm/QcomPkg/PrePi/PrePi/DEBUG/Sec.efi)
+
+
+

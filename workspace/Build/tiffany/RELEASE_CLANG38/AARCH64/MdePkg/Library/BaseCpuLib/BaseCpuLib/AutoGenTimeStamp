@@ -1,0 +1,6 @@
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseCpuLib/AArch64/CpuFlushTlb.S
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseCpuLib/BaseCpuLib.inf
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseCpuLib/AArch64/CpuSleep.asm
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseCpuLib/BaseCpuLib/DEBUG/AutoGen.h
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseCpuLib/AArch64/CpuFlushTlb.asm
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseCpuLib/AArch64/CpuSleep.S

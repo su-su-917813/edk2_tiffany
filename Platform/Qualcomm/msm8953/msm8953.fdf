@@ -130,7 +130,7 @@ READ_LOCK_STATUS   = TRUE
 !include Platform/Qualcomm/msm8953/dxe.fdf.inc
 
   # INF Silicon/Qualcomm/sdm660/Drivers/sdm660Dxe/sdm660Dxe.inf
-  INF Silicon/Qualcomm/msm8953/Drivers/Msm8953DisplayDxe/Msm8953DisplayDxe.inf
+#  INF Silicon/Qualcomm/msm8953/Drivers/Msm8953DisplayDxe/Msm8953DisplayDxe.inf
   INF Silicon/Qualcomm/QcomPkg/Drivers/SimpleFbDxe/SimpleFbDxe.inf
 
   #
@@ -190,24 +190,24 @@ READ_LOCK_STATUS   = TRUE
   INF MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe.inf
   INF MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe.inf
   INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
-  INF MdeModulePkg/Application/UiApp/UiApp.inf
-  INF Platform/RenegadePkg/Drivers/LogoDxe/LogoDxe.inf
+#  INF MdeModulePkg/Application/UiApp/UiApp.inf
+#  INF Platform/RenegadePkg/Drivers/LogoDxe/LogoDxe.inf
 
   #
   # Windows kernel patcher
   #
-  INF Platform/RenegadePkg/Drivers/KernelErrataPatcher/KernelErrataPatcher.inf
+#  INF Platform/RenegadePkg/Drivers/KernelErrataPatcher/KernelErrataPatcher.inf
   
   #
   # Simple Init GUI
   #
-  INF src/main/SimpleInitMain.inf
+#  INF src/main/SimpleInitMain.inf
 
-  INF src/kernelfdt/KernelFdtDxe.inf
+#  INF src/kernelfdt/KernelFdtDxe.inf
 
 !if $(AB_SLOTS_SUPPORT) == TRUE
-  INF GPLDrivers/Drivers/BootSlotDxe/BootSlotDxe.inf
-  INF GPLDrivers/Application/SwitchSlotsApp/SwitchSlotsApp.inf
+#  INF GPLDrivers/Drivers/BootSlotDxe/BootSlotDxe.inf
+#  INF GPLDrivers/Application/SwitchSlotsApp/SwitchSlotsApp.inf
 !endif
 
 # Device specific fdf

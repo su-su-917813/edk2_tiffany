@@ -1,0 +1,31 @@
+
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/filesystem/SimpleInitFileSystem/OUTPUT/layer/zip.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/filesystem/SimpleInitFileSystem/OUTPUT/layer/uefi.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/filesystem/SimpleInitFileSystem/OUTPUT/layer/template.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/filesystem/SimpleInitFileSystem/OUTPUT/layer/overlay.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/filesystem/SimpleInitFileSystem/OUTPUT/layer/assets.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/filesystem/SimpleInitFileSystem/OUTPUT/volume/uefi.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/filesystem/SimpleInitFileSystem/OUTPUT/utils.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/filesystem/SimpleInitFileSystem/OUTPUT/file.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/filesystem/SimpleInitFileSystem/OUTPUT/string.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/filesystem/SimpleInitFileSystem/OUTPUT/locked.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/filesystem/SimpleInitFileSystem/OUTPUT/volume.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/filesystem/SimpleInitFileSystem/OUTPUT/internal.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/filesystem/SimpleInitFileSystem/OUTPUT/oper.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/filesystem/SimpleInitFileSystem/OUTPUT/drivers.obj.deps
+
+               

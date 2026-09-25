@@ -1,0 +1,41 @@
+
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/ramdisk.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/loader.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/linux.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/dump.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/arm.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/qcom.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/uefi.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/move.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/compress.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/dtbo.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/fdt.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/info.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/random.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/conf.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/dtb_sel.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/mem.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/cmdline.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/splash.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/linux-boot/SimpleInitBootLinux/OUTPUT/aboot.obj.deps
+
+               

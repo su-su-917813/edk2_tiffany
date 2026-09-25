@@ -1,0 +1,7 @@
+
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/Platform/RenegadePkg/Application/Reboot2PayloadApp/Reboot2PayloadApp/OUTPUT/AutoGen.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/Platform/RenegadePkg/Application/Reboot2PayloadApp/Reboot2PayloadApp/OUTPUT/Reboot2PayloadApp.obj.deps
+
+               

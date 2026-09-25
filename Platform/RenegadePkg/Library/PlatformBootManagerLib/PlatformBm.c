@@ -644,7 +644,7 @@ VOID EFIAPI PlatformBootManagerAfterConsole(VOID)
   //
   // Show the splash screen.
   //
-  Status = BootLogoEnableLogo();
+  /* Status = BootLogoEnableLogo(); -- TEMP: 避免清屏 */
   if (EFI_ERROR(Status)) {
     if (FirmwareVerLength > 0) {
       Print(VERSION_STRING_PREFIX L"%s\n", PcdGetPtr(PcdFirmwareVersionString));

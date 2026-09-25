@@ -1,0 +1,4 @@
+gCommandLineDefines: {'FIRMWARE_VER': '94511270', 'USE_UART': '0', 'FIX_CLANG': '0', 'NO_EXCEPTION_DISPLAY': '0', 'FD_BASE': '0x8F600000', 'FD_SIZE': '0x02000000', 'ENABLE_LINUX_UTILS': '', 'ARCH': 'AARCH64'}
+BuildOptionPcd: []
+Active Platform: /home/hina/edk2-msm/Platform/Xiaomi/msm8953/tiffany.dsc
+Flash Image Definition: /home/hina/edk2-msm/Platform/Qualcomm/msm8953/msm8953.fdf

@@ -1,0 +1,11 @@
+
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/Silicon/Qualcomm/QcomPkg/Drivers/SynapticsRmi4Dxe/SynapticsTouchDxe/OUTPUT/AutoGen.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/Silicon/Qualcomm/QcomPkg/Drivers/SynapticsRmi4Dxe/SynapticsTouchDxe/OUTPUT/ComponentName.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/Silicon/Qualcomm/QcomPkg/Drivers/SynapticsRmi4Dxe/SynapticsTouchDxe/OUTPUT/SynapticsTouchDxe.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/Silicon/Qualcomm/QcomPkg/Drivers/SynapticsRmi4Dxe/SynapticsTouchDxe/OUTPUT/I2cOps.obj.deps
+
+               

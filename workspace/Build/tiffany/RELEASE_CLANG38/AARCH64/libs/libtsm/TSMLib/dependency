@@ -1,0 +1,19 @@
+
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/libtsm/TSMLib/OUTPUT/libs/libtsm/external/wcwidth/wcwidth.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/libtsm/TSMLib/OUTPUT/libs/libtsm/src/shared/shl-htable.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/libtsm/TSMLib/OUTPUT/libs/libtsm/src/tsm/tsm-selection.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/libtsm/TSMLib/OUTPUT/libs/libtsm/src/tsm/tsm-vte.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/libtsm/TSMLib/OUTPUT/libs/libtsm/src/tsm/tsm-screen.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/libtsm/TSMLib/OUTPUT/libs/libtsm/src/tsm/tsm-render.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/libtsm/TSMLib/OUTPUT/libs/libtsm/src/tsm/tsm-vte-charsets.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/libtsm/TSMLib/OUTPUT/libs/libtsm/src/tsm/tsm-unicode.obj.deps
+
+               

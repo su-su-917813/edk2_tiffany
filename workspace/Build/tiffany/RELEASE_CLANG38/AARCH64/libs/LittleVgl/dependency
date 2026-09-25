@@ -1,0 +1,313 @@
+
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/hal/lv_hal_disp.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/hal/lv_hal_tick.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/hal/lv_hal_indev.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/themes/mono/lv_theme_mono.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/themes/basic/lv_theme_basic.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/themes/default/lv_theme_default.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/libs/qrcode/lv_qrcode.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/libs/qrcode/qrcodegen.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/libs/sjpg/lv_sjpg.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/libs/sjpg/tjpgd.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/libs/gif/lv_gif.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/libs/gif/gifdec.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/libs/bmp/lv_bmp.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/libs/fsdrv/lv_fs_win32.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/libs/fsdrv/lv_fs_stdio.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/libs/fsdrv/lv_fs_posix.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/libs/fsdrv/lv_fs_fatfs.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/libs/rlottie/lv_rlottie.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/led/lv_led.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/tabview/lv_tabview.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/spinner/lv_spinner.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/meter/lv_meter.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/win/lv_win.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/calendar/lv_calendar.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/span/lv_span.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/spinbox/lv_spinbox.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/tileview/lv_tileview.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/list/lv_list.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/keyboard/lv_keyboard.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/msgbox/lv_msgbox.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/chart/lv_chart.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/animimg/lv_animimg.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/widgets/menu/lv_menu.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/layouts/grid/lv_grid.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/layouts/flex/lv_flex.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/others/snapshot/lv_snapshot.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/others/imgfont/lv_imgfont.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/others/fragment/lv_fragment_manager.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/others/fragment/lv_fragment.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/others/ime/lv_ime_pinyin.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/others/monkey/lv_monkey.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/others/msg/lv_msg.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/others/gridnav/lv_gridnav.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/extra/lv_extra.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/widgets/lv_checkbox.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/widgets/lv_textarea.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/widgets/lv_switch.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/widgets/lv_label.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/widgets/lv_btn.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/widgets/lv_objx_templ.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/widgets/lv_arc.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/widgets/lv_slider.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/widgets/lv_line.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/widgets/lv_btnmatrix.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/widgets/lv_canvas.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/widgets/lv_table.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/widgets/lv_roller.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/widgets/lv_dropdown.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/widgets/lv_img.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/widgets/lv_bar.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_ll.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_tlsf.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_gc.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_printf.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_style.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_anim.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_fs.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_async.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_templ.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_lru.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_style_gen.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_mem.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_anim_timeline.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_txt.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_utils.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_color.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_area.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_bidi.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_timer.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_math.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_txt_ap.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/misc/lv_log.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/font/lv_font_fmt_txt.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/font/lv_font_loader.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/font/lv_font.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/nxp/vglite/lv_draw_vglite_arc.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/nxp/vglite/lv_draw_vglite_rect.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/nxp/vglite/lv_gpu_nxp_vglite.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/nxp/pxp/lv_draw_pxp_blend.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/nxp/lv_gpu_nxp.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/arm2d/lv_gpu_arm2d.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sdl/lv_draw_sdl_img.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sdl/lv_draw_sdl_mask.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sdl/lv_draw_sdl_bg.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sdl/lv_draw_sdl_line.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sdl/lv_draw_sdl_rect.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sdl/lv_draw_sdl_arc.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sdl/lv_draw_sdl_composite.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sdl/lv_draw_sdl_label.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sdl/lv_draw_sdl_utils.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sdl/lv_draw_sdl_stack_blur.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sdl/lv_draw_sdl.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sdl/lv_draw_sdl_layer.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sdl/lv_draw_sdl_polygon.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sw/lv_draw_sw_arc.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sw/lv_draw_sw_transform.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sw/lv_draw_sw_dither.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sw/lv_draw_sw_line.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sw/lv_draw_sw_gradient.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sw/lv_draw_sw_letter.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sw/lv_draw_sw_layer.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sw/lv_draw_sw_blend.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sw/lv_draw_sw.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sw/lv_draw_sw_polygon.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sw/lv_draw_sw_rect.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/sw/lv_draw_sw_img.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/lv_img_buf.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/lv_draw_label.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/lv_img_decoder.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/lv_draw_arc.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/lv_draw_mask.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/lv_draw_transform.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/lv_draw_line.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/lv_img_cache.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/lv_draw.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/lv_draw_rect.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/lv_draw_layer.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/lv_draw_img.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/draw/lv_draw_triangle.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/core/lv_obj_class.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/core/lv_group.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/core/lv_obj_draw.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/core/lv_event.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/core/lv_obj_scroll.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/core/lv_indev_scroll.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/core/lv_obj.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/core/lv_obj_tree.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/core/lv_obj_style.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/core/lv_obj_style_gen.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/core/lv_disp.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/core/lv_theme.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/core/lv_refr.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/core/lv_obj_pos.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/libs/LittleVgl/OUTPUT/lvgl/src/core/lv_indev.obj.deps
+
+               

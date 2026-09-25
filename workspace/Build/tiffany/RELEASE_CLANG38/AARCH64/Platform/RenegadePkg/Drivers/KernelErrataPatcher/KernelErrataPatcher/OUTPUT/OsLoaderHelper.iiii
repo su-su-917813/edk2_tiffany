@@ -1,0 +1,37 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+.extern KernelErrataPatcherExitBootServices
+.global ExitBootServicesWrapper ; .type ExitBootServicesWrapper, %function
+
+
+
+
+
+
+
+
+ExitBootServicesWrapper:
+
+
+
+        mov x2, x19
+
+
+        mov x3, x20
+
+
+        mov x4, x30
+
+
+        b KernelErrataPatcherExitBootServices

@@ -1,0 +1,12 @@
+/home/hina/edk2-msm/Common/edk2/MdePkg/Include/AArch64/ProcessorBind.h
+/home/hina/edk2-msm/Common/edk2/MdePkg/Include/Base.h
+/home/hina/edk2-msm/Common/edk2/MdePkg/Include/Library/PcdLib.h
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseLib/AArch64/CpuBreakpoint.S
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseLib/AArch64/DisableInterrupts.S
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseLib/AArch64/EnableInterrupts.S
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseLib/AArch64/GetInterruptsState.S
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseLib/AArch64/MemoryFence.S
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseLib/AArch64/SetJumpLongJump.S
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseLib/AArch64/SpeculationBarrier.S
+/home/hina/edk2-msm/Common/edk2/MdePkg/Library/BaseLib/AArch64/SwitchStack.S
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/DEBUG/AutoGen.h

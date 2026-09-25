@@ -1,0 +1,133 @@
+#/** @file
+#
+#
+#  Copyright (c) DuoWoA authors. All rights reserved.
+#  Copyright (c) Renegade Project. All rights reserved.
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+#**/
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x00010017
+  BASE_NAME                  = Sec
+  FILE_GUID                  = 8AF09F13-44C5-96EC-1437-DD899CB5EE5D
+  MODULE_TYPE                = SEC
+  VERSION_STRING             = 1.0
+
+[Packages.AARCH64]
+  ArmPkg/ArmPkg.dec
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  EmbeddedPkg/EmbeddedPkg.dec
+  SimpleInit.dec
+
+[Binaries.AARCH64]
+  PE32|Sec.efi
+
+[PatchPcd.AARCH64]
+
+[Protocols.AARCH64]
+  gPeCoffLoaderProtocolGuid
+
+
+[Ppis.AARCH64]
+
+[Guids.AARCH64]
+  gEfiSystemNvDataFvGuid
+
+  gEfiVariableGuid
+
+  gEfiFirmwarePerformanceGuid
+
+  gSimpleInitFileGuid
+
+  gEfiMemoryTypeInformationGuid
+
+  gEfiHobMemoryAllocModuleGuid
+
+  gEfiHobMemoryAllocStackGuid
+
+  gArmMmuReplaceLiveTranslationEntryFuncGuid
+
+  ## PRODUCES  ## UNDEFINED # specifies LZMA custom decompress algorithm.
+  gLzmaCustomDecompressGuid
+
+
+[PcdEx.AARCH64]
+
+[LibraryClasses.AARCH64]
+## @LIB_INSTANCES
+#  MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf
+#  libs/compatible/SimpleInitCompatible.inf
+#  EmbeddedPkg/Library/FdtLib/FdtLib.inf
+#  src/lib/SimpleInitLib.inf
+#  Silicon/Qualcomm/sdm660/Library/PlatformMemoryMapLib/PlatformMemoryMapLib.inf
+#  Silicon/Qualcomm/QcomPkg/Library/MemoryMapHelperLib/MemoryMapHelperLib.inf
+#  MdeModulePkg/Library/DebugAgentLibNull/DebugAgentLibNull.inf
+#  MdePkg/Library/BasePeCoffGetEntryPointLib/BasePeCoffGetEntryPointLib.inf
+#  MdePkg/Library/BasePeCoffExtraActionLibNull/BasePeCoffExtraActionLibNull.inf
+#  MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf
+#  MdePkg/Library/BasePerformanceLibNull/BasePerformanceLibNull.inf
+#  Silicon/Qualcomm/QcomPkg/Library/FrameBufferSerialPortLib/FrameBufferSerialPortLib.inf
+#  MdePkg/Library/BasePrintLib/BasePrintLib.inf
+#  MdePkg/Library/BasePeCoffLib/BasePeCoffLib.inf
+#  MdePkg/Library/BaseUefiDecompressLib/BaseUefiDecompressLib.inf
+#  MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
+#  MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib.inf
+#  ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib.inf
+#  EmbeddedPkg/Library/PrePiLib/PrePiLib.inf
+#  ArmPlatformPkg/Library/PrePiHobListPointerLib/PrePiHobListPointerLib.inf
+#  Silicon/Qualcomm/sdm660/Library/PlatformPrePiLib/PlatformPrePiLib.inf
+#  Silicon/Qualcomm/sdm660/Library/PlatformPeiLib/PlatformPeiLib.inf
+#  Silicon/Qualcomm/QcomPkg/Library/MemoryInitPeiLib/PeiMemoryAllocationLib.inf
+#  EmbeddedPkg/Library/PrePiMemoryAllocationLib/PrePiMemoryAllocationLib.inf
+#  MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic.inf
+#  EmbeddedPkg/Library/PrePiHobLib/PrePiHobLib.inf
+#  ArmPkg/Library/ArmCacheMaintenanceLib/ArmCacheMaintenanceLib.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  ArmPkg/Library/ArmLib/ArmBaseLib.inf
+#  ArmPkg/Library/ArmMmuLib/ArmMmuBaseLib.inf
+#  MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib.inf
+#  ArmPkg/Library/ArmGenericTimerPhyCounterLib/ArmGenericTimerPhyCounterLib.inf
+#  MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort.inf
+#  ArmPkg/Library/ArmArchTimerLib/ArmArchTimerLib.inf
+#  EmbeddedPkg/Library/PrePiExtractGuidedSectionLib/PrePiExtractGuidedSectionLib.inf
+#  MdeModulePkg/Library/LzmaCustomDecompressLib/LzmaCustomDecompressLib.inf
+#  libs/libufdt/UfdtLib.inf
+
+[Depex.AARCH64]
+#  (gEfiPeiMemoryDiscoveredPpiGuid) AND (TRUE)
+
+
+
+
+
+[BuildOptions.AARCH64]
+## @AsBuilt
+##   GCC:RELEASE_CLANG38_AARCH64_MAKE_FLAGS = -s
+##   GCC:RELEASE_CLANG38_AARCH64_DLINK2_FLAGS = -Wl,--script=$(EDK_TOOLS_PATH)/Scripts/GccBase.lds -Wl,--defsym=PECOFF_HEADER_SIZE=0x228
+##   GCC:RELEASE_CLANG38_AARCH64_DTC_FLAGS = -H epapr
+##   GCC:RELEASE_CLANG38_AARCH64_DTCPP_FLAGS = -E -x assembler-with-cpp -imacros AutoGen.h -nostdinc -undef
+##   GCC:RELEASE_CLANG38_AARCH64_DLINK_FLAGS = -target aarch64-linux-gnu -Wl,--emit-relocs -nostdlib -Wl,--gc-sections -u $(IMAGE_ENTRY_POINT) -Wl,-e,$(IMAGE_ENTRY_POINT),-Map,$(DEST_DIR_DEBUG)/$(BASE_NAME).map -z common-page-size=0x20 -z common-page-size=0x1000 -flto -Wl,-O3 -L/home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto -llto-aarch64 -Wl,-plugin-opt=-pass-through=-llto-aarch64
+##   GCC:RELEASE_CLANG38_AARCH64_VFRPP_FLAGS = -x c -E -P -DVFRCOMPILE --include $(MODULE_NAME)StrDefs.h -target aarch64-linux-gnu $(ARCHCC_FLAGS) $(PLATFORM_FLAGS)
+##   GCC:RELEASE_CLANG38_AARCH64_OPTROM_FLAGS = -e
+##   GCC:RELEASE_CLANG38_AARCH64_APP_FLAGS = 
+##   GCC:RELEASE_CLANG38_AARCH64_ASL_FLAGS = 
+##   GCC:RELEASE_CLANG38_AARCH64_PP_FLAGS = -E -x assembler-with-cpp -include AutoGen.h -DOPENSBI_EXTERNAL_SBI_TYPES=OpensbiTypes.h -target aarch64-linux-gnu $(ARCHCC_FLAGS) $(PLATFORM_FLAGS)
+##   GCC:RELEASE_CLANG38_AARCH64_PLATFORM_FLAGS = 
+##   GCC:RELEASE_CLANG38_AARCH64_OBJCOPY_FLAGS = objcopy not needed for
+##   GCC:RELEASE_CLANG38_AARCH64_ASLCC_FLAGS = -x c -fno-lto
+##   GCC:RELEASE_CLANG38_AARCH64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   GCC:RELEASE_CLANG38_AARCH64_NASMB_FLAGS = -f bin
+##   GCC:RELEASE_CLANG38_AARCH64_ASLPP_FLAGS = -x c -E -include AutoGen.h -target aarch64-linux-gnu
+##   GCC:RELEASE_CLANG38_AARCH64_ASLDLINK_FLAGS = -target aarch64-linux-gnu -Wl,--emit-relocs -nostdlib -Wl,--gc-sections -u $(IMAGE_ENTRY_POINT) -Wl,-e,$(IMAGE_ENTRY_POINT),-Map,$(DEST_DIR_DEBUG)/$(BASE_NAME).map -z common-page-size=0x20 -Wl,--entry,ReferenceAcpiTable -u $(IMAGE_ENTRY_POINT) -Wl,--defsym=PECOFF_HEADER_SIZE=0 -Wl,--script=$(EDK_TOOLS_PATH)/Scripts/GccBase.lds -z common-page-size=0x20
+##   GCC:RELEASE_CLANG38_AARCH64_GENFW_FLAGS = 
+##   GCC:RELEASE_CLANG38_AARCH64_DEPS_FLAGS = -MMD -MF $@.deps
+##   GCC:RELEASE_CLANG38_AARCH64_VFR_FLAGS = -l -n
+##   GCC:RELEASE_CLANG38_AARCH64_RC_FLAGS = -I binary -O elf64-littleaarch64 -B aarch64     --rename-section .data=.hii
+##   GCC:RELEASE_CLANG38_AARCH64_ASM_FLAGS = -c -x assembler -imacros AutoGen.h -target aarch64-linux-gnu $(ARCHASM_FLAGS) $(PLATFORM_FLAGS) -Qunused-arguments
+##   GCC:RELEASE_CLANG38_AARCH64_CC_FLAGS = -g -Os -fshort-wchar -fno-builtin -fno-strict-aliasing -Wall -Werror -Wno-array-bounds -include AutoGen.h -fno-common -mlittle-endian -fno-short-enums -fverbose-asm -funsigned-char  -ffunction-sections -fdata-sections -Wno-address -fno-asynchronous-unwind-tables -fno-unwind-tables -fno-pic -fno-pie -ffixed-x18 -target aarch64-linux-gnu -mcmodel=small -Wno-parentheses-equality -Wno-tautological-compare -Wno-tautological-constant-out-of-range-compare -Wno-empty-body -Wno-unused-const-variable -Wno-varargs -Wno-unknown-warning-option -Wno-unused-but-set-variable -Wno-unused-const-variable $(ARCHCC_FLAGS) $(PLATFORM_FLAGS) -flto -O3 -Werror -Wno-error=unused-function -Os -Wno-unused-const-variable -Wno-sometimes-uninitialized -D CLANG -Wno-self-assign -Wno-uninitialized -Wno-initializer-overrides -Wno-non-literal-null-conversion -Wno-unused-but-set-variable -Wno-string-plus-int -fdiagnostics-format=vi -fcolor-diagnostics -Wno-deprecated-non-prototype -DDEFAULT_DARK -mtune=cortex-a53 -mcpu=cortex-a53 -fverbose-asm -funsigned-char -ffunction-sections -fdata-sections -fno-builtin -fno-common -Wno-unused-variable -fshort-wchar -fno-strict-aliasing -mlittle-endian -fno-short-enums -fno-asynchronous-unwind-tables -mcmodel=small -ffixed-x18 -mstrict-align -fstack-protector -Wno-unaligned-access -Wno-misleading-indentation -DENABLE_SIMPLE_INIT

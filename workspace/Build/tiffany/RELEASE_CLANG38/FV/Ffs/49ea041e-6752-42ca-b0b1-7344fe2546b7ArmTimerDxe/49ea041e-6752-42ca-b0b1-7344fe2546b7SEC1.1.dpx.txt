@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/FV/Ffs/49ea041e-6752-42ca-b0b1-7344fe2546b7ArmTimerDxe/49ea041e-6752-42ca-b0b1-7344fe2546b7SEC1.1.dpx /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Drivers/TimerDxe/TimerDxe/OUTPUT/ArmTimerDxe.depex

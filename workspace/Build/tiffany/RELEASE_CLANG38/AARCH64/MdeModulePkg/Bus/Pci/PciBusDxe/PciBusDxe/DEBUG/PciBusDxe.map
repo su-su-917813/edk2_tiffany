@@ -1,0 +1,959 @@
+由于文件 (符号) 而包含了归档成员
+
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memcpy.obj)
+                              /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memcpy)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memset.obj)
+                              /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memset)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib(DriverEntryPoint.obj)
+                              (_ModuleEntryPoint)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib(BaseStackCheckGcc.obj)
+                              /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (__stack_chk_fail)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib(AutoGen.obj)
+                              DriverEntryPoint.obj (symbol from plugin) (ProcessLibraryConstructorList)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib(PciBus.obj)
+                              AutoGen.obj (symbol from plugin) (PciBusEntryPoint)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib(PciDeviceSupport.obj)
+                              PciBus.obj (symbol from plugin) (InitializePciDevicePool)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib(ComponentName.obj)
+                              PciBus.obj (symbol from plugin) (gPciBusComponentName)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib(PciEnumeratorSupport.obj)
+                              PciBus.obj (symbol from plugin) (PciEnumeratorLight)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib(PciEnumerator.obj)
+                              PciBus.obj (symbol from plugin) (PciEnumerator)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib(PciOptionRomSupport.obj)
+                              PciDeviceSupport.obj (symbol from plugin) (InitializePciLoadFile2)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib(PciDriverOverride.obj)
+                              PciDeviceSupport.obj (symbol from plugin) (InitializePciDriverOverrideInstance)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib(PciPowerManagement.obj)
+                              PciEnumeratorSupport.obj (symbol from plugin) (ResetPowerManagementFeature)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib(PciRomTable.obj)
+                              PciDeviceSupport.obj (symbol from plugin) (PciRomAddImageMapping)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib(PciLib.obj)
+                              PciEnumeratorSupport.obj (symbol from plugin) (GetBackPcCardBar)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib(PciIo.obj)
+                              PciDeviceSupport.obj (symbol from plugin) (InitializePciIoInstance)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib(PciCommand.obj)
+                              PciEnumeratorSupport.obj (symbol from plugin) (PciOperateRegister)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib(PciResourceSupport.obj)
+                              PciLib.obj (symbol from plugin) (InsertResourceNode)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib(PciHotPlugSupport.obj)
+                              PciLib.obj (symbol from plugin) (InitializeHotPlugSupport)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RShiftU64.obj)
+                              PciEnumeratorSupport.obj (symbol from plugin) (RShiftU64)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x32.obj)
+                              PciEnumeratorSupport.obj (symbol from plugin) (MultU64x32)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LShiftU64.obj)
+                              PciEnumeratorSupport.obj (symbol from plugin) (LShiftU64)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LowBitSet64.obj)
+                              PciLib.obj (symbol from plugin) (LowBitSet64)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(HighBitSet64.obj)
+                              PciLib.obj (symbol from plugin) (HighBitSet64)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(HighBitSet32.obj)
+                              PciEnumeratorSupport.obj (symbol from plugin) (HighBitSet32)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuDeadLoop.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuDeadLoop)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LinkedList.obj)
+                              PciDeviceSupport.obj (symbol from plugin) (InitializeListHead)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Math64.obj)
+                              LShiftU64.obj (symbol from plugin) (InternalMathLShiftU64)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+                              CpuDeadLoop.obj (symbol from plugin) (CpuPause)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuBreakpoint)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes32.obj)
+                              Math64.obj (symbol from plugin) (SwapBytes32)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes16.obj)
+                              SwapBytes32.obj (symbol from plugin) (SwapBytes16)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ZeroMemWrapper.obj)
+                              PciEnumerator.obj (symbol from plugin) (ZeroMem)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CompareMemWrapper.obj)
+                              PciDriverOverride.obj (symbol from plugin) (CompareMem)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMemWrapper.obj)
+                              PciEnumeratorSupport.obj (symbol from plugin) (CopyMem)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGeneric.obj)
+                              ZeroMemWrapper.obj (symbol from plugin) (InternalMemZeroMem)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGuid.obj)
+                              PciEnumeratorSupport.obj (symbol from plugin) (CopyGuid)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMem.obj)
+                              CopyMemWrapper.obj (symbol from plugin) (InternalMemCopyMem)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem.obj)
+                              MemLibGeneric.obj (symbol from plugin) (InternalMemSetMem)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort/OUTPUT/BaseDebugLibSerialPort.lib(DebugLib.obj)
+                              AutoGen.obj (symbol from plugin) (BaseDebugLibSerialPortConstructor)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmArchTimerLib/ArmArchTimerLib/OUTPUT/ArmArchTimerLib.lib(ArmArchTimerLib.obj)
+                              AutoGen.obj (symbol from plugin) (TimerConstructor)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib(UefiBootServicesTableLib.obj)
+                              AutoGen.obj (symbol from plugin) (UefiBootServicesTableLibConstructor)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib/OUTPUT/UefiMemoryAllocationLib.lib(MemoryAllocationLib.obj)
+                              PciOptionRomSupport.obj (symbol from plugin) (AllocatePool)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib/OUTPUT/UefiRuntimeServicesTableLib.lib(UefiRuntimeServicesTableLib.obj)
+                              AutoGen.obj (symbol from plugin) (UefiRuntimeServicesTableLibConstructor)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathUtilities.obj)
+                              PciBus.obj (symbol from plugin) (IsDevicePathEnd)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathUtilitiesDxeSmm.obj)
+                              PciLib.obj (symbol from plugin) (DevicePathFromHandle)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(UefiDevicePathLib.obj)
+                              PciDriverOverride.obj (symbol from plugin) (GetDevicePathSize)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathToText.obj)
+                              UefiDevicePathLib.obj (symbol from plugin) (UefiDevicePathLibConvertDeviceNodeToText)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathFromText.obj)
+                              UefiDevicePathLib.obj (symbol from plugin) (UefiDevicePathLibConvertTextToDeviceNode)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiDriverModel.obj)
+                              PciBus.obj (symbol from plugin) (EfiLibInstallDriverBindingComponentName2)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiLib.obj)
+                              AutoGen.obj (symbol from plugin) (UefiLibConstructor)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/DxeHobLib/DxeHobLib/OUTPUT/DxeHobLib.lib(HobLib.obj)
+                              AutoGen.obj (symbol from plugin) (HobLibConstructor)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Library/DxeReportStatusCodeLib/DxeReportStatusCodeLib/OUTPUT/DxeReportStatusCodeLib.lib(ReportStatusCodeLib.obj)
+                              PciBus.obj (symbol from plugin) (ReportProgressCodeEnabled)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes64.obj)
+                              DevicePathFromText.obj (symbol from plugin) (SwapBytes64)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x64.obj)
+                              ArmArchTimerLib.obj (symbol from plugin) (MultU64x64)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32Remainder.obj)
+                              ArmArchTimerLib.obj (symbol from plugin) (DivU64x32Remainder)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32.obj)
+                              ArmArchTimerLib.obj (symbol from plugin) (DivU64x32)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SafeString.obj)
+                              DevicePathFromText.obj (symbol from plugin) (StrnLenS)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(String.obj)
+                              DevicePathFromText.obj (symbol from plugin) (StrLen)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Unaligned.obj)
+                              DevicePathUtilities.obj (symbol from plugin) (ReadUnaligned16)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMemWrapper.obj)
+                              DebugLib.obj (symbol from plugin) (SetMem)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem64Wrapper.obj)
+                              SetMemWrapper.obj (symbol from plugin) (SetMem64)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                              ArmArchTimerLib.obj (symbol from plugin) (ArmIsArchTimerImplemented)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib/OUTPUT/BaseDebugPrintErrorLevelLib.lib(BaseDebugPrintErrorLevelLib.obj)
+                              DebugLib.obj (symbol from plugin) (GetDebugPrintErrorLevel)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLib.obj)
+                              DevicePathToText.obj (symbol from plugin) (UnicodeVSPrint)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLibInternal.obj)
+                              PrintLib.obj (symbol from plugin) (BasePrintLibConvertValueToStringS)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/Silicon/Qualcomm/QcomPkg/Library/FrameBufferSerialPortLib/FrameBufferSerialPortLib/OUTPUT/FrameBufferSerialPortLib.lib(FrameBufferSerialPortLib.obj)
+                              DebugLib.obj (symbol from plugin) (SerialPortInitialize)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmGenericTimerPhyCounterLib/ArmGenericTimerPhyCounterLib/OUTPUT/ArmGenericTimerPhyCounterLib.lib(ArmGenericTimerPhyCounterLib.obj)
+                              ArmArchTimerLib.obj (symbol from plugin) (ArmGenericTimerGetTimerFreq)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+                              FrameBufferSerialPortLib.obj (symbol from plugin) (ArmGetInterruptState)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+                              FrameBufferSerialPortLib.obj (symbol from plugin) (ArmEnableInterrupts)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+                              ArmGenericTimerPhyCounterLib.obj (symbol from plugin) (ArmReadCntFrq)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmCacheMaintenanceLib/ArmCacheMaintenanceLib/OUTPUT/ArmCacheMaintenanceLib.lib(ArmCacheMaintenanceLib.obj)
+                              FrameBufferSerialPortLib.obj (symbol from plugin) (WriteBackInvalidateDataCacheRange)
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLib.obj)
+                              ArmCacheMaintenanceLib.obj (symbol from plugin) (ArmDataCacheLineLength)
+
+舍弃的输入节
+
+ .text          0x0000000000000000       0x10 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .data          0x0000000000000000        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .bss           0x0000000000000000        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .text          0x0000000000000000        0x0 /tmp/lto-llvm-9d48a3.o
+ .text.memcpy   0x0000000000000000       0x1c /tmp/lto-llvm-9d48a3.o
+ .text.__memset
+                0x0000000000000000       0x18 /tmp/lto-llvm-9d48a3.o
+ .comment       0x0000000000000000      0xa36 /tmp/lto-llvm-9d48a3.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /tmp/lto-llvm-9d48a3.o
+ .text          0x0000000000000000       0x30 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .text          0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .text          0x0000000000000000        0x0 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmInvalidateDataCacheEntryByMVA
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmCleanDataCacheEntryByMVA
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmCleanDataCacheEntryToPoUByMVA
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmInvalidateInstructionCacheEntryToPoUByMVA
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmInvalidateDataCacheEntryBySetWay
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmCleanInvalidateDataCacheEntryBySetWay
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmCleanDataCacheEntryBySetWay
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmInvalidateInstructionCache
+                0x0000000000000000       0x10 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableMmu
+                0x0000000000000000       0x88 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableMmu
+                0x0000000000000000       0x74 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableCachesAndMmu
+                0x0000000000000000       0x6c /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmMmuEnabled
+                0x0000000000000000       0x34 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableDataCache
+                0x0000000000000000       0x68 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableDataCache
+                0x0000000000000000       0x68 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableInstructionCache
+                0x0000000000000000       0x68 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableInstructionCache
+                0x0000000000000000       0x68 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableAlignmentCheck
+                0x0000000000000000       0x58 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableAlignmentCheck
+                0x0000000000000000       0x68 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableStackAlignmentCheck
+                0x0000000000000000       0x58 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableStackAlignmentCheck
+                0x0000000000000000       0x68 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableBranchPrediction
+                0x0000000000000000        0x4 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableBranchPrediction
+                0x0000000000000000        0x4 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.AArch64AllDataCachesOperation
+                0x0000000000000000       0xa8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDataMemoryBarrier
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmInstructionSynchronizationBarrier
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmWriteVBar
+                0x0000000000000000       0x34 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadVBar
+                0x0000000000000000       0x30 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableVFP
+                0x0000000000000000       0x64 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmCallWFI
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadIdAA64Mmfr2
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadMpidr
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadTpidrurw
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmWriteTpidrurw
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadIdAA64Pfr0
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmWriteHcr
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadHcr
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadCurrentEL
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadCntHctl
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmWriteCntHctl
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text          0x0000000000000000        0x0 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmReadMidr
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmGetFiqState
+                0x0000000000000000       0x10 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmWriteCpacr
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmWriteAuxCr
+                0x0000000000000000       0x28 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmReadAuxCr
+                0x0000000000000000       0x28 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmSetTTBR0
+                0x0000000000000000       0x34 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmGetTTBR0BaseAddress
+                0x0000000000000000       0x30 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmGetTCR
+                0x0000000000000000       0x34 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmSetTCR
+                0x0000000000000000       0x34 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmGetMAIR
+                0x0000000000000000       0x34 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmSetMAIR
+                0x0000000000000000       0x34 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmUpdateTranslationTableEntry
+                0x0000000000000000       0x54 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmInvalidateTlb
+                0x0000000000000000       0x38 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmWriteCptr
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmWriteScr
+                0x0000000000000000        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmWriteMVBar
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmCallWFE
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmCallSEV
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmReadCpuActlr
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmWriteCpuActlr
+                0x0000000000000000       0x10 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmReadSctlr
+                0x0000000000000000       0x30 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmWriteSctlr
+                0x0000000000000000       0x30 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmGetPhysicalAddressBits
+                0x0000000000000000       0x24 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text          0x0000000000000000        0x0 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ArmIsMpCore
+                0x0000000000000000       0x14 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ArmEnableAsynchronousAbort
+                0x0000000000000000        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ArmDisableAsynchronousAbort
+                0x0000000000000000        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ArmEnableIrq
+                0x0000000000000000        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ArmDisableIrq
+                0x0000000000000000        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ArmEnableFiq
+                0x0000000000000000        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ArmDisableFiq
+                0x0000000000000000        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ArmDisableAllExceptions
+                0x0000000000000000        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ReadCCSIDR
+                0x0000000000000000       0x10 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ReadCLIDR
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text          0x0000000000000000        0x0 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntFrq
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmWriteCntFrq
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntkCtl
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmWriteCntkCtl
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntpTval
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmWriteCntpTval
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntpCtl
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmWriteCntpCtl
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntvTval
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmWriteCntvTval
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntvCtl
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmWriteCntvCtl
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntvCt
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntpCval
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmWriteCntpCval
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntvCval
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmWriteCntvCval
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmReadCntvOff
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+ .text.ArmWriteCntvOff
+                0x0000000000000000        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+
+内存配置
+
+名称           来源             长度             属性
+*default*        0x0000000000000000 0xffffffffffffffff
+
+链结器命令稿和内存映射
+
+LOAD /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+START GROUP
+LOAD /tmp/lto-llvm-9d48a3.o
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/DxePcdLib/DxePcdLib/OUTPUT/DxePcdLib.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull/OUTPUT/FilterLibNull.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmCacheMaintenanceLib/ArmCacheMaintenanceLib/OUTPUT/ArmCacheMaintenanceLib.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib/OUTPUT/BaseDebugPrintErrorLevelLib.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/Silicon/Qualcomm/QcomPkg/Library/FrameBufferSerialPortLib/FrameBufferSerialPortLib/OUTPUT/FrameBufferSerialPortLib.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort/OUTPUT/BaseDebugLibSerialPort.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmGenericTimerPhyCounterLib/ArmGenericTimerPhyCounterLib/OUTPUT/ArmGenericTimerPhyCounterLib.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmArchTimerLib/ArmArchTimerLib/OUTPUT/ArmArchTimerLib.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib/OUTPUT/UefiMemoryAllocationLib.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib/OUTPUT/UefiRuntimeServicesTableLib.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/DxeHobLib/DxeHobLib/OUTPUT/DxeHobLib.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Library/DxeReportStatusCodeLib/DxeReportStatusCodeLib/OUTPUT/DxeReportStatusCodeLib.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib
+LOAD /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib
+END GROUP
+                0x0000000000000228                . = PECOFF_HEADER_SIZE
+
+.gnu.version_d  0x0000000000000228        0x0
+ .gnu.version_d
+                0x0000000000000228        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+
+.gnu.version    0x0000000000000228        0x0
+ .gnu.version   0x0000000000000228        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+
+.gnu.version_r  0x0000000000000228        0x0
+ .gnu.version_r
+                0x0000000000000228        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+
+.text           0x0000000000001000     0xed98
+ *(.text .text.* .stub .gnu.linkonce.t.*)
+ .text._ModuleEntryPoint
+                0x0000000000001000      0x154 /tmp/lto-llvm-9d48a3.o
+                0x0000000000001000                _ModuleEntryPoint
+ .text.__stack_chk_fail
+                0x0000000000001154       0x20 /tmp/lto-llvm-9d48a3.o
+                0x0000000000001154                __stack_chk_fail
+ .text.PciBusDriverBindingSupported
+                0x0000000000001174      0x148 /tmp/lto-llvm-9d48a3.o
+ .text.PciBusDriverBindingStart
+                0x00000000000012bc     0x1a48 /tmp/lto-llvm-9d48a3.o
+ .text.PciBusDriverBindingStop
+                0x0000000000002d04       0xf8 /tmp/lto-llvm-9d48a3.o
+ .text.DestroyPciDeviceTree
+                0x0000000000002dfc       0x60 /tmp/lto-llvm-9d48a3.o
+ .text.FreePciDevice
+                0x0000000000002e5c       0x68 /tmp/lto-llvm-9d48a3.o
+ .text.RegisterPciDevice
+                0x0000000000002ec4      0x464 /tmp/lto-llvm-9d48a3.o
+ .text.DeRegisterPciDevice
+                0x0000000000003328      0x1bc /tmp/lto-llvm-9d48a3.o
+ .text.StartPciDevicesOnBridge
+                0x00000000000034e4      0x260 /tmp/lto-llvm-9d48a3.o
+ .text.CreateRootBridge
+                0x0000000000003744      0x134 /tmp/lto-llvm-9d48a3.o
+ .text.PciDeviceExisted
+                0x0000000000003878       0x88 /tmp/lto-llvm-9d48a3.o
+ .text.LocateVgaDeviceOnHostBridge
+                0x0000000000003900       0x78 /tmp/lto-llvm-9d48a3.o
+ .text.LocateVgaDevice
+                0x0000000000003978       0x9c /tmp/lto-llvm-9d48a3.o
+ .text.PciDevicePresent
+                0x0000000000003a14       0x98 /tmp/lto-llvm-9d48a3.o
+ .text.PciPciDeviceInfoCollector
+                0x0000000000003aac      0x138 /tmp/lto-llvm-9d48a3.o
+ .text.PciSearchDevice
+                0x0000000000003be4      0xd2c /tmp/lto-llvm-9d48a3.o
+ .text.CreatePciIoDevice
+                0x0000000000004910      0x254 /tmp/lto-llvm-9d48a3.o
+ .text.PciParseBar
+                0x0000000000004b64      0x228 /tmp/lto-llvm-9d48a3.o
+ .text.BarExisted
+                0x0000000000004d8c      0x108 /tmp/lto-llvm-9d48a3.o
+ .text.DumpPciBars
+                0x0000000000004e94       0xf0 /tmp/lto-llvm-9d48a3.o
+ .text.ProcessOptionRomLight
+                0x0000000000004f84      0x128 /tmp/lto-llvm-9d48a3.o
+ .text.DetermineDeviceAttribute
+                0x00000000000050ac      0x4d4 /tmp/lto-llvm-9d48a3.o
+ .text.ResetAllPpbBusNumber
+                0x0000000000005580      0x124 /tmp/lto-llvm-9d48a3.o
+ .text.NotifyPhase
+                0x00000000000056a4      0x138 /tmp/lto-llvm-9d48a3.o
+ .text.ProcessOptionRom
+                0x00000000000057dc      0x360 /tmp/lto-llvm-9d48a3.o
+ .text.GetMaxOptionRomSize
+                0x0000000000005b3c       0x80 /tmp/lto-llvm-9d48a3.o
+ .text.PreprocessController
+                0x0000000000005bbc      0x134 /tmp/lto-llvm-9d48a3.o
+ .text.LoadFile2
+                0x0000000000005cf0      0x378 /tmp/lto-llvm-9d48a3.o
+ .text.RomDecode
+                0x0000000000006068      0x130 /tmp/lto-llvm-9d48a3.o
+ .text.GetDriver
+                0x0000000000006198      0x1e0 /tmp/lto-llvm-9d48a3.o
+ .text.AddDriver
+                0x0000000000006378       0x78 /tmp/lto-llvm-9d48a3.o
+ .text.PciRomAddImageMapping
+                0x00000000000063f0      0x140 /tmp/lto-llvm-9d48a3.o
+ .text.DumpResourceMap
+                0x0000000000006530      0x578 /tmp/lto-llvm-9d48a3.o
+ .text.PciAllocateBusNumber
+                0x0000000000006aa8      0x1bc /tmp/lto-llvm-9d48a3.o
+ .text.PciScanBus
+                0x0000000000006c64      0x2e8 /tmp/lto-llvm-9d48a3.o
+ .text.PciIoPollMem
+                0x0000000000006f4c       0xcc /tmp/lto-llvm-9d48a3.o
+ .text.PciIoVerifyBarAccess
+                0x0000000000007018       0x9c /tmp/lto-llvm-9d48a3.o
+ .text.PciIoMemRead
+                0x00000000000070b4       0xac /tmp/lto-llvm-9d48a3.o
+ .text.PciIoPollIo
+                0x0000000000007160       0xc8 /tmp/lto-llvm-9d48a3.o
+ .text.PciIoIoRead
+                0x0000000000007228       0xac /tmp/lto-llvm-9d48a3.o
+ .text.PciIoMemWrite
+                0x00000000000072d4       0xac /tmp/lto-llvm-9d48a3.o
+ .text.PciIoIoWrite
+                0x0000000000007380       0xac /tmp/lto-llvm-9d48a3.o
+ .text.PciIoConfigRead
+                0x000000000000742c       0x94 /tmp/lto-llvm-9d48a3.o
+ .text.PciIoVerifyConfigAccess
+                0x00000000000074c0       0xa4 /tmp/lto-llvm-9d48a3.o
+ .text.PciIoConfigWrite
+                0x0000000000007564       0x94 /tmp/lto-llvm-9d48a3.o
+ .text.PciIoCopyMem
+                0x00000000000075f8       0xec /tmp/lto-llvm-9d48a3.o
+ .text.PciIoMap
+                0x00000000000076e4       0xb0 /tmp/lto-llvm-9d48a3.o
+ .text.PciIoUnmap
+                0x0000000000007794       0x70 /tmp/lto-llvm-9d48a3.o
+ .text.PciIoAllocateBuffer
+                0x0000000000007804       0x64 /tmp/lto-llvm-9d48a3.o
+ .text.PciIoFreeBuffer
+                0x0000000000007868       0x44 /tmp/lto-llvm-9d48a3.o
+ .text.PciIoFlush
+                0x00000000000078ac       0x44 /tmp/lto-llvm-9d48a3.o
+ .text.PciIoGetLocation
+                0x00000000000078f0       0x48 /tmp/lto-llvm-9d48a3.o
+ .text.PciIoAttributes
+                0x0000000000007938      0x3a8 /tmp/lto-llvm-9d48a3.o
+ .text.SupportPaletteSnoopAttributes
+                0x0000000000007ce0      0x140 /tmp/lto-llvm-9d48a3.o
+ .text.PciIoGetBarAttributes
+                0x0000000000007e20      0x4cc /tmp/lto-llvm-9d48a3.o
+ .text.PciIoSetBarAttributes
+                0x00000000000082ec       0x80 /tmp/lto-llvm-9d48a3.o
+ .text.PciOperateRegister
+                0x000000000000836c       0xc8 /tmp/lto-llvm-9d48a3.o
+ .text.LocateCapabilityRegBlock
+                0x0000000000008434      0x104 /tmp/lto-llvm-9d48a3.o
+ .text.InsertResourceNode
+                0x0000000000008538       0xd0 /tmp/lto-llvm-9d48a3.o
+ .text.MergeResourceTree
+                0x0000000000008608       0x64 /tmp/lto-llvm-9d48a3.o
+ .text.CalculateResourceAperture
+                0x000000000000866c      0x27c /tmp/lto-llvm-9d48a3.o
+ .text.GetResourceFromDevice
+                0x00000000000088e8      0x29c /tmp/lto-llvm-9d48a3.o
+ .text.CreateResourceMap
+                0x0000000000008b84      0xad0 /tmp/lto-llvm-9d48a3.o
+ .text.ProgramResource
+                0x0000000000009654      0x748 /tmp/lto-llvm-9d48a3.o
+ .text.ProgramUpstreamBridgeForRom
+                0x0000000000009d9c      0x114 /tmp/lto-llvm-9d48a3.o
+ .text.DestroyResourceTree
+                0x0000000000009eb0       0x78 /tmp/lto-llvm-9d48a3.o
+ .text.ZeroMem  0x0000000000009f28       0x6c /tmp/lto-llvm-9d48a3.o
+ .text.CopyMem  0x0000000000009f94      0x190 /tmp/lto-llvm-9d48a3.o
+ .text.CopyGuid
+                0x000000000000a124       0xc8 /tmp/lto-llvm-9d48a3.o
+ .text.CompareGuid
+                0x000000000000a1ec       0xa8 /tmp/lto-llvm-9d48a3.o
+ .text.DebugPrint
+                0x000000000000a294      0x42c /tmp/lto-llvm-9d48a3.o
+ .text.InternalAllocateZeroPool
+                0x000000000000a6c0       0x60 /tmp/lto-llvm-9d48a3.o
+ .text.AllocateCopyPool
+                0x000000000000a720       0x68 /tmp/lto-llvm-9d48a3.o
+ .text.ReallocatePool
+                0x000000000000a788       0x6c /tmp/lto-llvm-9d48a3.o
+ .text.IsDevicePathValid
+                0x000000000000a7f4       0xc4 /tmp/lto-llvm-9d48a3.o
+ .text.GetDevicePathSize
+                0x000000000000a8b8       0xa0 /tmp/lto-llvm-9d48a3.o
+ .text.DuplicateDevicePath
+                0x000000000000a958       0x34 /tmp/lto-llvm-9d48a3.o
+ .text.AppendDevicePathNode
+                0x000000000000a98c      0x1bc /tmp/lto-llvm-9d48a3.o
+ .text.UefiDevicePathLibCatPrint
+                0x000000000000ab48      0x114 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextPci
+                0x000000000000ac5c       0x14 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextPccard
+                0x000000000000ac70       0x10 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextMemMap
+                0x000000000000ac80       0xc0 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextVendor
+                0x000000000000ad40      0x430 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextController
+                0x000000000000b170       0x30 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextBmc
+                0x000000000000b1a0       0x58 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextAcpi
+                0x000000000000b1f8      0x10c /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextAcpiEx
+                0x000000000000b304      0x3e8 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextAcpiAdr
+                0x000000000000b6ec       0xc0 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextAtapi
+                0x000000000000b7ac       0x70 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextScsi
+                0x000000000000b81c       0x24 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextFibre
+                0x000000000000b840       0x98 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextFibreEx
+                0x000000000000b8d8       0xb0 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextSasEx
+                0x000000000000b988      0x1ac /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextNVMe
+                0x000000000000bb34       0x70 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextUfs
+                0x000000000000bba4       0x14 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextSd
+                0x000000000000bbb8       0x10 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextEmmc
+                0x000000000000bbc8       0x10 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToText1394
+                0x000000000000bbd8       0x50 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextUsb
+                0x000000000000bc28       0x14 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextUsbWWID
+                0x000000000000bc3c       0xb4 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextLogicalUnit
+                0x000000000000bcf0       0x10 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextUsbClass
+                0x000000000000bd00      0x214 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextSata
+                0x000000000000bf14       0x34 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextI2O
+                0x000000000000bf48       0x30 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextMacAddr
+                0x000000000000bf78       0x84 /tmp/lto-llvm-9d48a3.o
+ .text.CatNetworkProtocol
+                0x000000000000bffc       0x40 /tmp/lto-llvm-9d48a3.o
+ .text.CatIPv6Address
+                0x000000000000c03c       0x8c /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextIPv4
+                0x000000000000c0c8      0x164 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextIPv6
+                0x000000000000c22c       0xfc /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextInfiniBand
+                0x000000000000c328      0x114 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextUart
+                0x000000000000c43c      0x120 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextiSCSI
+                0x000000000000c55c      0x124 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextVlan
+                0x000000000000c680       0x18 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextBluetooth
+                0x000000000000c698       0x28 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextWiFi
+                0x000000000000c6c0       0x70 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextBluetoothLE
+                0x000000000000c730       0x44 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextDns
+                0x000000000000c774      0x10c /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextUri
+                0x000000000000c880       0xb4 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextHardDrive
+                0x000000000000c934      0x19c /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextCDROM
+                0x000000000000cad0       0xd4 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextFilePath
+                0x000000000000cba4       0x14 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextMediaProtocol
+                0x000000000000cbb8       0x14 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextFv
+                0x000000000000cbcc       0x14 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextFvFile
+                0x000000000000cbe0       0x14 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathRelativeOffsetRange
+                0x000000000000cbf4       0x98 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextRamDisk
+                0x000000000000cc8c      0x220 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextBBS
+                0x000000000000ceac       0xc0 /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextEndInstance
+                0x000000000000cf6c        0xc /tmp/lto-llvm-9d48a3.o
+ .text.DevPathToTextNodeGeneric
+                0x000000000000cf78      0x118 /tmp/lto-llvm-9d48a3.o
+ .text.ReportStatusCodeWithDevicePath
+                0x000000000000d090      0x190 /tmp/lto-llvm-9d48a3.o
+ .text.ReadUnaligned32
+                0x000000000000d220       0x44 /tmp/lto-llvm-9d48a3.o
+ .text.UnicodeSPrint
+                0x000000000000d264       0x60 /tmp/lto-llvm-9d48a3.o
+ .text.BasePrintLibSPrintMarker
+                0x000000000000d2c4      0xeb8 /tmp/lto-llvm-9d48a3.o
+ .text.BasePrintLibSPrint
+                0x000000000000e17c       0x54 /tmp/lto-llvm-9d48a3.o
+ .text.WriteBackInvalidateDataCacheRange
+                0x000000000000e1d0       0x50 /tmp/lto-llvm-9d48a3.o
+ .text.ArmCleanInvalidateDataCacheEntryByMVA
+                0x000000000000e220        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x000000000000e220                ArmCleanInvalidateDataCacheEntryByMVA
+ .text.ArmDataSynchronizationBarrier
+                0x000000000000e228        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x000000000000e228                ArmDataSynchronizationBarrier
+ .text.ArmIsArchTimerImplemented
+                0x000000000000e230        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x000000000000e230                ArmIsArchTimerImplemented
+ .text.ArmCacheInfo
+                0x000000000000e238        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+                0x000000000000e238                ArmCacheInfo
+ .text.ArmGetInterruptState
+                0x000000000000e240       0x10 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+                0x000000000000e240                ArmGetInterruptState
+ .text.ArmEnableInterrupts
+                0x000000000000e250        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+                0x000000000000e250                ArmEnableInterrupts
+ .text.ArmDisableInterrupts
+                0x000000000000e25c        0xc /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+                0x000000000000e25c                ArmDisableInterrupts
+ .text.ArmReadCntPct
+                0x000000000000e268        0x8 /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64ArchTimerSupport.obj)
+                0x000000000000e268                ArmReadCntPct
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.1
+                0x000000000000e270      0x46a /tmp/lto-llvm-9d48a3.o
+                                        0x46c (松开之前的大小)
+ .rodata.str2.2
+                0x000000000000e6da     0x1020 /tmp/lto-llvm-9d48a3.o
+                                       0x114c (松开之前的大小)
+ .rodata.mUefiDevicePathLibEndDevicePath
+                0x000000000000f6fa        0x4 /tmp/lto-llvm-9d48a3.o
+ *fill*         0x000000000000f6fe        0x2 
+ .rodata..Lswitch.table.DevPathToTextUart
+                0x000000000000f700       0x18 /tmp/lto-llvm-9d48a3.o
+ .rodata.cst16  0x000000000000f718       0x10 /tmp/lto-llvm-9d48a3.o
+ .rodata.mWarningString
+                0x000000000000f728       0x96 /tmp/lto-llvm-9d48a3.o
+ .rodata.mErrorString
+                0x000000000000f7be      0x2b5 /tmp/lto-llvm-9d48a3.o
+ *fill*         0x000000000000fa73        0x1 
+ .rodata.font5x12
+                0x000000000000fa74      0x300 /tmp/lto-llvm-9d48a3.o
+ *(.got .got.*)
+ *fill*         0x000000000000fd74        0x4 
+ .got           0x000000000000fd78        0x8 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+                0x000000000000fd78                _GLOBAL_OFFSET_TABLE_
+ .got.plt       0x000000000000fd80       0x18 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ *:AutoGen.obj(.data.g*Guid)
+
+.plt            0x000000000000fd98        0x0
+ .plt           0x000000000000fd98        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+
+.data           0x0000000000010000      0x841
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.rel.ro   0x0000000000010000        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .data.__stack_chk_guard
+                0x0000000000010000        0x8 /tmp/lto-llvm-9d48a3.o
+                0x0000000000010000                __stack_chk_guard
+ .data.gEfiPciPlatformProtocolGuid
+                0x0000000000010008       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiPciOverrideProtocolGuid
+                0x0000000000010018       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEdkiiIoMmuProtocolGuid
+                0x0000000000010028       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEdkiiDeviceSecurityProtocolGuid
+                0x0000000000010038       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiPciEnumerationCompleteProtocolGuid
+                0x0000000000010048       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiLoadFile2ProtocolGuid
+                0x0000000000010058       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiBusSpecificDriverOverrideProtocolGuid
+                0x0000000000010068       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiIncompatiblePciDeviceSupportProtocolGuid
+                0x0000000000010078       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEdkiiDeviceIdentifierTypePciGuid
+                0x0000000000010088       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiPciHostBridgeResourceAllocationProtocolGuid
+                0x0000000000010098       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiPciIoProtocolGuid
+                0x00000000000100a8       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiDecompressProtocolGuid
+                0x00000000000100b8       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gPciBusDriverBinding
+                0x00000000000100c8       0x30 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiLoadedImageDevicePathProtocolGuid
+                0x00000000000100f8       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.rel.ro.mBarTypeStr
+                0x0000000000010108       0x58 /tmp/lto-llvm-9d48a3.o
+ .data.gFullEnumeration
+                0x0000000000010160        0x1 /tmp/lto-llvm-9d48a3.o
+ *fill*         0x0000000000010161        0x3 
+ .data.gEfiPciRootBridgeIoProtocolGuid
+                0x0000000000010164       0x10 /tmp/lto-llvm-9d48a3.o
+ *fill*         0x0000000000010174        0x4 
+ .data.mPciIoInterface
+                0x0000000000010178       0xa0 /tmp/lto-llvm-9d48a3.o
+ .data.gAllOne  0x0000000000010218        0x8 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiDevicePathProtocolGuid
+                0x0000000000010220       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.rel.ro.mUefiDevicePathLibToTextTableGeneric
+                0x0000000000010230       0x60 /tmp/lto-llvm-9d48a3.o
+ .data.rel.ro.mUefiDevicePathLibToTextTable
+                0x0000000000010290      0x320 /tmp/lto-llvm-9d48a3.o
+ .data.rel.ro..Lswitch.table.DevPathToTextUart.174
+                0x00000000000105b0       0x20 /tmp/lto-llvm-9d48a3.o
+ .data.rel.ro..Lswitch.table.DevPathToTextBBS
+                0x00000000000105d0       0x30 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiPcAnsiGuid
+                0x0000000000010600       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiVT100Guid
+                0x0000000000010610       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiVT100PlusGuid
+                0x0000000000010620       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiVTUTF8Guid
+                0x0000000000010630       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiUartDevicePathGuid
+                0x0000000000010640       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiSasDevicePathGuid
+                0x0000000000010650       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiDebugPortProtocolGuid
+                0x0000000000010660       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiVirtualDiskGuid
+                0x0000000000010670       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiVirtualCdGuid
+                0x0000000000010680       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiPersistentVirtualDiskGuid
+                0x0000000000010690       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiPersistentVirtualCdGuid
+                0x00000000000106a0       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiDriverBindingProtocolGuid
+                0x00000000000106b0       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiHobListGuid
+                0x00000000000106c0       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiStatusCodeRuntimeProtocolGuid
+                0x00000000000106d0       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiCallerIdGuid
+                0x00000000000106e0       0x10 /tmp/lto-llvm-9d48a3.o
+ .data.gEfiStatusCodeSpecificDataGuid
+                0x00000000000106f0       0x10 /tmp/lto-llvm-9d48a3.o
+ *(.bss .bss.*)
+ .bss.mPciDevicePool
+                0x0000000000010700       0x10 /tmp/lto-llvm-9d48a3.o
+ .bss.gIncompatiblePciDeviceSupport
+                0x0000000000010710        0x8 /tmp/lto-llvm-9d48a3.o
+ .bss.mDeviceSecurityProtocol
+                0x0000000000010718        0x8 /tmp/lto-llvm-9d48a3.o
+ .bss.gPciHostBridgeNumber
+                0x0000000000010720        0x8 /tmp/lto-llvm-9d48a3.o
+ .bss.gPciHostBrigeHandles
+                0x0000000000010728       0x80 /tmp/lto-llvm-9d48a3.o
+ .bss.mNumberOfPciRomImages
+                0x00000000000107a8        0x8 /tmp/lto-llvm-9d48a3.o
+ .bss.mMaxNumberOfPciRomImages
+                0x00000000000107b0        0x8 /tmp/lto-llvm-9d48a3.o
+ .bss.mRomImageTable
+                0x00000000000107b8        0x8 /tmp/lto-llvm-9d48a3.o
+ .bss.mIoMmuProtocol
+                0x00000000000107c0        0x8 /tmp/lto-llvm-9d48a3.o
+ .bss.mReserveIsaAliases
+                0x00000000000107c8        0x1 /tmp/lto-llvm-9d48a3.o
+ *fill*         0x00000000000107c9        0x3 
+ .bss.mReserveVgaAliases
+                0x00000000000107cc        0x1 /tmp/lto-llvm-9d48a3.o
+ *fill*         0x00000000000107cd        0x3 
+ .bss.mPolicyDetermined
+                0x00000000000107d0        0x1 /tmp/lto-llvm-9d48a3.o
+ *fill*         0x00000000000107d1        0x7 
+ .bss.gPciPlatformProtocol
+                0x00000000000107d8        0x8 /tmp/lto-llvm-9d48a3.o
+ .bss.gPciOverrideProtocol
+                0x00000000000107e0        0x8 /tmp/lto-llvm-9d48a3.o
+ .bss.gAllZero  0x00000000000107e8        0x8 /tmp/lto-llvm-9d48a3.o
+ .bss.gST       0x00000000000107f0        0x8 /tmp/lto-llvm-9d48a3.o
+ .bss.mHobList  0x00000000000107f8        0x8 /tmp/lto-llvm-9d48a3.o
+ .bss.mReportStatusCodeLibStatusCodeProtocol
+                0x0000000000010800        0x8 /tmp/lto-llvm-9d48a3.o
+ .bss.gBS       0x0000000000010808        0x8 /tmp/lto-llvm-9d48a3.o
+ .bss.m_Initialized
+                0x0000000000010810        0x1 /tmp/lto-llvm-9d48a3.o
+ *fill*         0x0000000000010811        0x7 
+ .bss.m_Position.0
+                0x0000000000010818        0x8 /tmp/lto-llvm-9d48a3.o
+ .bss.m_Position.1
+                0x0000000000010820        0x8 /tmp/lto-llvm-9d48a3.o
+ .bss.m_MaxPosition.0
+                0x0000000000010828        0x1 /tmp/lto-llvm-9d48a3.o
+ *fill*         0x0000000000010829        0x7 
+ .bss.m_MaxPosition.1
+                0x0000000000010830        0x1 /tmp/lto-llvm-9d48a3.o
+ *fill*         0x0000000000010831        0x7 
+ .bss.m_Color.0
+                0x0000000000010838        0x1 /tmp/lto-llvm-9d48a3.o
+ *fill*         0x0000000000010839        0x7 
+ .bss.m_Color.1
+                0x0000000000010840        0x1 /tmp/lto-llvm-9d48a3.o
+
+.dynbss         0x0000000000010841        0x0
+ .dynbss        0x0000000000010841        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+
+.eh_frame
+ *(.eh_frame)
+
+.rela           0x0000000000010848      0x900
+ *(.rela .rela.*)
+ .rela.got      0x0000000000010848        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .rela.plt      0x0000000000010848        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .rela.bss      0x0000000000010848        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .rela.data.rel.ro
+                0x0000000000010848        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .rela.ifunc    0x0000000000010848        0x0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .rela.data.gPciBusDriverBinding
+                0x0000000000010848       0x48 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .rela.data.rel.ro.mBarTypeStr
+                0x0000000000010890      0x108 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .rela.data.mPciIoInterface
+                0x0000000000010998      0x1b0 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .rela.data.rel.ro.mUefiDevicePathLibToTextTableGeneric
+                0x0000000000010b48       0x78 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .rela.data.rel.ro.mUefiDevicePathLibToTextTable
+                0x0000000000010bc0      0x498 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .rela.data.rel.ro..Lswitch.table.DevPathToTextUart.174
+                0x0000000000011058       0x60 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .rela.data.rel.ro..Lswitch.table.DevPathToTextBBS
+                0x00000000000110b8       0x90 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+
+.hii
+ *(.hii)
+
+.build-id       0x0000000000011148       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000011148       0x24 /home/hina/edk2-msm/Common/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.interp)
+ *(.dynsym)
+ *(.dynstr)
+ *(.dynamic)
+ *(.hash .gnu.hash)
+ *(.comment)
+                0x0000000000000228                PECOFF_HEADER_SIZE = 0x228
+OUTPUT(/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG/PciBusDxe.dll elf64-littleaarch64)
+LOAD linker stubs
+
+.debug_loclists
+                0x0000000000000000     0x83ad
+ .debug_loclists
+                0x0000000000000000     0x83ad /tmp/lto-llvm-9d48a3.o
+
+.debug_abbrev   0x0000000000000000      0xbfe
+ .debug_abbrev  0x0000000000000000      0xbfe /tmp/lto-llvm-9d48a3.o
+
+.debug_info     0x0000000000000000    0x1fbd1
+ .debug_info    0x0000000000000000    0x1fbd1 /tmp/lto-llvm-9d48a3.o
+
+.debug_rnglists
+                0x0000000000000000      0xf2e
+ .debug_rnglists
+                0x0000000000000000      0xf2e /tmp/lto-llvm-9d48a3.o
+
+.debug_str_offsets
+                0x0000000000000000     0x1de4
+ .debug_str_offsets
+                0x0000000000000000     0x1de4 /tmp/lto-llvm-9d48a3.o
+
+.debug_str      0x0000000000000000     0x8e99
+ .debug_str     0x0000000000000000     0x8e99 /tmp/lto-llvm-9d48a3.o
+                                       0x9a09 (松开之前的大小)
+
+.debug_addr     0x0000000000000000     0x2bc0
+ .debug_addr    0x0000000000000000     0x2bc0 /tmp/lto-llvm-9d48a3.o
+
+.debug_frame    0x0000000000000000     0x1510
+ .debug_frame   0x0000000000000000     0x1510 /tmp/lto-llvm-9d48a3.o
+
+.debug_line     0x0000000000000000     0xb234
+ .debug_line    0x0000000000000000     0xb234 /tmp/lto-llvm-9d48a3.o
+
+.debug_line_str
+                0x0000000000000000     0x27af
+ .debug_line_str
+                0x0000000000000000     0x27af /tmp/lto-llvm-9d48a3.o
+                                       0x3501 (松开之前的大小)

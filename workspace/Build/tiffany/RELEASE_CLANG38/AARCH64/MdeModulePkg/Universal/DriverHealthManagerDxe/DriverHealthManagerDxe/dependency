@@ -1,0 +1,15 @@
+
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthConfigureVfr.c.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthManagerVfr.c.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthManagerVfr.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthManagerDxe.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/AutoGen.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthConfigureVfr.obj.deps
+
+               

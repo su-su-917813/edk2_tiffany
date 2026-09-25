@@ -1,0 +1,5 @@
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/loggerd/lib.c
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/loggerd/buffer.c
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/loggerd/SimpleInitLoggerd.inf
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/loggerd/client.c
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/loggerd/SimpleInitLoggerd/DEBUG/AutoGen.h

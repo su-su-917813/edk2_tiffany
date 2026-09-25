@@ -1,0 +1,16 @@
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/lib/url.c
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/lib/list.c
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/lib/replace.c
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/lib/keyval.c
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/lib/SimpleInitLib.inf
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/lib/param.c
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/lib/language.c
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/lib/aboot.c
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/lib/SimpleInitLib/DEBUG/AutoGen.h
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/lib/array.c
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/lib/fdtparser.c
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/lib/uefi.c
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/lib/readable.c
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/lib/base64.c
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/lib/strings.c
+/home/hina/edk2-msm/GPLDrivers/Library/SimpleInit/src/lib/reboot.c

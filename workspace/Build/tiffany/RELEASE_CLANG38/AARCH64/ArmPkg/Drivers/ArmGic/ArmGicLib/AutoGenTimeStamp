@@ -1,0 +1,7 @@
+/home/hina/edk2-msm/Common/edk2/ArmPkg/Drivers/ArmGic/ArmGicNonSecLib.c
+/home/hina/edk2-msm/Common/edk2/ArmPkg/Drivers/ArmGic/GicV2/ArmGicV2Lib.c
+/home/hina/edk2-msm/Common/edk2/ArmPkg/Drivers/ArmGic/ArmGicLib.inf
+/home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicLib/DEBUG/AutoGen.h
+/home/hina/edk2-msm/Common/edk2/ArmPkg/Drivers/ArmGic/GicV2/ArmGicV2NonSecLib.c
+/home/hina/edk2-msm/Common/edk2/ArmPkg/Drivers/ArmGic/ArmGicLib.c
+/home/hina/edk2-msm/Common/edk2/ArmPkg/Drivers/ArmGic/GicV3/AArch64/ArmGicV3.S

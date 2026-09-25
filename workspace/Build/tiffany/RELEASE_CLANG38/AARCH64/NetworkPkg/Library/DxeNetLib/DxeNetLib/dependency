@@ -1,0 +1,7 @@
+
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/NetworkPkg/Library/DxeNetLib/DxeNetLib/OUTPUT/NetBuffer.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/NetworkPkg/Library/DxeNetLib/DxeNetLib/OUTPUT/DxeNetLib.obj.deps
+
+               

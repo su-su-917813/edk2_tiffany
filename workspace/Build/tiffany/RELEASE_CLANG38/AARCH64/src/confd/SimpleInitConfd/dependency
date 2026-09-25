@@ -1,0 +1,17 @@
+
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/confd/SimpleInitConfd/OUTPUT/xml_conf.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/confd/SimpleInitConfd/OUTPUT/dump.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/confd/SimpleInitConfd/OUTPUT/uefi.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/confd/SimpleInitConfd/OUTPUT/file.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/confd/SimpleInitConfd/OUTPUT/store.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/confd/SimpleInitConfd/OUTPUT/file_conf.obj.deps
+
+-include /home/hina/edk2-msm/workspace/Build/tiffany/RELEASE_CLANG38/AARCH64/src/confd/SimpleInitConfd/OUTPUT/json_conf.obj.deps
+
+               
