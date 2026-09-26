@@ -66,5 +66,10 @@
   SOCSmbiosInfoLib|Silicon/Qualcomm/sdm660/Library/SOCSmbiosInfoLib/SOCSmbiosInfoLib.inf
 
 [Components.common]
+  MdeModulePkg/Bus/Pci/NonDiscoverablePciDeviceDxe/NonDiscoverablePciDeviceDxe.inf
+  MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe.inf
+  Silicon/Qualcomm/msm8953/Drivers/MsmSdccPlatformDxe/MsmSdccPlatformDxe.inf
+  MdeModulePkg/Bus/Sd/SdDxe/SdDxe.inf
+  Silicon/Qualcomm/msm8953/Drivers/MsmUsbDeviceDxe/MsmUsbDeviceDxe.inf
   Silicon/Qualcomm/msm8953/Drivers/Msm8953DisplayDxe/Msm8953DisplayDxe.inf
   

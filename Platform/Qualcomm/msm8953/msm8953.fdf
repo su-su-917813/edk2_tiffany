@@ -204,7 +204,14 @@ READ_LOCK_STATUS   = TRUE
 #  INF src/main/SimpleInitMain.inf
 
 #  INF src/kernelfdt/KernelFdtDxe.inf
+   # SD Card (SDCC2) - Non-discoverable SDHCI path
+INF MdeModulePkg/Bus/Pci/NonDiscoverablePciDeviceDxe/NonDiscoverablePciDeviceDxe.inf
+INF MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe.inf
+INF Silicon/Qualcomm/msm8953/Drivers/MsmSdccPlatformDxe/MsmSdccPlatformDxe.inf
 
+# File system stack (SD card needs these)
+INF MdeModulePkg/Bus/Sd/SdDxe/SdDxe.inf
+INF Silicon/Qualcomm/msm8953/Drivers/MsmUsbDeviceDxe/MsmUsbDeviceDxe.inf
 !if $(AB_SLOTS_SUPPORT) == TRUE
 #  INF GPLDrivers/Drivers/BootSlotDxe/BootSlotDxe.inf
 #  INF GPLDrivers/Application/SwitchSlotsApp/SwitchSlotsApp.inf

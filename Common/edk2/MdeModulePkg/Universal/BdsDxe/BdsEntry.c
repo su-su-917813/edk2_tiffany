@@ -33,6 +33,8 @@ EFI_BDS_ARCH_PROTOCOL  gBds = {
 //
 EFI_EVENT  gConnectConInEvent = NULL;
 
+STATIC BOOLEAN  mVolumeUpDetected = FALSE;
+
 ///
 /// The read-only variables defined in UEFI Spec.
 ///
@@ -318,10 +320,10 @@ BdsWait (
 {
   EFI_STATUS  Status;
   UINT16      TimeoutRemain;
-
   DEBUG ((DEBUG_INFO, "[Bds]BdsWait ...Zzzzzzzzzzzz...\n"));
 
-  TimeoutRemain = PcdGet16 (PcdPlatformBootTimeOut);
+  TimeoutRemain = 10;
+  /*
   while (TimeoutRemain != 0) {
     DEBUG ((DEBUG_INFO, "[Bds]BdsWait(%d)..Zzzz...\n", (UINTN)TimeoutRemain));
     PlatformBootManagerWaitCallback (TimeoutRemain);
@@ -346,7 +348,27 @@ BdsWait (
       TimeoutRemain--;
     }
   }
+  */
+  
+  /* TEMP: 音量+ GPIO 85 检测：忙循环 3 秒，每 0.1 秒读一次 */
+  {
+    UINTN _i;
+    volatile UINT32 *Gpio85Cfg = (volatile UINT32 *)0x01055000;
+    *Gpio85Cfg = 0x00000003;   /* pull-up, GPIO 功能 */
 
+    for (_i = 0; _i < 100; _i++) {
+      volatile UINT32 *Gpio85In = (volatile UINT32 *)0x01055004;
+      if ((*Gpio85In & 1) == 0) {   /* ACTIVE_LOW，按下=低电平 */
+        mVolumeUpDetected = TRUE;
+        break;
+      }
+      /* 忙循环约 0.1 秒 */
+      {
+        volatile UINTN _d;
+        for (_d = 0; _d < 30000000; _d++) { __asm__ volatile ("nop"); }
+      }
+    }
+  }
   //
   // If the platform configured a nonzero and finite time-out, and we have
   // actually reached that, report 100% completion to the platform.
@@ -1045,6 +1067,11 @@ BdsEntry (
     // BdsReadKeys() can be removed after all keyboard drivers invoke callback in timer callback.
     //
     BdsReadKeys ();
+
+    /* TEMP: 音量+ 按下 → 进 BootManagerMenu */
+    if (mVolumeUpDetected && (BootManagerMenuStatus != EFI_NOT_FOUND)) {
+      EfiBootManagerBoot (&BootManagerMenu);
+    }
 
     EfiBootManagerHotkeyBoot ();
 
