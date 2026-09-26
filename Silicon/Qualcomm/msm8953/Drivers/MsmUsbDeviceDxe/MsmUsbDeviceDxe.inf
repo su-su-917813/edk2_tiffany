@@ -1,0 +1,26 @@
+[Defines]
+  INF_VERSION                    = 0x0001001A
+  BASE_NAME                      = MsmUsbDeviceDxe
+  FILE_GUID                      = e820980e-c59a-4df0-bd00-0d4be8f248de
+  MODULE_TYPE                    = UEFI_DRIVER
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = InitializeMsmUsbDevice
+
+[Sources]
+  MsmUsbDeviceDxe.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+  BaseLib
+  IoLib
+  DebugLib
+  DxeServicesTableLib
+  UefiBootServicesTableLib
+  UefiDriverEntryPoint
+  NonDiscoverableDeviceRegistrationLib
+
+[Protocols]
+  gEdkiiNonDiscoverableDeviceProtocolGuid   ## CONSUMES

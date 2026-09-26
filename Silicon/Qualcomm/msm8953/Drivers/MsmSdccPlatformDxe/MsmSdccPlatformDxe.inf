@@ -1,0 +1,26 @@
+[Defines]
+  INF_VERSION                    = 0x0001001A
+  BASE_NAME                      = MsmSdccPlatformDxe
+  FILE_GUID                      = 5b3a8e21-1234-4abc-9def-aabbccddeeff
+  MODULE_TYPE                    = UEFI_DRIVER
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = InitializeMsmSdccPlatform
+
+[Sources]
+  MsmSdccPlatformDxe.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+  BaseLib
+  IoLib
+  DxeServicesTableLib
+  DebugLib
+  UefiBootServicesTableLib
+  UefiDriverEntryPoint
+  NonDiscoverableDeviceRegistrationLib
+
+[Protocols]
+  gEdkiiNonDiscoverableDeviceProtocolGuid   ## CONSUMES
