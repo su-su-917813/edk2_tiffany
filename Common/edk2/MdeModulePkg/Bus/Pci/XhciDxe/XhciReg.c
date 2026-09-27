@@ -106,7 +106,7 @@ XhcReadOpReg (
                              Xhc->PciIo,
                              EfiPciIoWidthUint32,
                              XHC_BAR_INDEX,
-                             0x400 + Offset,  /* DWC3 OpReg @ base+0x400 */
+                             Xhc->CapLength + Offset,
                              1,
                              &Data
                              );
@@ -142,7 +142,7 @@ XhcWriteOpReg (
                              Xhc->PciIo,
                              EfiPciIoWidthUint32,
                              XHC_BAR_INDEX,
-                             0x400 + Offset,  /* DWC3 OpReg @ base+0x400 */
+                             Xhc->CapLength + Offset,
                              1,
                              &Data
                              );

@@ -124,8 +124,6 @@ InitializeMsmUsbDevice (
 {
   EFI_STATUS  Status;
   UINT32      Before, After;
-  volatile UINT8 *Fb;
-  UINT32      x, y, Color, R, G, B;
   extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
   CHAR8       Line[64];
   UINTN       I;
@@ -455,25 +453,94 @@ InitializeMsmUsbDevice (
     }
   }
 
+  /* 8y. Port 1 端口复位（XHCI 需要软件清 CSC/PRC/PLC 后触发 PR） */
+  {
+    UINT32 PortOff = 0x20 + 0x400 + 0;   /* OpReg + 0x400 */
+    UINT32 Sc, W;
+
+    /* 1. 清状态变化位：CSC=bit17? 标准是 bit17?  实际 CSC=bit17? 
+       XHCI 标准：CSC=bit17?  不对，CSC=bit17 不是标准。
+       标准 PortSC：
+         bit0  CCS
+         bit1  PED
+         bit3  OCA
+         bit4  PR
+         bit5  PLC
+         bit6  PF
+         bit7  ... 
+       简单点：直接 W1C 所有状态位（bit5, bit6, bit7, bit16-23） */
+    Sc = MmioRead32 (DWC3_BASE + PortOff);
+    MmioWrite32 (DWC3_BASE + PortOff, Sc | 0x00FE0000 | 0x1C0);
+    Udelay (10000);
+
+    /* 2. 触发端口复位：写 PR=1（bit4） */
+    Sc = MmioRead32 (DWC3_BASE + PortOff);
+    MmioWrite32 (DWC3_BASE + PortOff, Sc | 0x10);
+    Udelay (50000);
+
+    /* 3. 等 PR 清零（最多 1 秒） */
+    for (W = 0; W < 100; W++) {
+      Sc = MmioRead32 (DWC3_BASE + PortOff);
+      if ((Sc & 0x10) == 0) break;
+      Udelay (10000);
+    }
+
+    /* 4. 再次清状态变化位 */
+    Sc = MmioRead32 (DWC3_BASE + PortOff);
+    MmioWrite32 (DWC3_BASE + PortOff, Sc | 0x00FE0000 | 0x1C0);
+    Udelay (10000);
+  }
+
+  /* 8y. Port 1 端口复位 + 清 CSC（触发设备重连检测） */
+  {
+    UINT32 PortOff = 0x20 + 0x400;   /* OpReg=0x20, PortSC(1)=+0x400 */
+    UINT32 Sc, W;
+
+    /* 1. W1C 清所有状态变化位：CSC(bit17)?  标准 bit17=CSC，
+       PRC=bit21, PLC=bit22, OCC=bit23, WRC=bit19, SRC=bit20,
+       PRC=bit21, PLC=bit22。简单点：清 bit17-23 */
+    Sc = MmioRead32 (DWC3_BASE + PortOff);
+    MmioWrite32 (DWC3_BASE + PortOff, Sc | (0x7F << 17));
+    Udelay (10000);
+
+    /* 2. 触发端口复位：写 PR=1（bit4） */
+    Sc = MmioRead32 (DWC3_BASE + PortOff);
+    MmioWrite32 (DWC3_BASE + PortOff, Sc | 0x10);
+    Udelay (50000);
+
+    /* 3. 等 PR 清零（最多 500ms） */
+    for (W = 0; W < 50; W++) {
+      Sc = MmioRead32 (DWC3_BASE + PortOff);
+      if ((Sc & 0x10) == 0) break;
+      Udelay (10000);
+    }
+
+    /* 4. 再次清状态位 */
+    Sc = MmioRead32 (DWC3_BASE + PortOff);
+    MmioWrite32 (DWC3_BASE + PortOff, Sc | (0x7F << 17));
+
+    /* 5. 打印复位后的 PortSC */
+    {
+      extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
+      CONST CHAR8 H4[] = "0123456789abcdef";
+      CHAR8 M4[16];
+      Sc = MmioRead32 (DWC3_BASE + PortOff);
+      M4[0]='['; M4[1]='R'; M4[2]='s'; M4[3]='t'; M4[4]='=';
+      M4[5]=H4[(Sc>>28)&0xF]; M4[6]=H4[(Sc>>24)&0xF];
+      M4[7]=H4[(Sc>>20)&0xF]; M4[8]=H4[(Sc>>16)&0xF];
+      M4[9]=H4[(Sc>>12)&0xF]; M4[10]=H4[(Sc>>8)&0xF];
+      M4[11]=H4[(Sc>>4)&0xF]; M4[12]=H4[Sc&0xF];
+      M4[13]=0x0D; M4[14]=0x0A;
+      SerialPortWrite ((UINT8 *)M4, 15);
+    }
+  }
+
   /* 9. 注册 XHCI 设备 */
   Status = RegisterNonDiscoverableMmioDevice (
              NonDiscoverableDeviceTypeXhci,
              NonDiscoverableDeviceDmaTypeCoherent,
              NULL, NULL, 1,
              DWC3_BASE, DWC3_SIZE);
-
-  /* 10. 屏幕色块 + 串口输出 */
-  Color = (After == 0xFFFFFFFF) ? 0xFF0000 :
-          (After == 0x00000000) ? 0x00FF00 : 0x0000FF;
-  R = (Color >> 16) & 0xFF; G = (Color >> 8) & 0xFF; B = Color & 0xFF;
-  Fb = (volatile UINT8 *)0x90000000;
-  for (y = 100; y < 400; y++) {
-    for (x = 100; x < 400; x++) {
-      Fb[(y * 1080 + x) * 3 + 0] = R;
-      Fb[(y * 1080 + x) * 3 + 1] = G;
-      Fb[(y * 1080 + x) * 3 + 2] = B;
-    }
-  }
 
   Line[0]='['; Line[1]='G'; Line[2]='C'; Line[3]='T';
   Line[4]='L'; Line[5]=']'; Line[6]=' ';
