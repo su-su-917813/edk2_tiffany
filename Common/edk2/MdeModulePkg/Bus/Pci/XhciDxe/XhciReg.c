@@ -106,7 +106,7 @@ XhcReadOpReg (
                              Xhc->PciIo,
                              EfiPciIoWidthUint32,
                              XHC_BAR_INDEX,
-                             Xhc->CapLength + Offset,
+                             0x400 + Offset,  /* DWC3 OpReg @ base+0x400 */
                              1,
                              &Data
                              );
@@ -142,7 +142,7 @@ XhcWriteOpReg (
                              Xhc->PciIo,
                              EfiPciIoWidthUint32,
                              XHC_BAR_INDEX,
-                             Xhc->CapLength + Offset,
+                             0x400 + Offset,  /* DWC3 OpReg @ base+0x400 */
                              1,
                              &Data
                              );
@@ -864,6 +864,32 @@ XhcResetHC (
   Status = EFI_SUCCESS;
 
   DEBUG ((DEBUG_INFO, "XhcResetHC!\n"));
+
+  /* TEMP: 进入 XhcResetHC 立即强制 DWC3 为 Host 模式 */
+  {
+    extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
+    UINT32 Gctl;
+    CHAR8  Msg[16];
+    Gctl  = MmioRead32 (0x07000000UL + 0xC110);
+    Gctl &= ~0x00003000;
+    Gctl |=  0x00001000;
+    MmioWrite32 (0x07000000UL + 0xC110, Gctl);
+    Msg[0]='['; Msg[1]='G'; Msg[2]='C'; Msg[3]='T'; Msg[4]='L';
+    Msg[5]=':'; Msg[6]='E'; Msg[7]='n'; Msg[8]='t'; Msg[9]='r';
+    Msg[10]=0x0D; Msg[11]=0x0A;
+    SerialPortWrite ((UINT8 *)Msg, 12);
+  }
+
+  /* TEMP: DWC3 的 HCRST 会失败，直接跳过整个 reset 流程 */
+  {
+    extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
+    CHAR8 Msg[20];
+    Msg[0]='['; Msg[1]='S'; Msg[2]='k'; Msg[3]='p'; Msg[4]='H';
+    Msg[5]='C'; Msg[6]='R'; Msg[7]='S'; Msg[8]='T';
+    Msg[9]=0x0D; Msg[10]=0x0A;
+    SerialPortWrite ((UINT8 *)Msg, 11);
+  }
+  return EFI_SUCCESS;
   //
   // Host can only be reset when it is halt. If not so, halt it
   //
@@ -893,6 +919,21 @@ XhcResetHC (
       // Set USBCMD HSEE Bit if PCICMD SERR# Enable Bit is set.
       //
       XhcSetHsee (Xhc);
+
+      /* TEMP: HCRST 后恢复 DWC3 Host 模式 */
+      {
+        extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
+        UINT32 Gctl2;
+        CHAR8  Msg2[16];
+        Gctl2  = MmioRead32 (0x07000000UL + 0xC110);
+        Gctl2 &= ~0x00003000;
+        Gctl2 |=  0x00001000;
+        MmioWrite32 (0x07000000UL + 0xC110, Gctl2);
+        Msg2[0]='['; Msg2[1]='G'; Msg2[2]='C'; Msg2[3]='T'; Msg2[4]='L';
+        Msg2[5]=':'; Msg2[6]='P'; Msg2[7]='o'; Msg2[8]='s'; Msg2[9]='t';
+        Msg2[10]=0x0D; Msg2[11]=0x0A;
+        SerialPortWrite ((UINT8 *)Msg2, 12);
+      }
     }
   }
 

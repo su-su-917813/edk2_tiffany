@@ -8,6 +8,19 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 
 #include "Xhci.h"
 
+STATIC
+VOID
+XhcDbgPrint (
+  IN CONST CHAR8  *S
+  )
+{
+  extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
+  UINTN L = 0;
+  while (S[L] != 0) L++;
+  SerialPortWrite ((UINT8 *)S, L);
+}
+
+
 //
 // Two arrays used to translate the XHCI port state (change)
 // to the UEFI protocol's port state (change).
@@ -205,7 +218,9 @@ XhcReset (
       XhciDelAllAsyncIntTransfers (Xhc);
       XhcFreeSched (Xhc);
 
-      XhcInitSched (Xhc);
+      XhcDbgPrint ("[X4] InitSched in\r\n");
+  XhcInitSched (Xhc);
+  XhcDbgPrint ("[X4] InitSched out\r\n");
       break;
 
     case EFI_USB_HC_RESET_GLOBAL_WITH_DEBUG:
@@ -1831,6 +1846,8 @@ XhcCreateUsbHc (
   // Be caution that the Offset passed to XhcReadCapReg() should be Dword align
   //
   Xhc->CapLength        = XhcReadCapReg8 (Xhc, XHC_CAPLENGTH_OFFSET);
+  
+  
   Xhc->HcSParams1.Dword = XhcReadCapReg (Xhc, XHC_HCSPARAMS1_OFFSET);
   Xhc->HcSParams2.Dword = XhcReadCapReg (Xhc, XHC_HCSPARAMS2_OFFSET);
   Xhc->HcCParams.Dword  = XhcReadCapReg (Xhc, XHC_HCCPARAMS_OFFSET);
@@ -2032,10 +2049,48 @@ XhcDriverBindingStart (
     goto CLOSE_PCIIO;
   }
 
+  /* TEMP: 打印 PciIo 属性结果 */
+  {
+    extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
+    CHAR8 Msg[32];
+    UINTN K;
+    Msg[0]='['; Msg[1]='X'; Msg[2]='H'; Msg[3]='C'; Msg[4]=']';
+    Msg[5]=' '; Msg[6]='P'; Msg[7]='c'; Msg[8]='i'; Msg[9]='='; 
+    Msg[10] = "0123456789abcdef"[((UINT32)Status >> 4) & 0xF];
+    Msg[11] = "0123456789abcdef"[(UINT32)Status & 0xF];
+    Msg[12]=0x0D; Msg[13]=0x0A;
+    for (K = 0; K < 14; K++) { }
+    SerialPortWrite ((UINT8 *)Msg, 14);
+  }
+
   //
   // Create then install USB2_HC_PROTOCOL
   //
+  XhcDbgPrint ("[X1] CreateUsbHc\r\n");
   Xhc = XhcCreateUsbHc (PciIo, HcDevicePath, OriginalPciAttributes);
+
+  /* TEMP: 打印 Xhc 结果 */
+  {
+    extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
+    CHAR8 Msg[32];
+    Msg[0]='['; Msg[1]='X'; Msg[2]='h'; Msg[3]='c'; Msg[4]=']';
+    Msg[5]=' ';
+    if (Xhc == NULL) {
+      Msg[6]='N'; Msg[7]='U'; Msg[8]='L'; Msg[9]='L';
+    } else {
+      Msg[6]='O'; Msg[7]='K';
+      Msg[8]=' '; Msg[9]='C';
+      Msg[10]='='; 
+      Msg[11] = "0123456789abcdef"[(Xhc->CapLength >> 4) & 0xF];
+      Msg[12] = "0123456789abcdef"[Xhc->CapLength & 0xF];
+      Msg[13]=0x0D; Msg[14]=0x0A;
+      SerialPortWrite ((UINT8 *)Msg, 15);
+      goto done_print;
+    }
+    Msg[10]=0x0D; Msg[11]=0x0A;
+    SerialPortWrite ((UINT8 *)Msg, 12);
+done_print: ;
+  }
 
   if (Xhc == NULL) {
     DEBUG ((DEBUG_ERROR, "XhcDriverBindingStart: failed to create USB2_HC\n"));
@@ -2066,9 +2121,12 @@ XhcDriverBindingStart (
     }
   }
 
+  XhcDbgPrint ("[X2] SetBiosOwnership\r\n");
   XhcSetBiosOwnership (Xhc);
 
+  XhcDbgPrint ("[X3] ResetHC in\r\n");
   XhcResetHC (Xhc, XHC_RESET_TIMEOUT);
+  XhcDbgPrint ("[X3] ResetHC out\r\n");
   ASSERT (XhcIsHalt (Xhc));
 
   //
@@ -2085,12 +2143,20 @@ XhcDriverBindingStart (
   //
   // Start the Host Controller
   //
+  XhcDbgPrint ("[X5] RunHC in\r\n");
   XhcRunHC (Xhc, XHC_GENERIC_TIMEOUT);
+  XhcDbgPrint ("[X5] RunHC out\r\n");
 
   //
   // Start the asynchronous interrupt monitor
   //
+  XhcDbgPrint ("[X6] SetTimer in\r\n");
   Status = gBS->SetTimer (Xhc->PollTimer, TimerPeriodic, XHC_ASYNC_TIMER_INTERVAL);
+  if (EFI_ERROR (Status)) {
+    XhcDbgPrint ("[X6] SetTimer FAILED\r\n");
+  } else {
+    XhcDbgPrint ("[X6] SetTimer OK\r\n");
+  }
   if (EFI_ERROR (Status)) {
     DEBUG ((DEBUG_ERROR, "XhcDriverBindingStart: failed to start async interrupt monitor\n"));
     XhcHaltHC (Xhc, XHC_GENERIC_TIMEOUT);
@@ -2100,6 +2166,7 @@ XhcDriverBindingStart (
   //
   // Create event to stop the HC when exit boot service.
   //
+  XhcDbgPrint ("[X7] CreateEventEx in\r\n");
   Status = gBS->CreateEventEx (
                   EVT_NOTIFY_SIGNAL,
                   TPL_NOTIFY,
@@ -2109,8 +2176,10 @@ XhcDriverBindingStart (
                   &Xhc->ExitBootServiceEvent
                   );
   if (EFI_ERROR (Status)) {
+    XhcDbgPrint ("[X7] CreateEventEx FAILED\r\n");
     goto FREE_POOL;
   }
+  XhcDbgPrint ("[X7] CreateEventEx OK\r\n");
 
   //
   // Install the component name protocol, don't fail the start
@@ -2131,6 +2200,7 @@ XhcDriverBindingStart (
     FALSE
     );
 
+  XhcDbgPrint ("[X8] InstallProto in\r\n");
   Status = gBS->InstallProtocolInterface (
                   &Controller,
                   &gEfiUsb2HcProtocolGuid,
@@ -2138,8 +2208,94 @@ XhcDriverBindingStart (
                   &Xhc->Usb2Hc
                   );
   if (EFI_ERROR (Status)) {
-    DEBUG ((DEBUG_ERROR, "XhcDriverBindingStart: failed to install USB2_HC Protocol\n"));
+    XhcDbgPrint ("[X8] InstallProto FAILED\r\n");
     goto FREE_POOL;
+  }
+  XhcDbgPrint ("[X8] InstallProto OK\r\n");
+
+
+  /* TEMP: 对比 PciIo 和 Direct MMIO 读 XHCI OpReg */
+  {
+    extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
+    CONST CHAR8 H[] = "0123456789abcdef";
+    UINT32 ViaPci, Direct;
+    CHAR8  Mb[40];
+    ViaPci = XhcReadOpReg (Xhc, 0x00);
+    Direct = MmioRead32 (0x07000000UL + 0x4000);
+    Mb[0]='['; Mb[1]='P'; Mb[2]='c'; Mb[3]='i'; Mb[4]='=';
+    Mb[5]=H[(ViaPci>>28)&0xF]; Mb[6]=H[(ViaPci>>24)&0xF];
+    Mb[7]=H[(ViaPci>>20)&0xF]; Mb[8]=H[(ViaPci>>16)&0xF];
+    Mb[9]=H[(ViaPci>>12)&0xF]; Mb[10]=H[(ViaPci>>8)&0xF];
+    Mb[11]=H[(ViaPci>>4)&0xF]; Mb[12]=H[ViaPci&0xF];
+    Mb[13]=' '; Mb[14]='D'; Mb[15]='i'; Mb[16]='r'; Mb[17]='=';
+    Mb[18]=H[(Direct>>28)&0xF]; Mb[19]=H[(Direct>>24)&0xF];
+    Mb[20]=H[(Direct>>20)&0xF]; Mb[21]=H[(Direct>>16)&0xF];
+    Mb[22]=H[(Direct>>12)&0xF]; Mb[23]=H[(Direct>>8)&0xF];
+    Mb[24]=H[(Direct>>4)&0xF]; Mb[25]=H[Direct&0xF];
+    Mb[26]=0x0D; Mb[27]=0x0A;
+    SerialPortWrite ((UINT8 *)Mb, 28);
+  }
+  /* TEMP: 使能所有 XHCI 端口 —— CONFIG.MaxPortsEn @ OpReg 0x38 */
+  {
+    UINT32 Cfg = XhcReadOpReg (Xhc, 0x38);
+    UINT32 MaxP = Xhc->HcSParams1.Data.MaxPorts & 0xFF;
+    Cfg &= 0x00FFFFFF;
+    Cfg |= (MaxP << 24);
+    XhcWriteOpReg (Xhc, 0x38, Cfg);
+    gBS->Stall (10000);
+  }
+
+  /* TEMP: 打印 DWC3 特有寄存器 */
+  {
+    extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
+    #define DWC3_BASE_DEBUG  0x07000000UL
+    UINT32 V, OFFS;
+    CHAR8  MsgD[40];
+    CONST CHAR8 HexD[] = "0123456789abcdef";
+    struct { CONST CHAR8 *Name; UINT32 Off; } Regs[] = {
+      { "DCFG",    0xC700 },
+      { "DCTL",    0xC704 },
+      { "DEVTEN",  0xC708 },
+      { "DSTS",    0xC70C },
+      { "GUSB2PHYCFG", 0xC200 },
+      { "GUSB3PIPECTL", 0xC2C0 },
+      { "GCTL",    0xC110 },
+    };
+    UINTN R;
+    for (R = 0; R < sizeof(Regs)/sizeof(Regs[0]); R++) {
+      V = MmioRead32 (DWC3_BASE_DEBUG + Regs[R].Off);
+      MsgD[0]='['; MsgD[1]=Regs[R].Name[0]; MsgD[2]=Regs[R].Name[1];
+      MsgD[3]=Regs[R].Name[2]; MsgD[4]='='; 
+      MsgD[5]=HexD[(V>>28)&0xF]; MsgD[6]=HexD[(V>>24)&0xF];
+      MsgD[7]=HexD[(V>>20)&0xF]; MsgD[8]=HexD[(V>>16)&0xF];
+      MsgD[9]=HexD[(V>>12)&0xF]; MsgD[10]=HexD[(V>>8)&0xF];
+      MsgD[11]=HexD[(V>>4)&0xF]; MsgD[12]=HexD[V&0xF];
+      MsgD[13]=0x0D; MsgD[14]=0x0A;
+      SerialPortWrite ((UINT8 *)MsgD, 15);
+    }
+  }
+
+  /* TEMP: 打印 root hub 端口状态 */
+  {
+    extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
+    UINT32 PortSC, PortNum;
+    CHAR8  MsgP[24];
+    for (PortNum = 1; PortNum <= Xhc->HcSParams1.Data.MaxPorts; PortNum++) {
+      PortSC = XhcReadOpReg (Xhc, 0x400 + (PortNum - 1) * 0x10);
+      MsgP[0]='['; MsgP[1]='P'; MsgP[2]='o'; MsgP[3]='r'; MsgP[4]='t';
+      MsgP[5]='0' + (PortNum % 10);
+      MsgP[6]='='; 
+      MsgP[7] = "0123456789abcdef"[(PortSC >> 28) & 0xF];
+      MsgP[8] = "0123456789abcdef"[(PortSC >> 24) & 0xF];
+      MsgP[9] = "0123456789abcdef"[(PortSC >> 20) & 0xF];
+      MsgP[10] = "0123456789abcdef"[(PortSC >> 16) & 0xF];
+      MsgP[11] = "0123456789abcdef"[(PortSC >> 12) & 0xF];
+      MsgP[12] = "0123456789abcdef"[(PortSC >> 8) & 0xF];
+      MsgP[13] = "0123456789abcdef"[(PortSC >> 4) & 0xF];
+      MsgP[14] = "0123456789abcdef"[PortSC & 0xF];
+      MsgP[15]=0x0D; MsgP[16]=0x0A;
+      SerialPortWrite ((UINT8 *)MsgP, 17);
+    }
   }
 
   DEBUG ((DEBUG_INFO, "XhcDriverBindingStart: XHCI started for controller @ %x\n", Controller));

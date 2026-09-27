@@ -71,5 +71,6 @@
   Silicon/Qualcomm/msm8953/Drivers/MsmSdccPlatformDxe/MsmSdccPlatformDxe.inf
   MdeModulePkg/Bus/Sd/SdDxe/SdDxe.inf
   Silicon/Qualcomm/msm8953/Drivers/MsmUsbDeviceDxe/MsmUsbDeviceDxe.inf
+  MdeModulePkg/Bus/Pci/XhciDxe/XhciDxe.inf
   Silicon/Qualcomm/msm8953/Drivers/Msm8953DisplayDxe/Msm8953DisplayDxe.inf
   

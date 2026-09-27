@@ -212,6 +212,7 @@ INF Silicon/Qualcomm/msm8953/Drivers/MsmSdccPlatformDxe/MsmSdccPlatformDxe.inf
 # File system stack (SD card needs these)
 INF MdeModulePkg/Bus/Sd/SdDxe/SdDxe.inf
 INF Silicon/Qualcomm/msm8953/Drivers/MsmUsbDeviceDxe/MsmUsbDeviceDxe.inf
+INF MdeModulePkg/Bus/Pci/XhciDxe/XhciDxe.inf
 !if $(AB_SLOTS_SUPPORT) == TRUE
 #  INF GPLDrivers/Drivers/BootSlotDxe/BootSlotDxe.inf
 #  INF GPLDrivers/Application/SwitchSlotsApp/SwitchSlotsApp.inf
