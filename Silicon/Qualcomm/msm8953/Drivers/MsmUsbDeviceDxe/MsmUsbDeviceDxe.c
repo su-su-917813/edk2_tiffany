@@ -9,30 +9,29 @@
 #include <Library/DebugLib.h>
 #include <Library/UefiBootServicesTableLib.h>
 #include <Library/DxeServicesTableLib.h>
-#include <Library/NonDiscoverableDeviceRegistrationLib.h>
+/* #include <Library/NonDiscoverableDeviceRegistrationLib.h> */  /* Device mode: not needed */
 #include <Protocol/NonDiscoverableDevice.h>
 
-/* ==== DWC3 ==== */
+
 #define DWC3_BASE                 0x07000000
-#define DWC3_SIZE                 0x100000    /* 覆盖 DWC3 + QSCRATCH */
+#define DWC3_SIZE                 0x100000  
 #define DWC3_GCTL_OFFSET          0xC110
 #define DWC3_GCTL_PRTCAPDIR_MASK  0x00003000
 #define DWC3_GCTL_PRTCAP_HOST     0x00001000
-#define DWC3_GCTL_CORESOFTRESET   (1 << 11)
 
-/* ==== QSCRATCH wrapper ==== */
+
 #define QSCRATCH_BASE             0x070F8800
 #define QSCRATCH_GENERAL_CFG      (QSCRATCH_BASE + 0x08)
 #define QSCRATCH_RAM1_REG         (QSCRATCH_BASE + 0x0C)
 #define QSCRATCH_HS_PHY_CTRL_COMMON (QSCRATCH_BASE + 0xEC)
 
-/* GENERAL_CFG bit positions */
+
 #define GENCFG_PIPE_UTMI_CLK_SEL_SHFT   0
 #define GENCFG_DBM_EN_SHFT              1
 #define GENCFG_PIPE3_PHYSTATUS_SW_SHFT  3
 #define GENCFG_PIPE_UTMI_CLK_DIS_SHFT   8
 
-/* ==== GCC (CLK_CTL_BASE) ==== */
+
 #define GCC_BASE                 0x01800000
 #define GCC_SIZE                 0x00100000
 
@@ -50,6 +49,75 @@
 #define USB_PHY_CFG_AHB_CBCR     (GCC_BASE + 0x3F080)
 #define GCC_QUSB2_PHY_BCR        (GCC_BASE + 0x4103C)
 
+/* === DWC3 全局寄存器（偏移以 DWC3_BASE=0x07000000 为基址）=== */
+#define DWC3_GCTL           0xC110   /* 全局控制：模式切换 */
+#define DWC3_GSNPSID        0xC120   /* 控制器 ID */
+#define DWC3_GUSB2PHYCFG    0xC200   /* USB2 PHY 配置 */
+
+/* === DWC3 设备模式寄存器 === */
+#define DWC3_DCFG           0xC700   /* 设备配置 */
+#define DWC3_DCTL           0xC704   /* 设备控制 */
+#define DWC3_DEVTEN         0xC708   /* 设备事件使能 */
+#define DWC3_DSTS           0xC70C   /* 设备状态 */
+#define DWC3_DGCMDPAR0      0xC710   /* 全局命令参数0 */
+#define DWC3_DGCMDPAR1      0xC714   /* 全局命令参数1 */
+#define DWC3_DGCMDPAR2      0xC718   /* 全局命令参数2 */
+#define DWC3_DGCMD          0xC71C   /* 全局命令 */
+
+/* === 事件缓冲区 === */
+#define DWC3_GEVNTADRLO     0xC400
+#define DWC3_GEVNTADRHI     0xC404
+#define DWC3_GEVNTSIZ       0xC408
+#define DWC3_GEVNTCOUNT     0xC40C
+
+/* === 端点 FIFO 大小 === */
+#define DWC3_GTXFIFOSIZ(n)  (0xC300 + (n) * 0x04)
+#define DWC3_GRXFIFOSIZ(n)  (0xC380 + (n) * 0x04)
+
+/* === 端点命令寄存器（物理端点 n：0~31）=== */
+#define DWC3_DEPCMDPAR0(n)  (0xC714 + (n) * 0x10)
+#define DWC3_DEPCMDPAR1(n)  (0xC718 + (n) * 0x10)
+#define DWC3_DEPCMDPAR2(n)  (0xC71C + (n) * 0x10)
+#define DWC3_DEPCMD(n)      (0xC720 + (n) * 0x10)
+
+/* === GCTL 位定义 === */
+#define DWC3_GCTL_PRTCAPDIR_DEVICE   0x00000000
+#define DWC3_GCTL_PRTCAPDIR_HOST     0x00001000
+#define DWC3_GCTL_CORESOFTRESET      (1u << 11)
+
+/* === DCFG 位定义 === */
+#define DWC3_DCFG_DEVSPEED_HS        0x0
+#define DWC3_DCFG_DEVSPEED_FS        0x1
+#define DWC3_DCFG_DEVSPEED_SS        0x4
+#define DWC3_DCFG_DEVADDR(a)         ((a) << 3)
+
+/* === DCTL 位定义 === */
+#define DWC3_DCTL_RUN_STOP           (1u << 31)
+#define DWC3_DCTL_CSFTRST            (1u << 30)
+#define DWC3_DCTL_KEEP_CONNECT       (1u << 19)
+
+/* === DEPCMD 命令类型 === */
+#define DWC3_DEPCMD_DEPCFG           0x1
+#define DWC3_DEPCMD_DEPXFER          0x2
+#define DWC3_DEPCMD_DEPSTRT          0x7
+
+/* === DEPCFG param0 字段 === */
+#define DWC3_DEPCFG_ACTION_INIT      (0 << 30)
+#define DWC3_DEPCFG_ACTION_MODIFY    (2 << 30)
+
+/* === DEPCFG param1 字段 === */
+#define DWC3_DEPCFG_EPTYPE_CONTROL   (0 << 0)
+#define DWC3_DEPCFG_EPTYPE_ISOC      (1 << 0)
+#define DWC3_DEPCFG_EPTYPE_BULK      (2 << 0)
+#define DWC3_DEPCFG_EPTYPE_INT       (3 << 0)
+#define DWC3_DEPCFG_MAXPKT(n)        (((n) & 0x7FF) << 3)
+#define DWC3_DEPCFG_FIFO(n)          (((n) & 0xFF) << 17)
+
+/* === DEPCFG param2 字段 === */
+#define DWC3_DEPCFG_XFER_COMPLETE_EN (1 << 0)
+#define DWC3_DEPCFG_XFER_IN_PROGRESS_EN (1 << 1)
+#define DWC3_DEPCFG_XFER_NOT_READY_EN   (1 << 2)
+#define DWC3_DEPCFG_EP_NUMBER(n)     (((n) & 0x1F) << 25)
 STATIC
 EFI_STATUS
 MapMmio (IN EFI_PHYSICAL_ADDRESS Base, IN UINT64 Size)
@@ -113,6 +181,12 @@ QscratchInit (VOID)
   V = MmioRead32 (QSCRATCH_GENERAL_CFG);
   V &= ~(1 << GENCFG_PIPE_UTMI_CLK_DIS_SHFT);
   MmioWrite32 (QSCRATCH_GENERAL_CFG, V);
+
+  /* 强制使能 REFCLK_EN (bit2)，否则 PHY 无参考时钟 */
+  V = MmioRead32 (QSCRATCH_GENERAL_CFG);
+  V |= (1u << 2);
+  MmioWrite32 (QSCRATCH_GENERAL_CFG, V);
+  gBS->Stall (10000);
 }
 
 EFI_STATUS
@@ -165,284 +239,18 @@ InitializeMsmUsbDevice (
   /* 6. QSCRATCH 初始化 */
   QscratchInit ();
 
-  /* 7. DWC3 core soft reset */
-  Before = MmioRead32 (DWC3_BASE + DWC3_GCTL_OFFSET);
-  MmioWrite32 (DWC3_BASE + DWC3_GCTL_OFFSET, Before | DWC3_GCTL_CORESOFTRESET);
-  Udelay (100000);
-  MmioWrite32 (DWC3_BASE + DWC3_GCTL_OFFSET,
-               MmioRead32 (DWC3_BASE + DWC3_GCTL_OFFSET) & ~DWC3_GCTL_CORESOFTRESET);
-  Udelay (100000);
-
-  /* 8. DWC3 core reset 完整序列（参考 Linux dwc3_core_init） */
-  {
-    UINT32 V, Retry;
-    /* 8.1 Global core soft reset */
-    V = MmioRead32 (DWC3_BASE + DWC3_GCTL_OFFSET);
-    V |= DWC3_GCTL_CORESOFTRESET;
-    MmioWrite32 (DWC3_BASE + DWC3_GCTL_OFFSET, V);
-    Udelay (200000);   /* 200ms */
-
-    V = MmioRead32 (DWC3_BASE + DWC3_GCTL_OFFSET);
-    V &= ~DWC3_GCTL_CORESOFTRESET;
-    MmioWrite32 (DWC3_BASE + DWC3_GCTL_OFFSET, V);
-    Udelay (200000);
-
-    /* 8.2 等 DWC3 完成复位 —— 轮询 GSNPSID 确认非 0 */
-    Retry = 100;
-    while ((MmioRead32 (DWC3_BASE + 0xC120) == 0) && (Retry-- > 0)) {
-      Udelay (10000);
-    }
-
-    /* 8.3 GCTL = Host + SCALEDOWN + DISSCRAMBLE + DSBLCLKGTNG */
-    V  = 0;
-    V |= (1u << 0);       /* DSBLCLKGTNG */
-    V |= (1u << 2);       /* SOFITPSYNC */
-    V |= (1u << 3);       /* DISSCRAMBLE */
-    V |= (1u << 4);       /* SCALEDOWN[1:0] = 01 */
-    V |= (1u << 12);      /* PRTCAPDIR[1:0] = 01 = Host */
-    MmioWrite32 (DWC3_BASE + DWC3_GCTL_OFFSET, V);
-    Udelay (10000);
-  }
-  After = MmioRead32 (DWC3_BASE + DWC3_GCTL_OFFSET);
-
-  /* 8b. 使能所有 XHCI 端口 —— CONFIG.MaxPortsEn @ OpReg 0x38 */
-  {
-    UINT32 Cfg = MmioRead32 (DWC3_BASE + 0x4000 + 0x38);
-    Cfg &= 0x00FFFFFF;
-    Cfg |= (0x02 << 24);
-    MmioWrite32 (DWC3_BASE + 0x4000 + 0x38, Cfg);
-  }
-
-  /* 8c. Host 模式 QUSB2 PHY 初始化 */
-  {
-    UINT32 PhyCfg;
-    MmioWrite32 (DWC3_BASE + 0xC200, MmioRead32 (DWC3_BASE + 0xC200) | (1u << 31));
-    Udelay (10000);
-    MmioWrite32 (DWC3_BASE + 0xC200, MmioRead32 (DWC3_BASE + 0xC200) & ~(1u << 31));
-    Udelay (10000);
-    PhyCfg  = MmioRead32 (DWC3_BASE + 0xC200);
-    PhyCfg &= ~0xF;
-    PhyCfg &= ~(1u << 6);
-    MmioWrite32 (DWC3_BASE + 0xC200, PhyCfg);
-  }
-
-  /* 8d. DWC3 RunStop 使能 */
-  {
-    UINT32 Dctl = MmioRead32 (DWC3_BASE + 0xC704);
-    Dctl |=  0x1;
-    MmioWrite32 (DWC3_BASE + 0xC704, Dctl);
-    Udelay (10000);
-  }
-
-  /* 8e. USB2 PHY 完整配置（参考 Linux dwc3 驱动） */
-  {
-    UINT32 V;
-    /* 1. PHY 软复位 */
-    V = MmioRead32 (DWC3_BASE + 0xC200);
-    MmioWrite32 (DWC3_BASE + 0xC200, V | (1u << 31));
-    Udelay (10000);
-    V = MmioRead32 (DWC3_BASE + 0xC200);
-    MmioWrite32 (DWC3_BASE + 0xC200, V & ~(1u << 31));
-    Udelay (10000);
-
-    /* 2. GUSB2PHYCFG：30MHz、UTMI+、不挂起、8-bit UTMI */
-    V  = MmioRead32 (DWC3_BASE + 0xC200);
-    V &= ~0xF;               /* 清 PHY 时钟频率 */
-    V |=  0x0;               /* 30MHz */
-    V &= ~(1u << 4);         /* UTMI+ 而非 ULPI */
-    V &= ~(1u << 6);         /* 清 SUSPHY */
-    V &= ~(1u << 12);        /* 8-bit UTMI */
-    V |=  (1u << 15);        /* ENAUTOSUSPEND */
-    V &= ~(3u << 3);         /* 清 PHYIF */
-    MmioWrite32 (DWC3_BASE + 0xC200, V);
-    Udelay (10000);
-
-    /* 3. GCTL：Host 模式 + 禁用时钟门控 + SOF ITP 同步 */
-    V = MmioRead32 (DWC3_BASE + 0xC110);
-    V |=  (1u << 0);         /* DSBLCLKGTNG */
-    V |=  (1u << 2);         /* SOFITPSYNC */
-    V &= ~(1u << 5);         /* 清 DCFG 上拉 */
-    MmioWrite32 (DWC3_BASE + 0xC110, V);
-    Udelay (1000);
-  }
-
-  /* 8f. 用正确偏移写 XHCI HCRST（XHCI OpReg 在 base + 0x40） */
-  {
-    UINT32 Cmd;
-    MmioWrite32 (DWC3_BASE + 0x40, 0x2);   /* USBCMD.HCRST = 1 */
-    Udelay (10000);
-    for (Cmd = 0; Cmd < 100; Cmd++) {
-      if ((MmioRead32 (DWC3_BASE + 0x40) & 0x2) == 0) break;
-      Udelay (1000);
-    }
-  }
-
-  /* 8e. 一次性测试所有可能的 XHCI OpReg 偏移 */
-  {
-    extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
-    CONST CHAR8 Hx[] = "0123456789abcdef";
-    UINT8  B00  = MmioRead8  (DWC3_BASE + 0x00);
-    UINT16 H02  = MmioRead16 (DWC3_BASE + 0x02);
-    UINT32 W40  = MmioRead32 (DWC3_BASE + 0x40);
-    UINT32 W44  = MmioRead32 (DWC3_BASE + 0x44);
-    UINT32 W4000= MmioRead32 (DWC3_BASE + 0x4000);
-    UINT32 W440 = MmioRead32 (DWC3_BASE + 0x440);
-    CHAR8  Mx[80];
-    UINTN  K = 0;
-    Mx[K++]='['; Mx[K++]='B'; Mx[K++]='0'; Mx[K++]='=';
-    Mx[K++]=Hx[(B00>>4)&0xF]; Mx[K++]=Hx[B00&0xF]; Mx[K++]=' ';
-    Mx[K++]='H'; Mx[K++]='0'; Mx[K++]='2'; Mx[K++]='=';
-    Mx[K++]=Hx[(H02>>12)&0xF]; Mx[K++]=Hx[(H02>>8)&0xF];
-    Mx[K++]=Hx[(H02>>4)&0xF]; Mx[K++]=Hx[H02&0xF]; Mx[K++]=' ';
-    Mx[K++]='W'; Mx[K++]='4'; Mx[K++]='0'; Mx[K++]='=';
-    Mx[K++]=Hx[(W40>>28)&0xF]; Mx[K++]=Hx[(W40>>24)&0xF];
-    Mx[K++]=Hx[(W40>>20)&0xF]; Mx[K++]=Hx[(W40>>16)&0xF];
-    Mx[K++]=Hx[(W40>>12)&0xF]; Mx[K++]=Hx[(W40>>8)&0xF];
-    Mx[K++]=Hx[(W40>>4)&0xF]; Mx[K++]=Hx[W40&0xF]; Mx[K++]=' ';
-    Mx[K++]='W'; Mx[K++]='4'; Mx[K++]='4'; Mx[K++]='=';
-    Mx[K++]=Hx[(W44>>28)&0xF]; Mx[K++]=Hx[(W44>>24)&0xF];
-    Mx[K++]=Hx[(W44>>20)&0xF]; Mx[K++]=Hx[(W44>>16)&0xF];
-    Mx[K++]=Hx[(W44>>12)&0xF]; Mx[K++]=Hx[(W44>>8)&0xF];
-    Mx[K++]=Hx[(W44>>4)&0xF]; Mx[K++]=Hx[W44&0xF]; Mx[K++]=' ';
-    Mx[K++]='4'; Mx[K++]='k'; Mx[K++]='=';
-    Mx[K++]=Hx[(W4000>>28)&0xF]; Mx[K++]=Hx[(W4000>>24)&0xF];
-    Mx[K++]=Hx[(W4000>>20)&0xF]; Mx[K++]=Hx[(W4000>>16)&0xF];
-    Mx[K++]=Hx[(W4000>>12)&0xF]; Mx[K++]=Hx[(W4000>>8)&0xF];
-    Mx[K++]=Hx[(W4000>>4)&0xF]; Mx[K++]=Hx[W4000&0xF]; Mx[K++]=' ';
-    Mx[K++]='4'; Mx[K++]='4'; Mx[K++]='0'; Mx[K++]='=';
-    Mx[K++]=Hx[(W440>>28)&0xF]; Mx[K++]=Hx[(W440>>24)&0xF];
-    Mx[K++]=Hx[(W440>>20)&0xF]; Mx[K++]=Hx[(W440>>16)&0xF];
-    Mx[K++]=Hx[(W440>>12)&0xF]; Mx[K++]=Hx[(W440>>8)&0xF];
-    Mx[K++]=Hx[(W440>>4)&0xF]; Mx[K++]=Hx[W440&0xF];
-    Mx[K++]=0x0D; Mx[K++]=0x0A;
-    SerialPortWrite ((UINT8 *)Mx, K);
-  }
-
-  /* 8g. 探测 XHCI CONFIG 寄存器在两个偏移的值 */
-  {
-    extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
-    CONST CHAR8 Hx[] = "0123456789abcdef";
-    UINT32 CfgA = MmioRead32 (DWC3_BASE + 0x78);     /* OpReg = 0x40 */
-    UINT32 CfgB = MmioRead32 (DWC3_BASE + 0x4038);   /* OpReg = 0x4000 */
-    UINT32 StsA = MmioRead32 (DWC3_BASE + 0x44);     /* USBSTS @ 0x40 */
-    UINT32 StsB = MmioRead32 (DWC3_BASE + 0x4004);   /* USBSTS @ 0x4000 */
-    CHAR8  Mx[60];
-    UINTN  K = 0;
-    Mx[K++]='[';
-    Mx[K++]='C'; Mx[K++]='f'; Mx[K++]='g'; Mx[K++]='A'; Mx[K++]='=';
-    Mx[K++]=Hx[(CfgA>>28)&0xF]; Mx[K++]=Hx[(CfgA>>24)&0xF];
-    Mx[K++]=Hx[(CfgA>>20)&0xF]; Mx[K++]=Hx[(CfgA>>16)&0xF];
-    Mx[K++]=Hx[(CfgA>>12)&0xF]; Mx[K++]=Hx[(CfgA>>8)&0xF];
-    Mx[K++]=Hx[(CfgA>>4)&0xF]; Mx[K++]=Hx[CfgA&0xF]; Mx[K++]=' ';
-    Mx[K++]='B'; Mx[K++]='=';
-    Mx[K++]=Hx[(CfgB>>28)&0xF]; Mx[K++]=Hx[(CfgB>>24)&0xF];
-    Mx[K++]=Hx[(CfgB>>20)&0xF]; Mx[K++]=Hx[(CfgB>>16)&0xF];
-    Mx[K++]=Hx[(CfgB>>12)&0xF]; Mx[K++]=Hx[(CfgB>>8)&0xF];
-    Mx[K++]=Hx[(CfgB>>4)&0xF]; Mx[K++]=Hx[CfgB&0xF]; Mx[K++]=' ';
-    Mx[K++]='S'; Mx[K++]='A'; Mx[K++]='=';
-    Mx[K++]=Hx[(StsA>>28)&0xF]; Mx[K++]=Hx[(StsA>>24)&0xF];
-    Mx[K++]=Hx[(StsA>>20)&0xF]; Mx[K++]=Hx[(StsA>>16)&0xF];
-    Mx[K++]=Hx[(StsA>>12)&0xF]; Mx[K++]=Hx[(StsA>>8)&0xF];
-    Mx[K++]=Hx[(StsA>>4)&0xF]; Mx[K++]=Hx[StsA&0xF]; Mx[K++]=' ';
-    Mx[K++]='S'; Mx[K++]='B'; Mx[K++]='=';
-    Mx[K++]=Hx[(StsB>>28)&0xF]; Mx[K++]=Hx[(StsB>>24)&0xF];
-    Mx[K++]=Hx[(StsB>>20)&0xF]; Mx[K++]=Hx[(StsB>>16)&0xF];
-    Mx[K++]=Hx[(StsB>>12)&0xF]; Mx[K++]=Hx[(StsB>>8)&0xF];
-    Mx[K++]=Hx[(StsB>>4)&0xF]; Mx[K++]=Hx[StsB&0xF];
-    Mx[K++]=0x0D; Mx[K++]=0x0A;
-    SerialPortWrite ((UINT8 *)Mx, K);
-  }
-
-  /* 8g. 探测 XHCI CONFIG 寄存器在两个偏移的值 */
-  {
-    extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
-    CONST CHAR8 Hx[] = "0123456789abcdef";
-    UINT32 CfgA = MmioRead32 (DWC3_BASE + 0x78);     /* OpReg = 0x40 */
-    UINT32 CfgB = MmioRead32 (DWC3_BASE + 0x4038);   /* OpReg = 0x4000 */
-    UINT32 StsA = MmioRead32 (DWC3_BASE + 0x44);     /* USBSTS @ 0x40 */
-    UINT32 StsB = MmioRead32 (DWC3_BASE + 0x4004);   /* USBSTS @ 0x4000 */
-    CHAR8  Mx[60];
-    UINTN  K = 0;
-    Mx[K++]='[';
-    Mx[K++]='C'; Mx[K++]='f'; Mx[K++]='g'; Mx[K++]='A'; Mx[K++]='=';
-    Mx[K++]=Hx[(CfgA>>28)&0xF]; Mx[K++]=Hx[(CfgA>>24)&0xF];
-    Mx[K++]=Hx[(CfgA>>20)&0xF]; Mx[K++]=Hx[(CfgA>>16)&0xF];
-    Mx[K++]=Hx[(CfgA>>12)&0xF]; Mx[K++]=Hx[(CfgA>>8)&0xF];
-    Mx[K++]=Hx[(CfgA>>4)&0xF]; Mx[K++]=Hx[CfgA&0xF]; Mx[K++]=' ';
-    Mx[K++]='B'; Mx[K++]='=';
-    Mx[K++]=Hx[(CfgB>>28)&0xF]; Mx[K++]=Hx[(CfgB>>24)&0xF];
-    Mx[K++]=Hx[(CfgB>>20)&0xF]; Mx[K++]=Hx[(CfgB>>16)&0xF];
-    Mx[K++]=Hx[(CfgB>>12)&0xF]; Mx[K++]=Hx[(CfgB>>8)&0xF];
-    Mx[K++]=Hx[(CfgB>>4)&0xF]; Mx[K++]=Hx[CfgB&0xF]; Mx[K++]=' ';
-    Mx[K++]='S'; Mx[K++]='A'; Mx[K++]='=';
-    Mx[K++]=Hx[(StsA>>28)&0xF]; Mx[K++]=Hx[(StsA>>24)&0xF];
-    Mx[K++]=Hx[(StsA>>20)&0xF]; Mx[K++]=Hx[(StsA>>16)&0xF];
-    Mx[K++]=Hx[(StsA>>12)&0xF]; Mx[K++]=Hx[(StsA>>8)&0xF];
-    Mx[K++]=Hx[(StsA>>4)&0xF]; Mx[K++]=Hx[StsA&0xF]; Mx[K++]=' ';
-    Mx[K++]='S'; Mx[K++]='B'; Mx[K++]='=';
-    Mx[K++]=Hx[(StsB>>28)&0xF]; Mx[K++]=Hx[(StsB>>24)&0xF];
-    Mx[K++]=Hx[(StsB>>20)&0xF]; Mx[K++]=Hx[(StsB>>16)&0xF];
-    Mx[K++]=Hx[(StsB>>12)&0xF]; Mx[K++]=Hx[(StsB>>8)&0xF];
-    Mx[K++]=Hx[(StsB>>4)&0xF]; Mx[K++]=Hx[StsB&0xF];
-    Mx[K++]=0x0D; Mx[K++]=0x0A;
-    SerialPortWrite ((UINT8 *)Mx, K);
-  }
-
-  /* 8h. 探测 XHCI Capability 是否可读 */
-  {
-    extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
-    CONST CHAR8 Hb[] = "0123456789abcdef";
-    UINT8  B0 = MmioRead8 (DWC3_BASE + 0x00);
-    UINT8  B1 = MmioRead8 (DWC3_BASE + 0x01);
-    UINT16 H02 = MmioRead16 (DWC3_BASE + 0x02);
-    UINT32 HCSP1 = MmioRead32 (DWC3_BASE + 0x04);
-    UINT32 HCCP = MmioRead32 (DWC3_BASE + 0x10);
-    CHAR8  Mx[64];
-    UINTN  K = 0;
-    Mx[K++]='[';
-    Mx[K++]='B'; Mx[K++]='0'; Mx[K++]='=';
-    Mx[K++]=Hb[(B0>>4)&0xF]; Mx[K++]=Hb[B0&0xF]; Mx[K++]=' ';
-    Mx[K++]='H'; Mx[K++]='0'; Mx[K++]='2'; Mx[K++]='=';
-    Mx[K++]=Hb[(H02>>12)&0xF]; Mx[K++]=Hb[(H02>>8)&0xF];
-    Mx[K++]=Hb[(H02>>4)&0xF]; Mx[K++]=Hb[H02&0xF]; Mx[K++]=' ';
-    Mx[K++]='H'; Mx[K++]='C'; Mx[K++]='=';
-    Mx[K++]=Hb[(HCCP>>28)&0xF]; Mx[K++]=Hb[(HCCP>>24)&0xF];
-    Mx[K++]=Hb[(HCCP>>20)&0xF]; Mx[K++]=Hb[(HCCP>>16)&0xF];
-    Mx[K++]=Hb[(HCCP>>12)&0xF]; Mx[K++]=Hb[(HCCP>>8)&0xF];
-    Mx[K++]=Hb[(HCCP>>4)&0xF]; Mx[K++]=Hb[HCCP&0xF]; Mx[K++]=' ';
-    Mx[K++]='H'; Mx[K++]='C'; Mx[K++]='S'; Mx[K++]='1'; Mx[K++]='=';
-    Mx[K++]=Hb[(HCSP1>>28)&0xF]; Mx[K++]=Hb[(HCSP1>>24)&0xF];
-    Mx[K++]=Hb[(HCSP1>>20)&0xF]; Mx[K++]=Hb[(HCSP1>>16)&0xF];
-    Mx[K++]=Hb[(HCSP1>>12)&0xF]; Mx[K++]=Hb[(HCSP1>>8)&0xF];
-    Mx[K++]=Hb[(HCSP1>>4)&0xF]; Mx[K++]=Hb[HCSP1&0xF];
-    Mx[K++]=0x0D; Mx[K++]=0x0A;
-    SerialPortWrite ((UINT8 *)Mx, K);
-  }
-
-  /* 8z. 扫描所有 PortSC 候选偏移（基于 CapLength=0x20） */
+  /* 6c. QSCRATCH 寄存器快照 */
   {
     extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
     CONST CHAR8 Hs[] = "0123456789abcdef";
-    /* 可能的 PortSC 偏移：CapReg 0x00 处的候选 + OpReg 基准候选 */
-    UINT32 Offs[] = {
-      0x20, 0x24, 0x28, 0x38, 0x3C,           /* 若 OpReg=base+0 附近 */
-      0x420, 0x424, 0x438, 0x43C,             /* 若 OpReg=base+0x20 */
-      0x800, 0x804, 0x838,                   /* 若 PortSC=base+0x800 */
-      0x820, 0x824, 0x838, 0x83C,
-      0x440, 0x444, 0x458, 0x45C,
-      0x1800, 0x1810, 0x1820,
-      0x4000, 0x4004, 0x4038, 0x4438,
-      0x4400, 0x4420, 0x4430,
-    };
-    UINTN N = sizeof(Offs)/sizeof(Offs[0]);
-    UINTN I;
-    for (I = 0; I < N; I++) {
-      UINT32 V = MmioRead32 (DWC3_BASE + Offs[I]);
-      CHAR8  Ln[32];
+    UINT32 QRegs[] = { 0x070F8800, 0x070F8808, 0x070F88EC };
+    UINTN  I;
+    for (I = 0; I < 3; I++) {
+      UINT32 V = MmioRead32 (QRegs[I]);
+      CHAR8  Ln[20];
       UINTN  K = 0;
-      Ln[K++]='['; Ln[K++]='+';
-      Ln[K++]=Hs[(Offs[I]>>12)&0xF]; Ln[K++]=Hs[(Offs[I]>>8)&0xF];
-      Ln[K++]=Hs[(Offs[I]>>4)&0xF]; Ln[K++]=Hs[Offs[I]&0xF];
+      Ln[K++]='['; Ln[K++]='R';
+      Ln[K++]=Hs[(QRegs[I]>>4)&0xF]; Ln[K++]=Hs[QRegs[I]&0xF];
       Ln[K++]='=';
       Ln[K++]=Hs[(V>>28)&0xF]; Ln[K++]=Hs[(V>>24)&0xF];
       Ln[K++]=Hs[(V>>20)&0xF]; Ln[K++]=Hs[(V>>16)&0xF];
@@ -453,103 +261,342 @@ InitializeMsmUsbDevice (
     }
   }
 
-  /* 8y. Port 1 端口复位（XHCI 需要软件清 CSC/PRC/PLC 后触发 PR） */
+  /* 6d. QUSB2 PHY 其余寄存器快照 */
   {
-    UINT32 PortOff = 0x20 + 0x400 + 0;   /* OpReg + 0x400 */
-    UINT32 Sc, W;
+    extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
+    CONST CHAR8 Hs[] = "0123456789abcdef";
+    UINT32 PRegs[] = { 0x00, 0x04, 0x08, 0x10, 0x14, 0x3C, 0x40, 0x44, 0x8C, 0x90, 0x94, 0xB8 };
+    UINTN  I;
+    for (I = 0; I < sizeof(PRegs)/sizeof(PRegs[0]); I++) {
+      UINT32 V = MmioRead32 (0x00079000 + PRegs[I]);
+      CHAR8  Ln[20];
+      UINTN  K = 0;
+      Ln[K++]='['; Ln[K++]='X';
+      Ln[K++]=Hs[(PRegs[I]>>4)&0xF]; Ln[K++]=Hs[PRegs[I]&0xF];
+      Ln[K++]='=';
+      Ln[K++]=Hs[(V>>28)&0xF]; Ln[K++]=Hs[(V>>24)&0xF];
+      Ln[K++]=Hs[(V>>20)&0xF]; Ln[K++]=Hs[(V>>16)&0xF];
+      Ln[K++]=Hs[(V>>12)&0xF]; Ln[K++]=Hs[(V>>8)&0xF];
+      Ln[K++]=Hs[(V>>4)&0xF]; Ln[K++]=Hs[V&0xF];
+      Ln[K++]=0x0D; Ln[K++]=0x0A;
+      SerialPortWrite ((UINT8 *)Ln, K);
+    }
+  }
 
-    /* 1. 清状态变化位：CSC=bit17? 标准是 bit17?  实际 CSC=bit17? 
-       XHCI 标准：CSC=bit17?  不对，CSC=bit17 不是标准。
-       标准 PortSC：
-         bit0  CCS
-         bit1  PED
-         bit3  OCA
-         bit4  PR
-         bit5  PLC
-         bit6  PF
-         bit7  ... 
-       简单点：直接 W1C 所有状态位（bit5, bit6, bit7, bit16-23） */
-    Sc = MmioRead32 (DWC3_BASE + PortOff);
-    MmioWrite32 (DWC3_BASE + PortOff, Sc | 0x00FE0000 | 0x1C0);
+  /* 6c. 释放 QSCRATCH PHY 复位 + 使能参考时钟 */
+  {
+    UINT32 V;
+
+    /* QSCRATCH_PHY_CFG (0x070F8800): 释放 PHY 软复位 */
+    V = MmioRead32 (0x070F8800);
+    V |= 0x1;   /* PHY_SW_RESET = 1（释放） */
+    MmioWrite32 (0x070F8800, V);
     Udelay (10000);
 
-    /* 2. 触发端口复位：写 PR=1（bit4） */
-    Sc = MmioRead32 (DWC3_BASE + PortOff);
-    MmioWrite32 (DWC3_BASE + PortOff, Sc | 0x10);
-    Udelay (50000);
-
-    /* 3. 等 PR 清零（最多 1 秒） */
-    for (W = 0; W < 100; W++) {
-      Sc = MmioRead32 (DWC3_BASE + PortOff);
-      if ((Sc & 0x10) == 0) break;
-      Udelay (10000);
-    }
-
-    /* 4. 再次清状态变化位 */
-    Sc = MmioRead32 (DWC3_BASE + PortOff);
-    MmioWrite32 (DWC3_BASE + PortOff, Sc | 0x00FE0000 | 0x1C0);
+    /* QSCRATCH_GENERAL_CFG: 保留已配置的位，只置位 REFCLK_EN */
+    V = MmioRead32 (0x070F8808);
+    V |= (1u << 2);   /* REFCLK_EN */
+    MmioWrite32 (0x070F8808, V);
     Udelay (10000);
   }
 
-  /* 8y. Port 1 端口复位 + 清 CSC（触发设备重连检测） */
+  /* 6d. QSCRATCH + QUSB2 PHY 寄存器快照（诊断用） */
   {
-    UINT32 PortOff = 0x20 + 0x400;   /* OpReg=0x20, PortSC(1)=+0x400 */
-    UINT32 Sc, W;
+    extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
+    CONST CHAR8 Hs[] = "0123456789abcdef";
+    UINT32 QRegs[] = { 0x070F8800, 0x070F8808, 0x070F88EC };
+    UINT32 PRegs[] = { 0x00, 0x04, 0x08, 0x10, 0x14, 0x3C, 0x40, 0x44, 0x8C, 0x90, 0x94, 0xB8 };
+    UINTN  I;
+    for (I = 0; I < sizeof(QRegs)/sizeof(QRegs[0]); I++) {
+      UINT32 V = MmioRead32 (QRegs[I]);
+      CHAR8  Ln[20]; UINTN K = 0;
+      Ln[K++]='['; Ln[K++]='R';
+      Ln[K++]=Hs[(QRegs[I]>>4)&0xF]; Ln[K++]=Hs[QRegs[I]&0xF];
+      Ln[K++]='=';
+      Ln[K++]=Hs[(V>>28)&0xF]; Ln[K++]=Hs[(V>>24)&0xF];
+      Ln[K++]=Hs[(V>>20)&0xF]; Ln[K++]=Hs[(V>>16)&0xF];
+      Ln[K++]=Hs[(V>>12)&0xF]; Ln[K++]=Hs[(V>>8)&0xF];
+      Ln[K++]=Hs[(V>>4)&0xF];  Ln[K++]=Hs[V&0xF];
+      Ln[K++]=0x0D; Ln[K++]=0x0A;
+      SerialPortWrite ((UINT8 *)Ln, K);
+    }
+    for (I = 0; I < sizeof(PRegs)/sizeof(PRegs[0]); I++) {
+      UINT32 V = MmioRead32 (0x00079000 + PRegs[I]);
+      CHAR8  Ln[20]; UINTN K = 0;
+      Ln[K++]='['; Ln[K++]='X';
+      Ln[K++]=Hs[(PRegs[I]>>4)&0xF]; Ln[K++]=Hs[PRegs[I]&0xF];
+      Ln[K++]='=';
+      Ln[K++]=Hs[(V>>28)&0xF]; Ln[K++]=Hs[(V>>24)&0xF];
+      Ln[K++]=Hs[(V>>20)&0xF]; Ln[K++]=Hs[(V>>16)&0xF];
+      Ln[K++]=Hs[(V>>12)&0xF]; Ln[K++]=Hs[(V>>8)&0xF];
+      Ln[K++]=Hs[(V>>4)&0xF];  Ln[K++]=Hs[V&0xF];
+      Ln[K++]=0x0D; Ln[K++]=0x0A;
+      SerialPortWrite ((UINT8 *)Ln, K);
+    }
+  }
 
-    /* 1. W1C 清所有状态变化位：CSC(bit17)?  标准 bit17=CSC，
-       PRC=bit21, PLC=bit22, OCC=bit23, WRC=bit19, SRC=bit20,
-       PRC=bit21, PLC=bit22。简单点：清 bit17-23 */
-    Sc = MmioRead32 (DWC3_BASE + PortOff);
-    MmioWrite32 (DWC3_BASE + PortOff, Sc | (0x7F << 17));
+  /* ============================================================
+   * 7. 切换到 Device 模式（GCTL.PRTCAPDIR = 00）
+   * ============================================================ */
+  {
+    UINT32 V = MmioRead32 (DWC3_BASE + DWC3_GCTL);
+    V &= ~(0x3u << 12);        /* PRTCAPDIR = 00 = Device */
+    MmioWrite32 (DWC3_BASE + DWC3_GCTL, V);
+    Udelay (10000);
+  }
+
+  /* ============================================================
+   * 8. DWC3 核心软复位
+   * ============================================================ */
+  {
+    UINT32 V, Retry;
+    V = MmioRead32 (DWC3_BASE + DWC3_GCTL);
+    V |= DWC3_GCTL_CORESOFTRESET;
+    MmioWrite32 (DWC3_BASE + DWC3_GCTL, V);
+    Udelay (200000);
+
+    V &= ~DWC3_GCTL_CORESOFTRESET;
+    MmioWrite32 (DWC3_BASE + DWC3_GCTL, V);
+    Udelay (200000);
+
+    Retry = 100;
+    while ((MmioRead32 (DWC3_BASE + DWC3_GSNPSID) == 0) && (Retry-- > 0)) {
+      Udelay (10000);
+    }
+  }
+
+  /* ============================================================
+   * 9. GCTL 最终配置（Device 模式）
+   * ============================================================ */
+  {
+    UINT32 V  = 0;
+    V |= (1u << 0);       /* DSBLCLKGTNG */
+    V |= (1u << 2);       /* SOFITPSYNC */
+    V |= (1u << 3);       /* DISSCRAMBLE */
+    V |= (1u << 4);       /* SCALEDOWN[1:0] = 01 */
+    V &= ~(0x3u << 12);   /* PRTCAPDIR = 00 = Device */
+    MmioWrite32 (DWC3_BASE + DWC3_GCTL, V);
+    Udelay (10000);
+    After = MmioRead32 (DWC3_BASE + DWC3_GCTL);
+  }
+
+  /* ============================================================
+   * 10. 配置端点 FIFO 大小
+   *     TX FIFO0(EP0)=64, TX FIFO1(EP1 IN)=512, TX FIFO2(EP2 OUT)=512
+   *     RX FIFO0 = 1024
+   * ============================================================ */
+  MmioWrite32 (DWC3_BASE + DWC3_GTXFIFOSIZ (0), 0x00000040);
+  MmioWrite32 (DWC3_BASE + DWC3_GTXFIFOSIZ (1), 0x00400080);
+  MmioWrite32 (DWC3_BASE + DWC3_GTXFIFOSIZ (2), 0x00800100);
+  MmioWrite32 (DWC3_BASE + DWC3_GRXFIFOSIZ (0), 0x01800000);
+  Udelay (10000);
+
+  /* ============================================================
+   * 11. 分配事件缓冲区
+   * ============================================================ */
+  {
+    EFI_PHYSICAL_ADDRESS  EventBufPhys = 0;
+    UINTN                 EventBufPages = 1;   /* 4KB */
+
+    Status = gBS->AllocatePages (
+                    AllocateAnyPages,
+                    EfiBootServicesData,
+                    EventBufPages,
+                    &EventBufPhys
+                    );
+    if (EFI_ERROR (Status)) {
+      return Status;
+    }
+    gBS->SetMem ((VOID *)(UINTN)EventBufPhys, EventBufPages * 4096, 0);
+
+    MmioWrite32 (DWC3_BASE + DWC3_GEVNTADRLO, (UINT32)(EventBufPhys & 0xFFFFFFFF));
+    MmioWrite32 (DWC3_BASE + DWC3_GEVNTADRHI, (UINT32)((EventBufPhys >> 32) & 0xFFFFFFFF));
+    MmioWrite32 (DWC3_BASE + DWC3_GEVNTSIZ,   (UINT32)(EventBufPages * 4096));
+    Udelay (10000);
+  }
+
+  /* ============================================================
+   * 12. DCFG：高速 + 设备地址 0
+   * ============================================================ */
+  {
+    UINT32 V = 0;
+    V |= DWC3_DCFG_DEVSPEED_HS;
+    V |= DWC3_DCFG_DEVADDR (0);
+    MmioWrite32 (DWC3_BASE + DWC3_DCFG, V);
+    Udelay (10000);
+  }
+
+  /* ============================================================
+   * 13. PHY 配置 + DCTL 启动
+   * ============================================================ */
+  {
+    UINT32 V, Retry;
+
+
+    /* 13.2 KEEP_CONNECT */
+    V = MmioRead32 (DWC3_BASE + DWC3_DCTL);
+    V |= DWC3_DCTL_KEEP_CONNECT;
+    MmioWrite32 (DWC3_BASE + DWC3_DCTL, V);
     Udelay (10000);
 
-    /* 2. 触发端口复位：写 PR=1（bit4） */
-    Sc = MmioRead32 (DWC3_BASE + PortOff);
-    MmioWrite32 (DWC3_BASE + PortOff, Sc | 0x10);
-    Udelay (50000);
+    /* 13.3 CSFTRST */
+    V = MmioRead32 (DWC3_BASE + DWC3_DCTL);
+    V |= DWC3_DCTL_CSFTRST;
+    MmioWrite32 (DWC3_BASE + DWC3_DCTL, V);
+    Udelay (10000);
 
-    /* 3. 等 PR 清零（最多 500ms） */
-    for (W = 0; W < 50; W++) {
-      Sc = MmioRead32 (DWC3_BASE + PortOff);
-      if ((Sc & 0x10) == 0) break;
+    /* 13.4 等 CSFTRST 清零 */
+    Retry = 100;
+    while (((MmioRead32 (DWC3_BASE + DWC3_DCTL) & DWC3_DCTL_CSFTRST) != 0) && (Retry-- > 0)) {
       Udelay (10000);
     }
 
-    /* 4. 再次清状态位 */
-    Sc = MmioRead32 (DWC3_BASE + PortOff);
-    MmioWrite32 (DWC3_BASE + PortOff, Sc | (0x7F << 17));
+    /* 13.4a 重新初始化 QUSB2 PHY（CSFTRST 会复位 PHY） */
+    /* PHY Power-on */
+    MmioWrite32 (0x00079000 + 0x18, 0x00);   /* PLL_PWR_CTL */
+    Udelay (10000);
+    V = MmioRead32 (0x00079000 + 0xB4);
+    MmioWrite32 (0x00079000 + 0xB4, V & ~0x1);  /* 释放 Powerdown */
+    Udelay (10000);
 
-    /* 5. 打印复位后的 PortSC */
+    /* PHY PLL 配置（从 Host 模式复用） */
+    MmioWrite32 (0x00079000 + 0x0C, 0x79);   /* PLL_USER_CTL1 */
+    MmioWrite32 (0x00079000 + 0x1C, 0x9F);   /* PLL_AUTOPGM_CTL1 */
+    MmioWrite32 (0x00079000 + 0x80, 0xF8);   /* PORT_TUNE1 */
+    MmioWrite32 (0x00079000 + 0x84, 0xB3);   /* PORT_TUNE2 */
+    MmioWrite32 (0x00079000 + 0x88, 0x83);   /* PORT_TUNE3 */
+    MmioWrite32 (0x00079000 + 0x9C, 0x14);   /* PORT_TEST2 */
+    Udelay (10000);
+
+    /* 等 PLL 锁定（最多 500ms） */
+    Retry = 500;
+    while (((MmioRead32 (0x00079000 + 0x38) & 0x20) == 0) && (Retry-- > 0)) {
+      Udelay (1000);
+    }
+
+    /* 13.4b CSFTRST 之后配置 GUSB2PHYCFG */
+    V = MmioRead32 (DWC3_BASE + DWC3_GUSB2PHYCFG);
+    V |= (1u << 31);                        /* PHYSOFTRST */
+    MmioWrite32 (DWC3_BASE + DWC3_GUSB2PHYCFG, V);
+    Udelay (10000);
+
+    V = MmioRead32 (DWC3_BASE + DWC3_GUSB2PHYCFG);
+    V &= ~(1u << 31);                       /* 解除 PHYSOFTRST */
+    V &= ~((1u << 4) | (1u << 6) | (1u << 8));
+    V |= (1u << 0);                         /* VBUSVLDEXT = 1 */
+    MmioWrite32 (DWC3_BASE + DWC3_GUSB2PHYCFG, V);
+    Udelay (10000);
+
+
+    /* 13.5 等 DSTS.Connected，最多 500ms */
+    Retry = 500;
+    while (((MmioRead32 (DWC3_BASE + DWC3_DSTS) & 0x1) == 0) && (Retry-- > 0)) {
+      Udelay (1000);
+    }
+
+    /* 13.6 使能 RUN_STOP + KEEP_CONNECT + U2 电源管理 */
+    V = MmioRead32 (DWC3_BASE + DWC3_DCTL);
+    V |= DWC3_DCTL_RUN_STOP;
+    V |= DWC3_DCTL_KEEP_CONNECT;
+    V |= (1u << 12);   /* INITU2ENA */
+    V |= (1u << 11);   /* ACCEPTU2ENA */
+    MmioWrite32 (DWC3_BASE + DWC3_DCTL, V);
+    Udelay (10000);
+
+    /* 13.7 打印 GUSB2PHYCFG 和 DSTS */
     {
-      extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
-      CONST CHAR8 H4[] = "0123456789abcdef";
-      CHAR8 M4[16];
-      Sc = MmioRead32 (DWC3_BASE + PortOff);
-      M4[0]='['; M4[1]='R'; M4[2]='s'; M4[3]='t'; M4[4]='=';
-      M4[5]=H4[(Sc>>28)&0xF]; M4[6]=H4[(Sc>>24)&0xF];
-      M4[7]=H4[(Sc>>20)&0xF]; M4[8]=H4[(Sc>>16)&0xF];
-      M4[9]=H4[(Sc>>12)&0xF]; M4[10]=H4[(Sc>>8)&0xF];
-      M4[11]=H4[(Sc>>4)&0xF]; M4[12]=H4[Sc&0xF];
-      M4[13]=0x0D; M4[14]=0x0A;
-      SerialPortWrite ((UINT8 *)M4, 15);
+      CONST CHAR8 Hd[] = "0123456789abcdef";
+      UINT32 Regs[] = { DWC3_GUSB2PHYCFG, DWC3_DSTS };
+      UINTN i;
+      for (i = 0; i < 2; i++) {
+        UINT32 Rv = MmioRead32 (DWC3_BASE + Regs[i]);
+        CHAR8 Ln[20]; UINTN K = 0;
+        Ln[K++]='['; Ln[K++]='P'; Ln[K++]='H'; Ln[K++]='Y'; Ln[K++]='=';
+        Ln[K++]=Hd[(Rv>>28)&0xF]; Ln[K++]=Hd[(Rv>>24)&0xF];
+        Ln[K++]=Hd[(Rv>>20)&0xF]; Ln[K++]=Hd[(Rv>>16)&0xF];
+        Ln[K++]=Hd[(Rv>>12)&0xF]; Ln[K++]=Hd[(Rv>>8)&0xF];
+        Ln[K++]=Hd[(Rv>>4)&0xF];  Ln[K++]=Hd[Rv&0xF];
+        Ln[K++]=0x0D; Ln[K++]=0x0A;
+        SerialPortWrite ((UINT8 *)Ln, K);
+      }
     }
   }
 
-  /* 9. 注册 XHCI 设备 */
-  Status = RegisterNonDiscoverableMmioDevice (
-             NonDiscoverableDeviceTypeXhci,
-             NonDiscoverableDeviceDmaTypeCoherent,
-             NULL, NULL, 1,
-             DWC3_BASE, DWC3_SIZE);
+  /* ============================================================
+   * 14. 配置 EP0（控制端点）
+   * ============================================================ */
+  {
+    UINT32 Param0, Param1, Param2, Retry;
 
-  Line[0]='['; Line[1]='G'; Line[2]='C'; Line[3]='T';
-  Line[4]='L'; Line[5]=']'; Line[6]=' ';
-  for (I = 0; I < 8; I++) Line[7+I] = Hex[(After >> (28 - I*4)) & 0xF];
-  Line[15]=' '; Line[16]='R'; Line[17]='=';
-  for (I = 0; I < 8; I++) Line[18+I] = Hex[((UINT32)Status >> (28 - I*4)) & 0xF];
-  Line[26]=0x0D; Line[27]=0x0A;
-  SerialPortWrite ((UINT8 *)Line, 28);
+    Param0  = DWC3_DEPCFG_ACTION_INIT;
+    Param0 |= 0;                                /* EP number = 0 */
 
-  { volatile UINTN d; for (d = 0; d < 800000000; d++) { __asm__ volatile ("nop"); } }
+    Param1  = DWC3_DEPCFG_EPTYPE_CONTROL;
+    Param1 |= DWC3_DEPCFG_MAXPKT (64);
+    Param1 |= DWC3_DEPCFG_FIFO (0);
+
+    Param2  = DWC3_DEPCFG_XFER_COMPLETE_EN;
+    Param2 |= DWC3_DEPCFG_XFER_IN_PROGRESS_EN;
+    Param2 |= DWC3_DEPCFG_XFER_NOT_READY_EN;
+
+    MmioWrite32 (DWC3_BASE + DWC3_DEPCMDPAR0 (0), Param0);
+    MmioWrite32 (DWC3_BASE + DWC3_DEPCMDPAR1 (0), Param1);
+    MmioWrite32 (DWC3_BASE + DWC3_DEPCMDPAR2 (0), Param2);
+    MmioWrite32 (DWC3_BASE + DWC3_DEPCMD (0), DWC3_DEPCMD_DEPCFG);
+    Udelay (10000);
+
+    Retry = 100;
+    while (((MmioRead32 (DWC3_BASE + DWC3_DEPCMD (0)) & 0xC00) != 0) && (Retry-- > 0)) {
+      Udelay (1000);
+    }
+  }
+
+  /* ============================================================
+   * 15. 启动 EP0（DEPSTRT）
+   * ============================================================ */
+  {
+    MmioWrite32 (DWC3_BASE + DWC3_DEPCMDPAR0 (0), 0);
+    MmioWrite32 (DWC3_BASE + DWC3_DEPCMDPAR1 (0), 0);
+    MmioWrite32 (DWC3_BASE + DWC3_DEPCMDPAR2 (0), 0);
+    MmioWrite32 (DWC3_BASE + DWC3_DEPCMD (0), DWC3_DEPCMD_DEPSTRT);
+    Udelay (10000);
+  }
+
+  /* ============================================================
+   * 16. 使能设备事件
+   * ============================================================ */
+  {
+    UINT32 V  = 0;
+    V |= (1u << 0);    /* DisconnEvtEn */
+    V |= (1u << 1);    /* USBRstEvtEn */
+    V |= (1u << 2);    /* ConnectDoneEvtEn */
+    V |= (1u << 3);    /* ULStEvtEn */
+    V |= (1u << 4);    /* WkUpEvtEn */
+    V |= (1u << 5);    /* ErTyEvtEn */
+    MmioWrite32 (DWC3_BASE + DWC3_DEVTEN, V);
+  }
+
+  /* ============================================================
+   * 17. 打印关键寄存器（GCTL / DCFG / DCTL / DSTS）
+   * ============================================================ */
+  {
+    UINT32 Regs[] = { DWC3_GCTL, DWC3_DCFG, DWC3_DCTL, DWC3_DSTS };
+    UINTN  I;
+    for (I = 0; I < 4; I++) {
+      UINT32 Rv = MmioRead32 (DWC3_BASE + Regs[I]);
+      UINTN  K = 0;
+      CHAR8  Ln[20];
+      Ln[K++]='['; Ln[K++]='D';
+      Ln[K++]=Hex[(Regs[I]>>4)&0xF]; Ln[K++]=Hex[Regs[I]&0xF];
+      Ln[K++]='=';
+      Ln[K++]=Hex[(Rv>>28)&0xF]; Ln[K++]=Hex[(Rv>>24)&0xF];
+      Ln[K++]=Hex[(Rv>>20)&0xF]; Ln[K++]=Hex[(Rv>>16)&0xF];
+      Ln[K++]=Hex[(Rv>>12)&0xF]; Ln[K++]=Hex[(Rv>>8)&0xF];
+      Ln[K++]=Hex[(Rv>>4)&0xF];  Ln[K++]=Hex[Rv&0xF];
+      Ln[K++]=0x0D; Ln[K++]=0x0A;
+      SerialPortWrite ((UINT8 *)Ln, K);
+    }
+  }
+
   return Status;
 }

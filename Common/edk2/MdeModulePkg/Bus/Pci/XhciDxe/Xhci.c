@@ -2213,6 +2213,27 @@ done_print: ;
   }
   XhcDbgPrint ("[X8] InstallProto OK\r\n");
 
+  /* 读 PortSC(1) 和 PortSC(2) 确认端口状态 */
+  {
+    CONST CHAR8 H[] = "0123456789abcdef";
+    UINT32 Base = 0x07000000UL;
+    UINT32 P1 = MmioRead32 (Base + Xhc->CapLength + 0x400);
+    UINT32 P2 = MmioRead32 (Base + Xhc->CapLength + 0x410);
+    CHAR8  L1[16];
+    CHAR8  L2[16];
+    UINTN  K;
+
+    L1[0]='['; L1[1]='P'; L1[2]='1'; L1[3]='=';
+    for (K = 0; K < 8; K++) L1[4+K] = H[(P1 >> (28 - K*4)) & 0xF];
+    L1[12]=']'; L1[13]=0x0D; L1[14]=0x0A; L1[15]=0;
+    XhcDbgPrint (L1);
+
+    L2[0]='['; L2[1]='P'; L2[2]='2'; L2[3]='=';
+    for (K = 0; K < 8; K++) L2[4+K] = H[(P2 >> (28 - K*4)) & 0xF];
+    L2[12]=']'; L2[13]=0x0D; L2[14]=0x0A; L2[15]=0;
+    XhcDbgPrint (L2);
+  }
+
 
   /* TEMP: 对比 PciIo 和 Direct MMIO 读 XHCI OpReg */
   {

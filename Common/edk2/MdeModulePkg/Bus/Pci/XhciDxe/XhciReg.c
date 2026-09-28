@@ -880,15 +880,58 @@ XhcResetHC (
     SerialPortWrite ((UINT8 *)Msg, 12);
   }
 
-  /* TEMP: DWC3 的 HCRST 会失败，直接跳过整个 reset 流程 */
+  /* 完整端口复位序列 */
   {
     extern RETURN_STATUS EFIAPI SerialPortWrite (UINT8 *, UINTN);
-    CHAR8 Msg[20];
-    Msg[0]='['; Msg[1]='S'; Msg[2]='k'; Msg[3]='p'; Msg[4]='H';
-    Msg[5]='C'; Msg[6]='R'; Msg[7]='S'; Msg[8]='T';
-    Msg[9]=0x0D; Msg[10]=0x0A;
-    SerialPortWrite ((UINT8 *)Msg, 11);
+    CONST CHAR8 H[] = "0123456789abcdef";
+    UINT32 PortOff = Xhc->CapLength + 0x400;
+    UINT32 Base    = 0x07000000UL;
+    UINT32 V;
+    UINTN  I;
+    CHAR8  M[20];
+    UINTN  K = 0;
+
+    /* 1. 清状态变化位（CSC/PRC/PLC 等），保持 PP=1 */
+    V = MmioRead32 (Base + PortOff);
+    MmioWrite32 (Base + PortOff, V | 0x007E0000 | 0x0200);
+    gBS->Stall (10000);
+
+    /* 2. 触发端口复位：PP=1 + PR=1 */
+    V = MmioRead32 (Base + PortOff);
+    MmioWrite32 (Base + PortOff, V | 0x0210);
+    gBS->Stall (50000);
+
+    /* 3. 等 PR 位（bit4=0x10）清零（最多 1 秒） */
+    for (I = 0; I < 100; I++) {
+      V = MmioRead32 (Base + PortOff);
+      if ((V & 0x0010) == 0) break;
+      gBS->Stall (10000);
+    }
+
+    /* 4. 再次清状态变化位 */
+    V = MmioRead32 (Base + PortOff);
+    MmioWrite32 (Base + PortOff, V | 0x007E0000 | 0x0200);
+    gBS->Stall (10000);
+
+    /* 5. 手动强制置位 PED=1（bit1） */
+    V = MmioRead32 (Base + PortOff);
+    if ((V & 0x00000002) == 0) {
+      MmioWrite32 (Base + PortOff, V | 0x00000002);  /* PED=1 */
+      gBS->Stall (10000);
+    }
+
+    /* 6. 读回最终值 */
+    V = MmioRead32 (Base + PortOff);
+    M[K++]='['; M[K++]='P'; M[K++]='S'; M[K++]='C'; M[K++]='=';
+    M[K++]=H[(V>>28)&0xF]; M[K++]=H[(V>>24)&0xF];
+    M[K++]=H[(V>>20)&0xF]; M[K++]=H[(V>>16)&0xF];
+    M[K++]=H[(V>>12)&0xF]; M[K++]=H[(V>>8)&0xF];
+    M[K++]=H[(V>>4)&0xF];  M[K++]=H[V&0xF];
+    M[K++]=0x0D; M[K++]=0x0A;
+    SerialPortWrite ((UINT8 *)M, K);
   }
+
+  /* 直接跳过 HCRST，返回成功（DWC3 的 HCRST 会卡死） */
   return EFI_SUCCESS;
   //
   // Host can only be reset when it is halt. If not so, halt it
